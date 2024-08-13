@@ -71,6 +71,10 @@ screen descript_screen:
         hover 'interface/Quest_Menu.png'
         action NullAction()
         xalign .5 yalign .5
+    add "interface/Quest_Menu_fg.png":
+        xalign .5 
+        yalign .5
+        
     text _('Заметки') xalign .52 outlines [(1, "#000", 0, 0)] ypos 190 size 55 bold True
     viewport xalign .5 yalign .5:
         xmaximum 1365
@@ -232,6 +236,28 @@ screen descript_screen:
 
 
 
+        #if getattr(store, 'descript_BiblioGirl', '!') != '!':
+        viewport:
+            xmaximum 175
+            ymaximum 212
+
+            imagebutton:
+                at ButtonEffect01
+                idle '#0000'
+                hover '#fffa'
+                action SetVariable('old_descript_BiblioGirl', descript_BiblioGirl), Show('descript_screen_2', dscr = descript_BiblioGirl, who = 'BiblioGirl', main = True)
+            xpos 202 ypos 176 + 244
+
+        imagebutton:
+
+            if old_descript_BiblioGirl != descript_BiblioGirl:
+                idle 'interface/new_quest.png'
+                at NewEventEffect(157, 236 + 210, .25)
+            else:
+                idle Transform('interface/new_quest.png', alpha = 0.0)
+                xpos 157 ypos 236 + 210
+            hover 'interface/new_quest_red.png'
+            action SetVariable('old_descript_BiblioGirl', descript_BiblioGirl), Show('descript_screen_2', dscr = descript_BiblioGirl, who = 'BiblioGirl', main = True)
 
 
 

@@ -86,8 +86,24 @@ label start:
 
 
 
+    menu:
+        "дальше":
+            pass
+        "К ТЗ":
+            $ time.tdtd = "Пятница"
+            $ time.time_now   = 'morning'
+            $ block_exit_home = False
+            $ locations['Corridor'].buttons[0].update({'Exit To City Home'  : ((906, 381, 162, 353,), [Function(go_to_city)]),})
+            $ Location(
+                    'City_Home',
+                    buttons       = [],
+                    image_buttons = {
+                    'Door' : Function(JumpToLocation, 'Corridor'),
+                    
+                    }
+                    )
 
-
+            jump christie_root_21.tt_01
 
 
 
@@ -146,7 +162,7 @@ label start:
 
     'Марина' "Это брат моего мужа. Он живёт со мной, пока Джеймс в командировке. "
     'Офицер' "Я так и думал."
-   # show screen give_item_screen(i_path+'/items/ticket.png', _("Билеты"), [_("Билеты"), _("Театральные билеты на постановку «Кошки».")])
+    # show screen give_item_screen(i_path+'/items/ticket.png', _("Билеты"), [_("Билеты"), _("Театральные билеты на постановку «Кошки».")])
 
     'Офицер' "Полагаю, имя его вам тоже знакомо?"
     show Milf Angry
@@ -315,7 +331,7 @@ label start:
     #$ Event('ep1_prologue_milf', 'Milf')
     $ block_milf_events = 'ep1_prologue_milf'
     #$ block_milf_home = True
-    call player_pool from _call_player_pool
+    #call player_pool from _call_player_pool
     #show image 'interface/tutorial.png'
     # with my_dissolve
     # $ renpy.pause(.75, hard = True)

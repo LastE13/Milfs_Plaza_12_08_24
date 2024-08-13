@@ -1151,8 +1151,29 @@ image invis = Composite((638, 976),
 image Goon Invis = 'invis'
 
 
+
+#############################
+
+image BiblioGirl Pose_0 = "characters/BiblioGirl/1POSES/0.png"
+
+image BiblioGirl Smile = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 287),  "BiblioGirl_7")
+
+image BiblioGirl Embarrassment = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 287),  "BiblioGirl_2")
+
+image BiblioGirl Passion = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 287),  "BiblioGirl_1")
+
+
+#############################
+
 init python:
-
-
+    # Skepticism, Passion, Embarrassment, Laughs, Angry, Surprise, Chagrin, Smile, Normal
+    for i in range(9):
+        renpy.image("BiblioGirl_" + str(i), im.Crop("characters/BiblioGirl/atlas/emo_atlas.png", (0+i*131, 0, 131, 112)))
     for i in custom_sprites:
         renpy.image(i + " Invis", 'invis')

@@ -81,6 +81,69 @@ label christie_root_21_menu:
 
             scene black with Dissolve(.5)
             jump main_interface_label
+label bibliogirl_minigame_pre_menu:
+    call show_bg_image_label from _call_show_bg_image_label_133
+    $ location_now = 'City_Library_BiblioGirl'
+    $ check_ev = check_events()
+    $ library_event_name = ""
+
+    if check_ev:
+        $ library_event_name = check_ev.button_name
+  
+    show BiblioGirl Normal
+    show BiblioGirl Normal:
+        xalign .85
+    show GG Normal
+    show GG Normal at go_from_left
+
+label bibliogirl_minigame_menu:
+
+    menu:
+        "Помочь" if len(library_event_name):
+            $ location_now = 'City_Library'
+            $ renpy.jump(check_ev.label)
+            if time.time_now == 'evening':
+                "Библиотекарша" "Извините, но мы уже закрываемся."
+                show GG Normal:
+                    xalign .15
+                with my_dissolve
+                "[gg]" "Да, я понял. "
+                jump christie_root_21_menu
+            jump biblio_BookW
+        "Говорить" if not len(library_event_name):
+            $ location_now = 'City_Library'
+            if time.time_now == 'evening':
+                "Библиотекарша" "Извините, но мы уже закрываемся."
+                show GG Normal:
+                    xalign .15
+                with my_dissolve
+                "[gg]" "Да, я понял. "
+                jump christie_root_21_menu
+
+            "Библиотекарша" "Добро пожаловать в обитель знаний, меня зову Нэнси. "
+            show GG Normal:
+                xalign .15
+            with my_dissolve
+            "[gg]" "Привет, а меня [gg]."
+
+            "Библиотекарша" "Вы к нам по делу или так?"
+            show GG Normal
+            "[gg]" "А что из «так» вы предлагаете?"
+
+            "Библиотекарша" "Смотря что вы ожидаете, хи-хи."
+            jump christie_root_21_menu
+        "Уйти" if True:
+
+
+            $ location_now    = 'City_Library'
+
+
+
+
+
+
+            scene black with Dissolve(.5)
+            jump main_interface_label
 
 label christie_root_21:
 
@@ -362,9 +425,22 @@ label christie_root_21:
 
 
 
-
-
+    label .tt_01:
+    
     $ descript_Christie   = _("Завершить реферат по «Обществознанию».")
-    $ unlock_city_library = False
+    $ descript_BiblioGirl = _('Нэнси ждёт меня в библиотеке.')
+    $ unlock_city_library = True
+    $ Location(
+            'City_Library',
+            buttons       = [],
+            image_buttons = {
+            'biblio_girl':Jump("bibliogirl_minigame_pre_menu")
+            }
+            )
+
+    $ Event('biblio_BookW', location = 'City_Library_BiblioGirl', button_name = _("Помочь"), time = ['morning', 'afternoon'], priority = -1)
+
+
+    
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -725,6 +725,14 @@ label variables_at_start:
             smth_change_after_load = True
             print("smth_change_after_load : 336")
             set_locations_at_start = True
+        if not hasattr(store, 'descript_BiblioGirl'):
+            descript_BiblioGirl = '!'
+            smth_change_after_load = True
+            print("smth_change_after_load : 339")
+        if not hasattr(store, 'old_descript_BiblioGirl'):
+            old_descript_BiblioGirl = '!'
+            smth_change_after_load = True
+            print("smth_change_after_load : 342")
             Location(
                 'Corridor',
                 buttons = [{
