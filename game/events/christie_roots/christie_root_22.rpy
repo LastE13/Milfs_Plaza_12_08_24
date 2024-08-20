@@ -10,7 +10,7 @@ label christie_root_22:
 
 
 
-    $ events.pop('christie_root_22', 0)
+    $ events_pop('christie_root_22', 0)
 
     call show_all_images_label from _call_show_all_images_label
 
@@ -44,14 +44,16 @@ label christie_root_22:
     "[gg]" "Игорь!"
     $ block_time_forward = False
 
-    if 'christie_root_22' in allowed_events:
-        $ allowed_events.remove("christie_root_22")
+ 
 
 
     $ Event('christie_root_23_block', 'Sister_Room', time = 'night')
 
     $ Event('christie_root_23', 'Igor', button_name = _('Замок на двери'))
-
+    if not hasattr(store, 'allowed_events'):
+        $ allowed_events = []
+    $ allowed_events.append('christie_root_23')
+    $ list_event_mandatory.append('christie_root_23')
     $ descript_Christie = _("Сначала поговорить с Игорем, а после отправиться в библиотеку и продолжить написание реферата по теме «Обществознание».")
     
     if getattr(store, 'block_igor_position', False):

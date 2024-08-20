@@ -84,7 +84,7 @@ label ep2_18_end:
 
         $ milf_love_quests = 3
 
-    $ events.pop('ep2_18_end', 0)
+    $ events_pop('ep2_18_end', 0)
 
 
     jump main_interface_label

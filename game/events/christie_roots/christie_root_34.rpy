@@ -386,6 +386,6 @@ label christie_root_34:
 
 
     $ descript_Christie= _("Отправить фотку Кристи Игорю.")
-    $ events.pop('christie_root_34', 0)
+    $ events_pop('christie_root_34', 0)
     jump christie_root_35
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

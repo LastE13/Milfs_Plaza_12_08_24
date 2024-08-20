@@ -2,7 +2,7 @@ label biblio_20:
     # Description: Нужно убедить Зудило и Бубнилу помочь мне отвлечь секс-коммунистов в библиотеке.
     # Task: Активировать Зудилуи Бубнилу
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_264
     show Jay Silence
     show Jay Silence:
         ypos 1085
@@ -19,11 +19,11 @@ label biblio_20:
     "Зудило" "С чего ты решил, что оно у нас хорошее?"
     show GG Skepticism with my_dissolve
     "[gg]" "Наверное потому, что я нашёл вам классную работу."
-    "Зудило" "У нас уже есть работы."
+    "Зудило" "У нас уже есть работа."
     "Зудило" "Если ты не заметил, конечно."
     "Бубнило" "..........."
     show GG Normal with my_dissolve
-    "[gg]" "Но чем больше работы, чем больше денег. А? Правильно я говорю?"
+    "[gg]" "Но чем больше работы, тем больше денег. А? Правильно я говорю?"
     "Зудило" "Ты чо, чувачело, заделался инфо-бизнессменом? Хватит вешать лапшу на уши, ищи других дураков."
     show GG Skepticism with my_dissolve
     "[gg]" "Вот именно потому, что вы сразу меня раскусили, я и выбрал вас в качестве исполнителей."
@@ -55,8 +55,18 @@ label biblio_20:
     "Зудило" "Только не тяни резину, чувачело."
     "Зудило" "В любой момент к нам может подъехать Харли Ванштейнт."
     "Зудило" "Слышишь, Голливуд? Тебе пиздец!"
-    
-    $ events.pop("biblio_20", 0)
+    $ location_now = "City_Shop"
+    $ Location('ClothesStore',
+        buttons       = [],
+        image_buttons = {
+        }
+        )
+    $ storein_costumes_shop_items = ['Платья']
+    $ events_pop("biblio_20", 0)
+    $ Event("biblio_21", location = "ClothesStore")
+    $ Event("biblio_22", location = "JayBob")
     # biblio_21 Покупки должны быть обработаны отдельно
+    #jump biblio_21
+    $ descript_BiblioGirl = _("Купить женские парики для Зудилы и Бубнилы.")
     
     jump main_interface_label

@@ -2,7 +2,7 @@ label christie_root_23:
 
 
 
-    $ events.pop('christie_root_23', 0)
+    $ events_pop('christie_root_23', 0)
     call show_bg_image_label from _call_show_bg_image_label_99
 
     call show_additional_images_label from _call_show_additional_images_label_84
@@ -119,13 +119,18 @@ label christie_root_23:
 
 
     $ Event('christie_root_24b', 'Sister_Room', time = 'night', priority = -1)
+    $ check_event_in_allowed_events("christie_root_24b")
     $ unlock_city_library = True
-    $ events.pop('christie_root_21', 0)
-    $ events.pop('christie_root_23_block', 0)
+    $ events_pop('christie_root_21', 0)
+    $ events_pop('christie_root_23_block', 0)
     $ Event('christie_root_24', 'City_Library_BiblioGirl', button_name = _("Реферат"), time = ['morning', 'afternoon'], priority = -1)
-
+    $ list_event_mandatory.append('christie_root_24')
+    $ if_in_allowed_events("christie_root_24")
     $ descript_Christie_tmp_0 = __("1. Отправиться в библиотеку и продолжить написание реферата по теме «Обществознание» (1/3).")
     $ descript_Christie_tmp_1 = __("2. Ночью, пока все спят, взломать дверь Кристи.")
+    #$ Event('biblio_BookW', location = 'City_Library_BiblioGirl', button_name = _("Помочь"), time = ['morning', 'afternoon'], priority = -1)
+
+
     $ descript_Christie       = str(descript_Christie_tmp_0) + "\n" + str(descript_Christie_tmp_1)
 
     jump main_interface_label

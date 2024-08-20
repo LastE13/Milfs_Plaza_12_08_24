@@ -178,7 +178,7 @@ label christie_root_26:
 
 
     if not from_gallery_check():
-        $ events.pop('christie_root_26', 0)
+        $ events_pop('christie_root_26', 0)
 
         $ remove_from_inventory(name = 'Реферат «Обществознание» 3/3')
     elif True:

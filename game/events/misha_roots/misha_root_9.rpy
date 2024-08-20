@@ -123,7 +123,7 @@ image misha_root_9 anim 4:
 
 label misha_root_9:
     if not from_gallery_check():
-        $ events.pop("misha_root_9", 0)
+        $ events_pop("misha_root_9", 0)
 
 
 

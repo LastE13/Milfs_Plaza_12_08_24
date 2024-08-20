@@ -54,7 +54,7 @@ image Night_collector_18anim:
 
 label pre_ep3_night_girl:
     if events.get('pre_ep3_night_girl'):
-        $ events.pop('pre_ep3_night_girl', 0)
+        $ events_pop('pre_ep3_night_girl', 0)
 
 
 

@@ -2,21 +2,24 @@ label biblio_23:
     # Description: Выгнать банду секс-коммунистов из библиотеки.
     # Task: Активировать библиотеку на карте
     
-    call show_bg_image_label
-    show GG Smile
-    show GG Smile at go_from_left(xxalign = .15)
-    show incel
-    show Jay Silence
-    show Jay Silence:
-        ypos 1085
-        xalign .65
-    show Bob Normal
-    show Bob Normal:
-        ypos 1085
-        xalign .95
+    call show_bg_image_label from _call_show_bg_image_label_255
     show BiblioGirl Smile
     show BiblioGirl Smile:
-        xalign .85
+        xalign .99
+    show GG Smile
+    show GG Smile at go_from_left(xxalign = -.07)
+    show Incel 1
+    show Incel 1:
+        xalign 1.6
+        ease 1 xalign .85
+    show Bob Dress
+    show Bob Dress at go_from_left(xxalign = .15):
+        xzoom -1
+        
+    show Jay Dress
+    show Jay Dress at go_from_left(xxalign = .3):
+        xzoom -1
+        
     with my_dissolve
     
     
@@ -34,7 +37,10 @@ label biblio_23:
     "Зудило" "Мы... эти, как их там, женщины!"
     
     # //simp приближаются к Зудило_Wifu
-    
+    show simp1 1:
+        xalign 1.69
+        linear .5 xalign 0.7
+
     "Simp" "Вау!"
     "Simp" "Ничосе..."
     "Simp" "Мне нравится та, которая слева."
@@ -57,7 +63,21 @@ label biblio_23:
     "Incel" "Хорошо... Я согласен."
     
     # //Все спрайты уходят, кроме GG_Normal и BiblioGirl_Normal
-    
+    show Incel 1:
+        ease 1 xalign -1.5
+    show Bob Dress:
+        xzoom 1
+    show Bob Dress:
+        ease 1 xalign -1.5
+    show Jay Dress:
+            xzoom 1
+    show Jay Dress:
+        ease 1 xalign -1.5
+    show simp1 1:
+        ease 1 xalign -1.5
+    show BiblioGirl Smile:
+        pause .4
+        ease .5 xalign .9
     "Нэнси" "Ах, [gg]! Ты снова спас меня."
     "[gg]" "Теперь это входит в привычку."
     show BiblioGirl Chagrin with my_dissolve
@@ -75,7 +95,10 @@ label biblio_23:
     "Нэнси" "Позволь мне сперва подготовиться к нашей встрече."
     "Нэнси" "Хочу показать тебе твой подарок, что оказался внутри шкатулки."
     
-    # // BiblioGirl_Passion  исчезает вправо
+    show BiblioGirl Passion:
+        xzoom -1
+        ease 1 xalign 1.6
+    # исчезает вправо
     
     show GG Think with my_dissolve
     "[gg]" "Я весь горю от нетерпения."
@@ -87,4 +110,8 @@ label biblio_23:
     "Нэнси" "[gg]! Пора!"
     show GG Smile with my_dissolve
     "[gg]" "Ну наконец-то."
+    show GG Smile:
+        ease 1 xalign 1.6
+    with my_dissolve
+    pause .9
     jump biblio_23_sex

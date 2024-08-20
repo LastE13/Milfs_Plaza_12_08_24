@@ -169,7 +169,7 @@ label test_label:
     show image 'cg/milf_and_sister_activities/milf_hall.png'
     with my_dissolve
 
-    $ events.pop('steam_bonus_2', 0)
+    $ events_pop('steam_bonus_2', 0)
     
     show GG Passion
     show GG Passion at go_from_left()

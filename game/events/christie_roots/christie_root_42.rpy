@@ -6,7 +6,7 @@ label christie_root_42:
         $ events['christie_root_42'].day_start = time.day_now + 1
         jump main_interface_label
         
-    $ events.pop('christie_root_42', 0)
+    $ events_pop('christie_root_42', 0)
     #Description: Проведать Игоря в Парке и показать ему запись с продажным копом.
     # "A Task" ""
     # #Активировать Igor_Sprite в Park 

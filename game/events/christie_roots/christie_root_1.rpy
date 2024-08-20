@@ -6,7 +6,7 @@ label christie_root_try_to_del_descript_christie_block_igor:
             pass
     return
 label christie_root_1:
-    $ events.pop('christie_root_1', 0)
+    $ events_pop('christie_root_1', 0)
     call show_bg_image_label from _call_show_bg_image_label_108
     call show_additional_images_label from _call_show_additional_images_label_90
 

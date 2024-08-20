@@ -1059,7 +1059,7 @@ label ep5_milf_77_menu_8:
     $ unlock_milf_costumes = True
 
     $ block_change_milf_position   = False
-    $ events.pop('ep5_milf_77', 0)
+    $ events_pop('ep5_milf_77', 0)
 
 
     python:

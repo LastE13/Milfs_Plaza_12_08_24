@@ -42,7 +42,7 @@ init -50 python:
     Item(_('Костюм 1'), ['Костюм'],      i_path+'/items/costume_1.png', NullAction()),
 
     Item(_('Костюм 2'), ['Костюм'],      i_path+'/items/costume_2.png', NullAction()),
-
+    Item(_('Платья'), ['Платья'],      i_path+'/items/dress.png', NullAction()),
     Item(_('Красное вино'), ['Красное вино'],      i_path+'/items/wine.png', NullAction()),
 
     Item(_('Чёрные очки'), ['Чёрные очки'],      i_path+'/items/black_glasses.png', NullAction()),
@@ -74,7 +74,10 @@ init -50 python:
     Item(_('Реферат «Обществознание» 3/3'), ['Мой собственный многочасовой', 'интеллектуальный труд.'],      i_path+'/items/referat_2.png', NullAction()),
 
 
-    Item(_('Камасутра'), ['Древнеиндийский трактат,', 'посвящённый теме эмоциональной жизни,', 'влечения и любви.'],      i_path+'/items/camasutra.png', NullAction()),
+    Item(_('Камасутра'), ['Древнеиндийский трактат,', 'посвящённый теме эмоциональной жизни,', 'влечения и любви.'],      i_path+'/items/camasutra.png', Jump("biblio_1")),#
+    Item(_('Книга «Анжелика и Король»'), ['Анжелика и Король', 'Классический любовный роман'],      i_path+'/items/book.png', Jump("biblio_7")),#
+    Item(_('Правила Синдарина'), ['Вся необходимая информация для расшифровки.'],      i_path+'/items/ticket.png', NullAction()),#
+    Item(_('Любовная записка'), ['Любовная записка из книги.'],      i_path+'/items/love_mail.png', NullAction()),#
 
 
 
@@ -83,6 +86,8 @@ init -50 python:
     Item(_('Растение в горшке'), ["Обычное растение в горшке."],           i_path+'/items/ep5_tree_2.png',     NullAction()),
 
     Item(_('Товар'), ["Товар для продажи."],           i_path+'/items/drug.png',     NullAction(), max_quant = 35),
+    
+    Item(_('Элитный мешочек'),[_('Элитный мешочек Зудилы и Бубнилы')],           i_path+'/items/drug.png',     NullAction(), max_quant = 5),
 
     Item(_('Купон «кекса»'), [_('Коллекционный купон.'), _('Но сейчас эта самая ходовая валюта на чёрном рынке.')],           i_path+'/items/keks.png', NullAction(), max_quant = 10),
 
@@ -104,6 +109,7 @@ init -50 python:
 
 
     Item(_("Букет роз"),        ["Собранные вместе цветы для подарка."],           i_path+'/items/buket.png', NullAction()),
+    Item(_("Букет ландышей"),        ["Цветы что любит Нэнси"],           i_path+'/items/lilies.png', NullAction()),
 
     Item(_("Роза"),        ["Красивый, пахучий цветок бордового цвета."],           i_path+'/items/flower.png', NullAction()),
 

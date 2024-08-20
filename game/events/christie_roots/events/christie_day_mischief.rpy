@@ -2263,7 +2263,7 @@ label christie_day_mischief:
         
         
         $ add_to_gallery(39)
-        #$ events.pop('christie_night_mischief_day', 0)
+        #$ events_pop('christie_night_mischief_day', 0)
 
         scene black with Dissolve(.25)
         $ renpy.pause(.25, hard = True)

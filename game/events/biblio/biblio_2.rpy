@@ -2,7 +2,7 @@ label biblio_2:
     # Description: Спросить у Игоря про странную записку.
     # Task: Активировать Игоря в Парке.
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_252
     show GG Smile
     show GG Smile at go_from_left(xxalign = .15)
     show Igor Ok
@@ -63,7 +63,10 @@ label biblio_2:
     "[gg]" "Тревожить Игоря по пустякам я не хочу, он и так постоянно выручает меня."
     "[gg]" "Возможно Кристи мне поможет."
     
-    $ events.pop("biblio_2", 0)
+    $ events_pop("biblio_2", 0)
     $ Event("biblio_3", location = "Christie", time=["morning", "afternoon", "evening"])
+    $ check_event_in_allowed_events("biblio_3")
+
     
+    $ descript_BiblioGirl = _('Поговорить с Кристи по поводу эльфийского языка.')
     jump main_interface_label

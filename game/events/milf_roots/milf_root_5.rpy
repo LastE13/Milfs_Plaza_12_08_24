@@ -1,6 +1,6 @@
 
 label milf_root_5:
-    $ events.pop('milf_root_5', 0)
+    $ events_pop('milf_root_5', 0)
     $ time.time_now = 'night'
     call show_bg_image_label from _call_show_bg_image_label_113
     call show_additional_images_label from _call_show_additional_images_label_93

@@ -1,5 +1,5 @@
 label final_act_22:    #Final_Act_22
-   # $ events.pop('final_act_22', 0)
+   # $ events_pop('final_act_22', 0)
    # $ time.time_now = "evening"
 
    # "Description" "Мне удалось немного расшатать болты унитаза, но этого недостаточно. Теперь мне надо подкачаться ЕЩЁ СИЛЬНЕЕ! "

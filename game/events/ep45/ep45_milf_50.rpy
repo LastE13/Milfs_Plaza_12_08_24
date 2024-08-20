@@ -2,7 +2,7 @@ label ep45_milf_50:
 
 
 
-    $ events.pop('ep45_milf_50', 0)
+    $ events_pop('ep45_milf_50', 0)
 
     $ Hide('main_interface')()
 

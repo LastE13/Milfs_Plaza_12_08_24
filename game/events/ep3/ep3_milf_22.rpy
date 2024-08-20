@@ -21,7 +21,7 @@ image Shop_Flower_Anim:
 
 
 label ep3_milf_22:
-    $ events.pop('ep3_milf_22', 0)
+    $ events_pop('ep3_milf_22', 0)
 
     scene expression '#000' with Dissolve(.5)
 
@@ -268,7 +268,7 @@ label ep3_milf_22:
 
 
 label ep3_milf_22_2:
-    $ events.pop('ep3_milf_22_2', 0)
+    $ events_pop('ep3_milf_22_2', 0)
 
     show GG Angry
     show GG Angry:

@@ -291,9 +291,6 @@ label christie_root_30:
 
         $ time.time_now   = 'night'
 
-        if 'christie_root_30' in allowed_events:
-            $ allowed_events.remove("christie_root_30")
-
 
 
         $ block_exit_home     = copy.deepcopy(block_exit_home_tmp)
@@ -304,8 +301,8 @@ label christie_root_30:
 
         $ Event('christie_root_31', 'GG_Room',  time = ['morning'])
         $ Event('christie_root_31b', 'City_Psi', time = ['morning', 'afternoon'])
-        $ events.pop('christie_root_29', 0)
-        $ events.pop('christie_root_30', 0)
+        $ events_pop('christie_root_29', 0)
+        $ events_pop('christie_root_30', 0)
         $ add_to_gallery(28)
 
 

@@ -75,7 +75,7 @@ label ep3_milf_34:
     show screen ep3_milf_34_screen
     with Dissolve(.5)
     call screen empty_screen
-    $ events.pop('ep3_milf_34', 0)
+    $ events_pop('ep3_milf_34', 0)
 
     hide screen ep3_milf_34_screen
     hide screen main_interface 
@@ -450,16 +450,16 @@ label ep3_milf_34_menu:
 
         $ location_now = 'Corridor'
 
-        $ events.pop('ep3_milf_28', 0)
+        $ events_pop('ep3_milf_28', 0)
 
 
-        $ events.pop('stump_bed', 0)
+        $ events_pop('stump_bed', 0)
 
         $ descript = _('Лечь спать.')
 
-        $ events.pop('bed_night_milf_34', 0)
+        $ events_pop('bed_night_milf_34', 0)
 
-        $ events.pop('bed_night_milf_35', 0)
+        $ events_pop('bed_night_milf_35', 0)
 
 
 

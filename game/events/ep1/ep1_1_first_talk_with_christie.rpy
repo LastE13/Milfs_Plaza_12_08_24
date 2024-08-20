@@ -95,7 +95,7 @@ label ep1_1_first_talk_with_christie:
 
 
 
-    $ events.pop('ep1_1_first_talk_with_christie', 0)
+    $ events_pop('ep1_1_first_talk_with_christie', 0)
     $ Event('ep1_2_morning',  'GG_Room', time = ['morning'])
 
     $ block_time_forward = False

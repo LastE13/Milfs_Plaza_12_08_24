@@ -2,7 +2,7 @@ label milf_root_10:
     show black with Dissolve(.5)
 
     $ renpy.pause(.5, hard = True)
-    $ events.pop('milf_root_10', 0)
+    $ events_pop('milf_root_10', 0)
 
 
 

@@ -81,7 +81,7 @@ label ep45_milf_53:
     $ milf_position['morning']   = ['Kitchen',   'milf_kitchen']
     $ milf_position['afternoon'] = ['Kitchen',   'milf_kitchen']
 
-    $ events.pop('ep45_milf_park', 0)
+    $ events_pop('ep45_milf_park', 0)
 
     $ Event('ep45_milf_52_skip', None, 'ep45_milf_52_skip', time = ['evening', 'night'])
 

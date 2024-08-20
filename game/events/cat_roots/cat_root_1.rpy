@@ -1,5 +1,5 @@
 label cat_root_1:
-    $ events.pop('cat_root_1', 0)
+    $ events_pop('cat_root_1', 0)
     call show_bg_image_label from _call_show_bg_image_label_102
 
 

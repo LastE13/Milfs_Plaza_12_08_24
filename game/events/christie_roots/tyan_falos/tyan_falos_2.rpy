@@ -10,7 +10,7 @@ label tyan_falos_2_debug:
 label tyan_falos_2:
     #1. Активировать Кристи Утром или Днём (не в ванной, разумеется).
     #Scene:"
-    $ events.pop('tyan_falos_2', 0)
+    $ events_pop('tyan_falos_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_170
 
     show Christie Normal

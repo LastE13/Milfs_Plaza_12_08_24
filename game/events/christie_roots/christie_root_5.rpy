@@ -45,7 +45,7 @@ label christie_root_5_repeat:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
 
-    $ events.pop('christie_root_5_repeat', 0)
+    $ events_pop('christie_root_5_repeat', 0)
 
     scene black with Dissolve(.5)
 
@@ -122,7 +122,7 @@ label christie_root_5:
     $ Hide('main_city_screen')()
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
-    $ events.pop('christie_root_5', 0)
+    $ events_pop('christie_root_5', 0)
 
     scene black with Dissolve(.5)
 
@@ -486,7 +486,7 @@ label christie_root_5_after_menu:
     $ ACH_4_count+=1
     if ACH_4_count>=3:
         $ add_ach('ACH_4')
-    $ events.pop('christie_root_5_sms', 0)
+    $ events_pop('christie_root_5_sms', 0)
     $ descript_Christie = _("Проверить телефон.")
     $ NPHOTO            = 'cg/christie_root/psi_photo_mini.png'
     #$ phone_sms_screen_2_tmp = copy.deepcopy(phone_sms_screen)

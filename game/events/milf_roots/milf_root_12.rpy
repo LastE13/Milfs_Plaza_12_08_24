@@ -5,7 +5,7 @@ label milf_root_12:
 
 
 
-    $ events.pop('milf_root_12', 0)
+    $ events_pop('milf_root_12', 0)
 
 
 
@@ -353,8 +353,8 @@ label milf_root_12:
     $ milf_root_9_text= _("Дождаться появления офицера полиции через 2-3 дня вечером в коридоре.")
     $ Event('milf_root_13', location = "Corridor", day_start = time.day_now+2, time = ['evening'])
     $ new_events = True
-    $ events.pop('milf_root_12', 0)
-    $ events.pop('milf_root_11', 0)
+    $ events_pop('milf_root_12', 0)
+    $ events_pop('milf_root_11', 0)
     
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

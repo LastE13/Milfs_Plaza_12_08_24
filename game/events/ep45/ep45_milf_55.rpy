@@ -147,7 +147,7 @@ label ep45_milf_55_4:
 
 
 label ep45_milf_55_korridor:
-    $ events.pop('ep45_milf_55_korridor', 0)
+    $ events_pop('ep45_milf_55_korridor', 0)
     # $ locations['Hall'].buttons[1]['home_plant_2'] = ((1729, 61, 190, 215),   Jump('hall_home_plant_2_label'))
 
     # $ locations['Hall'].buttons[0]['home_plant_1'] = ((156, 140, 225, 249),   [SetVariable('money_boost_label_now', 'hall_home_plant_1_label'), Jump('money_boost_label')])
@@ -345,7 +345,7 @@ label ep45_milf_55_korridor:
 
 
 
-    $ events.pop('ep45_milf_54_city_home', 0)
+    $ events_pop('ep45_milf_54_city_home', 0)
 
 
     scene black with Dissolve(.5)
@@ -365,7 +365,7 @@ label ep45_milf_55_korridor:
     'evening'   : {},
     'night'     : {},
     }
-    $ events.pop('ep45_milf_52_skip', 0)
+    $ events_pop('ep45_milf_52_skip', 0)
 
 
 

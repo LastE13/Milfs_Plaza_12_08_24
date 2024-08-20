@@ -42,7 +42,7 @@ label ep3_2_morning:
         "cg/ep3/DIVAN/7_2.png",
         "cg/ep3/DIVAN/8.png",
         ]) from _call_comic_frame_v2_predict_label_7
-    $ events.pop('ep3_2_morning', 0)
+    $ events_pop('ep3_2_morning', 0)
 
     $ renpy.play('audio/Door.mp3')
 

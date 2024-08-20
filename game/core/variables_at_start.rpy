@@ -1001,19 +1001,19 @@ getattr(store, 'christie_root_26_end', False
         $ unlock_milf_costumes = True
         $ smth_change_after_load = True
 
-        $ events.pop('milf_root_11', 0)
-        $ events.pop('milf_root_13_end', 0)
-        $ events.pop('milf_root_13', 0)
-        $ events.pop('milf_root_12', 0)
-        $ events.pop('milf_root_9', 0)
+        $ events_pop('milf_root_11', 0)
+        $ events_pop('milf_root_13_end', 0)
+        $ events_pop('milf_root_13', 0)
+        $ events_pop('milf_root_12', 0)
+        $ events_pop('milf_root_9', 0)
 
         $ print("smth_change_after_load : 688")
     if hasattr(store, 'events') and "milf_root_13_end" in events:
 
-        $ events.pop('milf_root_11', 0)
-        $ events.pop('milf_root_13', 0)
-        $ events.pop('milf_root_12', 0)
-        $ events.pop('milf_root_9', 0)
+        $ events_pop('milf_root_11', 0)
+        $ events_pop('milf_root_13', 0)
+        $ events_pop('milf_root_12', 0)
+        $ events_pop('milf_root_9', 0)
         $ print("core/variables_at_start.rpy : 652")
 
     python:
@@ -1072,7 +1072,7 @@ getattr(store, 'christie_root_26_end', False
             $ print("smth_change_after_load : 750")
     
     if 'milf_root_10' in getattr(store, 'completed_events', (1, )):
-        $ events.pop('milf_root_9', 0)
+        $ events_pop('milf_root_9', 0)
         $ smth_change_after_load = True
 
         $ print("smth_change_after_load : 754")
@@ -1226,7 +1226,7 @@ getattr(store, 'christie_root_26_end', False
     if not hasattr(store, '_events_pop_fix') and hasattr(store, 'events'):
 
         
-        $ events.pop = events_pop
+        $ events_pop = events_pop
 
         $ _events_pop_fix = True
         $ smth_change_after_load = True
@@ -1244,7 +1244,7 @@ getattr(store, 'christie_root_26_end', False
             $ descript = _("Марина предложила мне прогулять уборку и провести это время с ней.")
             $ print("smth_change_after_load : 927")
         else:
-            $ events.pop('ep45_milf_54_hall', 0)
+            $ events_pop('ep45_milf_54_hall', 0)
             $ ep45_milf_54_hall_complete_fix = True
 
     # if hasattr(store, 'ep45_igor_fix') and not hasattr(store, 'ep45_igor_fix_2'):

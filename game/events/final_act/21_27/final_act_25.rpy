@@ -102,7 +102,7 @@ label final_act_25:
 
 
 
-    $ events.pop('final_act_25', 0)
+    $ events_pop('final_act_25', 0)
     #$ time.time_now = "night"
     scene black
     with my_dissolve

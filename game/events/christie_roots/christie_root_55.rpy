@@ -523,7 +523,7 @@ label christie_root_55:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
     if not from_gallery_check():
-        $ events.pop('christie_root_16', 0)
+        $ events_pop('christie_root_16', 0)
 
     scene black with Dissolve(.5)
 
@@ -542,7 +542,7 @@ label christie_root_55:
 
     with Dissolve(.5)
 
-    $ events.pop('christie_root_55', 0)
+    $ events_pop('christie_root_55', 0)
 
     show GG Normal
     show GG Normal at go_from_left

@@ -1,7 +1,7 @@
 label final_act_24:    #Final_Act_24
 
 
-    $ events.pop('final_act_24', 0)
+    $ events_pop('final_act_24', 0)
     #$ time.time_now = "evening"
     #call prison_talk_with_girl_officer_start
     #"Description" "Судя по царапинам на полу, под унитазом расположен тайник. Неплохо было бы узнать, что там.  Для этого я должен расшатать конструкцию, но мне не хватает сил. Надо подкачаться, как бы смешно это не звучало."

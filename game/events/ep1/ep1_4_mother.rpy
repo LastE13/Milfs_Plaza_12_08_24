@@ -1,5 +1,5 @@
 label ep1_4_mother:
-    $ events.pop('ep1_4_mother', 0)
+    $ events_pop('ep1_4_mother', 0)
     $ block_change_milf_position = False
     $ milf_position = {
         'morning'   : ('Restroom',  'milf_restroom'),

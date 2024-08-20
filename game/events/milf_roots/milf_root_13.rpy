@@ -192,7 +192,7 @@ label milf_root_13:
     if getattr(store, 'block_exit_home', False) or getattr(store, 'block_time_forward', False):
         $ Event('milf_root_13', location = "Corridor", day_start = time.day_now+1, time = ['evening'])
         jump main_interface_label
-    $ events.pop('milf_root_13', 0)
+    $ events_pop('milf_root_13', 0)
 
 
 
@@ -893,7 +893,7 @@ label milf_root_13_gg_milf_sex_4:
     jump main_interface_label
 
 label milf_root_13_end:
-    $ events.pop('milf_root_13_end')
+    $ events_pop('milf_root_13_end')
     scene expression '#000'
     with Dissolve(.5)
     $ renpy.pause(.5, hard = True)
@@ -993,11 +993,11 @@ label milf_root_13_end:
     if hasattr(store, 'christie_root_65_end'):
         call final_act_setup from _call_final_act_setup_3
     
-    $ events.pop('milf_root_11', 0)
-    $ events.pop('milf_root_13_end', 0)
-    $ events.pop('milf_root_13', 0)
-    $ events.pop('milf_root_12', 0)
-    $ events.pop('milf_root_9', 0)
+    $ events_pop('milf_root_11', 0)
+    $ events_pop('milf_root_13_end', 0)
+    $ events_pop('milf_root_13', 0)
+    $ events_pop('milf_root_12', 0)
+    $ events_pop('milf_root_9', 0)
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
 

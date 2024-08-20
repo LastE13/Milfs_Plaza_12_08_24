@@ -1,6 +1,6 @@
 label ep3_milf_35:
 
-    $ events.pop('ep3_milf_35', 0)
+    $ events_pop('ep3_milf_35', 0)
 
     $ descript = _("Написать Игорю СМС.")
 

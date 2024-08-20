@@ -1,8 +1,8 @@
 label ep3_milf_25:
 
-    $ events.pop('ep3_milf_24', 0)
+    $ events_pop('ep3_milf_24', 0)
 
-    $ events.pop('ep3_milf_25', 0)
+    $ events_pop('ep3_milf_25', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_66
     call show_additional_images_label from _call_show_additional_images_label_60

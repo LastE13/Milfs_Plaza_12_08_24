@@ -63,7 +63,7 @@ translate turk final_act_19_06c61d2f:
     # "Марина" "Какое-то время уйдёт на рассмотрение. "
 
 
-    "Марина" "Makalelerin incelenmesi biraz zaman alacaktır."
+    "Марина" "Makalelerin Incelenmesi biraz zaman alacaktır."
 
 
 

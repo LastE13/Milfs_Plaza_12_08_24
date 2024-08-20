@@ -20,7 +20,7 @@ label christie_root_31b:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
     if not from_gallery_check():
-        $ events.pop('christie_root_31b', 0)
+        $ events_pop('christie_root_31b', 0)
 
     scene black with Dissolve(.5)
     $ renpy.music.stop(fadeout=1.5)
@@ -564,7 +564,7 @@ label christie_root_31b:
 
     $ Event('christie_root_32', 'Christie', time = ["morning", "afternoon"])
 
-    $ events.pop('christie_root_31b', 0)
+    $ events_pop('christie_root_31b', 0)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

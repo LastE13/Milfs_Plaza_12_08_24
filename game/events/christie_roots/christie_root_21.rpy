@@ -1,39 +1,21 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 label christie_root_21_pre_menu:
     call show_bg_image_label from _call_show_bg_image_label_133
+    $ tmp_location_now  = copy.deepcopy(location_now)
     $ location_now = 'City_Library_BiblioGirl'
-    $ check_ev = check_events()
+    $ check_ev = get_all_events_from_location()
+    
+    $ location_now = copy.deepcopy(tmp_location_now)
+    $ check_ev_buttons  = get_check_ev_buttons(check_ev)
     $ library_event_name = ""
-
-    if check_ev:
-        $ library_event_name = check_ev.button_name
+   
+    if len(check_ev_buttons) > 1:
+        if True:
+            $ tmp_names_tmp_0 = check_ev_buttons[0]
+            $ tmp_names_tmp_1 = check_ev_buttons[1]
+    elif len(check_ev_buttons) == 1:
+        $ tmp_names_tmp_0 = check_ev_buttons[0]
+    
     show BiblioGirl Normal
     show BiblioGirl Normal:
         xalign .85
@@ -43,10 +25,25 @@ label christie_root_21_pre_menu:
 
 label christie_root_21_menu:
 
+
     menu:
-        "Реферат" if len(library_event_name):
+        "[tmp_names_tmp_0]" if len(check_ev_buttons) > 1:
+            $ Jump(check_ev[0].label)()
+        "[tmp_names_tmp_1]" if len(check_ev_buttons) > 1:
+            $ Jump(check_ev[1].label)()
+        "[tmp_names_tmp_0]" if len(check_ev_buttons) == 1:
+
             $ location_now = 'City_Library'
-            $ renpy.jump(check_ev.label)
+            
+            if time.time_now == 'evening':
+                "Библиотекарша" "Извините, но мы уже закрываемся."
+                show GG Normal:
+                    xalign .15
+                with my_dissolve
+                "[gg]" "Да, я понял. "
+                jump christie_root_21_pre_menu
+            $ Jump(check_ev[0].label)()
+        
         "Говорить" if not len(library_event_name):
             $ location_now = 'City_Library'
             if time.time_now == 'evening':
@@ -55,7 +52,7 @@ label christie_root_21_menu:
                     xalign .15
                 with my_dissolve
                 "[gg]" "Да, я понял. "
-                jump christie_root_21_menu
+                jump christie_root_21_pre_menu
 
             "Библиотекарша" "Добро пожаловать в обитель знаний, меня зову Нэнси. "
             show GG Normal:
@@ -68,82 +65,17 @@ label christie_root_21_menu:
             "[gg]" "А что из «так» вы предлагаете?"
 
             "Библиотекарша" "Смотря что вы ожидаете, хи-хи."
-            jump christie_root_21_menu
+            jump christie_root_21_pre_menu
         "Уйти" if True:
 
 
             $ location_now    = 'City_Library'
 
 
-
-
-
-
             scene black with Dissolve(.5)
             jump main_interface_label
-label bibliogirl_minigame_pre_menu:
-    call show_bg_image_label from _call_show_bg_image_label_133
-    $ location_now = 'City_Library_BiblioGirl'
-    $ check_ev = check_events()
-    $ library_event_name = ""
-
-    if check_ev:
-        $ library_event_name = check_ev.button_name
-  
-    show BiblioGirl Normal
-    show BiblioGirl Normal:
-        xalign .85
-    show GG Normal
-    show GG Normal at go_from_left
-
-label bibliogirl_minigame_menu:
-
-    menu:
-        "Помочь" if len(library_event_name):
-            $ location_now = 'City_Library'
-            $ renpy.jump(check_ev.label)
-            if time.time_now == 'evening':
-                "Библиотекарша" "Извините, но мы уже закрываемся."
-                show GG Normal:
-                    xalign .15
-                with my_dissolve
-                "[gg]" "Да, я понял. "
-                jump christie_root_21_menu
-            jump biblio_BookW
-        "Говорить" if not len(library_event_name):
-            $ location_now = 'City_Library'
-            if time.time_now == 'evening':
-                "Библиотекарша" "Извините, но мы уже закрываемся."
-                show GG Normal:
-                    xalign .15
-                with my_dissolve
-                "[gg]" "Да, я понял. "
-                jump christie_root_21_menu
-
-            "Библиотекарша" "Добро пожаловать в обитель знаний, меня зову Нэнси. "
-            show GG Normal:
-                xalign .15
-            with my_dissolve
-            "[gg]" "Привет, а меня [gg]."
-
-            "Библиотекарша" "Вы к нам по делу или так?"
-            show GG Normal
-            "[gg]" "А что из «так» вы предлагаете?"
-
-            "Библиотекарша" "Смотря что вы ожидаете, хи-хи."
-            jump christie_root_21_menu
-        "Уйти" if True:
 
 
-            $ location_now    = 'City_Library'
-
-
-
-
-
-
-            scene black with Dissolve(.5)
-            jump main_interface_label
 
 label christie_root_21:
 
@@ -409,38 +341,35 @@ label christie_root_21:
     "[gg]" "Мне придётся сюда вернуться ещё минимум два раза, если я хочу закончить начатое. "
 
     scene black with Dissolve(.5)
+    label .tt_01:
     $ time.time_now      = "night"
     $ location_now       = "City_Home"
     $ block_time_forward = True
 
     $ Event('christie_root_22', 'Corridor')
 
-    $ events.pop('christie_root_21', 0)
-    if not hasattr(store, 'allowed_events'):
-        $ allowed_events = []
-    $ allowed_events.append("christie_root_22")
+    $ events_pop('christie_root_21', 0)
 
 
 
 
 
 
-    label .tt_01:
+
+
+    #$ descript_Christie   = _("Завершить реферат по «Обществознанию».")
+    #$ unlock_city_library = False
+
     
     $ descript_Christie   = _("Завершить реферат по «Обществознанию».")
-    $ descript_BiblioGirl = _('Нэнси ждёт меня в библиотеке.')
+    $ descript_BiblioGirl = _('Ознакомиться с “Кама-сутра».')
     $ unlock_city_library = True
-    $ Location(
-            'City_Library',
-            buttons       = [],
-            image_buttons = {
-            'biblio_girl':Jump("bibliogirl_minigame_pre_menu")
-            }
-            )
 
-    $ Event('biblio_BookW', location = 'City_Library_BiblioGirl', button_name = _("Помочь"), time = ['morning', 'afternoon'], priority = -1)
 
+
+    #$ Event('biblio_BookW', location = 'City_Library_BiblioGirl', button_name = _("Помочь"), time = ['morning', 'afternoon', 'evening', 'night'], priority = -1)
 
     
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+

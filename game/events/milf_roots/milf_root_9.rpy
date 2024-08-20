@@ -10,7 +10,7 @@ label milf_root_9:
     if getattr(store, 'block_exit_home', False) or getattr(store, 'block_time_forward', False):
         $ Event('milf_root_9', 'Corridor', day_start = time.day_now+2)
         jump main_interface_label
-    $ events.pop('milf_root_9', 0)
+    $ events_pop('milf_root_9', 0)
 
 
 

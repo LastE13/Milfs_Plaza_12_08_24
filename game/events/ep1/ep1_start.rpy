@@ -1,5 +1,5 @@
 
-
+define gg_now = Character("[gg]", who_color= "#e5e349")
 label start:
     $ from_say_screen = False
     $ sex_name_box    = False
@@ -86,14 +86,35 @@ label start:
 
 
 
-    menu:
+    menu menu_0001:
         "дальше":
             pass
-        "К ТЗ":
-            $ time.tdtd = "Пятница"
-            $ time.time_now   = 'morning'
-            $ block_exit_home = False
+        "К зананию":
+            $ add_to_inventory(name = 'Камасутра')
+            $ Location(
+                'City_Psi',
+                buttons = []
+                )
+            $ Location(
+                'City_Getto',
+                buttons = []
+                )
+            $ Location(
+                'ClothesStore',
+                buttons = []
+                )
+            $ Location(
+                'City_Psi',
+                buttons = []
+                )
+            $ Location(
+                'City_Shop',
+                buttons       = [],
+                image_buttons = {
+                }
+                )
             $ locations['Corridor'].buttons[0].update({'Exit To City Home'  : ((906, 381, 162, 353,), [Function(go_to_city)]),})
+
             $ Location(
                     'City_Home',
                     buttons       = [],
@@ -103,7 +124,33 @@ label start:
                     }
                     )
 
+            $ Location(
+                    'City_Park',
+                    buttons       = [],
+                    image_buttons = {
+                    }
+                    )
+
+
+
+
+            $ igor_position = {
+                'morning'   : ('City_Park',  'igor_park'),
+                'afternoon' : ('City_Park',  'igor_park'),
+                'evening'   : ('None',       'None'),
+                'night'     : ('None',       'None'),
+                
+                }
             jump christie_root_21.tt_01
+            pass
+        # "мики игра (с задаваемым временем)":
+        #     jump testing_mgd
+        # "мики игра (120 сек/раунд)":
+        #     jump round_1
+        # "тишина":
+        #     show screen silence_mini_game
+        #     pause
+        #     jump menu_0001
 
 
 
@@ -187,7 +234,7 @@ label start:
     $ gg = gg.title()
     $ mp.gg = gg
     $ mp.save() 
-
+#
     
     $ player_name = gg
 
@@ -436,6 +483,6 @@ label ep1_gg_crane_label:
 
     $ time.time_now = 'night'
     $ block_milf_events = None
-   # $ events.pop('ep1_prologue_milf', 0)
+   # $ events_pop('ep1_prologue_milf', 0)
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

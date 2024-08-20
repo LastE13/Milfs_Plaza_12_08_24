@@ -1,6 +1,6 @@
 label misha_root_5_5:
 
-    $ events.pop('misha_root_5_5', 0)
+    $ events_pop('misha_root_5_5', 0)
     $ phone_warning  = True
     $ descript_Misha = _('Прочесть СМС от Мишванды.')
     play sound 'audio/sms.ogg'
@@ -51,8 +51,8 @@ label misha_root_6:
 
 
     $ descript_Misha     = _("Встретить Мишванду после работы у магазина ночью.")
-    $ events.pop('misha_root_5_5', False)
-    $ events.pop('misha_root_5_75', False)
+    $ events_pop('misha_root_5_5', False)
+    $ events_pop('misha_root_5_75', False)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

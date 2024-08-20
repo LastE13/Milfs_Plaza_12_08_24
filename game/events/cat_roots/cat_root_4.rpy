@@ -1,6 +1,6 @@
 label cat_root_4:
     $ location_now = 'City_Home'
-    $ events.pop('cat_root_4', 0)
+    $ events_pop('cat_root_4', 0)
     $ remove_from_inventory("Чёрные очки")
     #show Kat Embarrassment
     #show Kat Embarrassment at go_from_right
@@ -176,11 +176,11 @@ label cat_root_4:
     $ old_descript_Cat = 's'
     $ descript_Cat  = _('Пошалить с Кэт')
 
-    $ events.pop('cat_root_2', 0)
+    $ events_pop('cat_root_2', 0)
 
-    $ events.pop('cat_root_3', 0)
+    $ events_pop('cat_root_3', 0)
 
-    $ events.pop('cat_root_4', 0)
+    $ events_pop('cat_root_4', 0)
 
     #$ Event('cat_root_5_0', 'Corridor', day_start = time.day_now + 1,)
 

@@ -1874,7 +1874,7 @@ translate french cat_root_minet_menu_2_f8954217:
 
 
 
-    "[gg]" '''Il y a des étincelles dans mes yeux à cause de l’anticipation triomphale de la finale !'''
+    "[gg]" '''Il y a des étIncelles dans mes yeux à cause de l’anticipation triomphale de la finale !'''
 
 
 

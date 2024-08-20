@@ -1,6 +1,6 @@
 label ep2_6_blins:
 
-    $ events.pop('ep2_6_blins', 0)
+    $ events_pop('ep2_6_blins', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_5
     call show_additional_images_label from _call_show_additional_images_label_2
@@ -430,11 +430,18 @@ label ep2_6_blins:
         $ milf_position[time.time_now] = ['Kitchen', 'milf_kitchen']
         if not hasattr(store, 'allowed_events'):
             $ allowed_events = []
+
         $ allowed_events.append("ep2_7_need_wash_pants_k")
         $ allowed_events.append("ep2_7_need_wash_pants_h")
         $ allowed_events.append("ep2_7_need_wash_pants_ch")
         $ allowed_events.append("ep2_7_need_wash_pants_s_r")
         $ allowed_events.append("ep2_7_need_wash_pants_g_r")
+        
+        $ list_event_mandatory.append('ep2_7_need_wash_pants_k')
+        $ list_event_mandatory.append('ep2_7_need_wash_pants_h')
+        $ list_event_mandatory.append('ep2_7_need_wash_pants_ch')
+        $ list_event_mandatory.append('ep2_7_need_wash_pants_s_r')
+        $ list_event_mandatory.append('ep2_7_need_wash_pants_g_r')
 
 
         $ Event('ep2_7_need_wash_pants_k',   'Kitchen', 'ep2_7_need_wash_pants')

@@ -7,7 +7,7 @@ label final_act_3_debug:
 label final_act_3:    #Final_Act_3 
 
 
-    $ events.pop('final_act_3', 0)
+    $ events_pop('final_act_3', 0)
 
     $ location_now = "Corridor"
 

@@ -11,7 +11,7 @@ label final_act_26_end_func:
         $ location_now = 'Hall'
     return
 label final_act_26_christie:    #Final_Act_26
-    $ events.pop('final_act_26_christie', 0)
+    $ events_pop('final_act_26_christie', 0)
     call show_bg_image_label from _call_show_bg_image_label_242 
     call show_additional_images_label from _call_show_additional_images_label_65
     show Christie Normal
@@ -61,7 +61,7 @@ label final_act_26_christie:    #Final_Act_26
     jump main_interface_label
 #     #//Если с Милфой
 label final_act_26_milf:
-    $ events.pop('final_act_26_milf', 0)
+    $ events_pop('final_act_26_milf', 0)
     call show_bg_image_label from _call_show_bg_image_label_243 
     call show_additional_images_label from _call_show_additional_images_label_115
     if time.time_now in ('evening', 'night'):

@@ -28,7 +28,7 @@ label ep1_2_morning:
 
     $ phone_warning = True
 
-    $ events.pop('ep1_2_morning', 0)
+    $ events_pop('ep1_2_morning', 0)
 
     jump main_interface_label
 

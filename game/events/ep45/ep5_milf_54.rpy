@@ -375,7 +375,7 @@ label ep45_milf_54_hall:
 
     $ Event('ep45_milf_55_korridor', 'Corridor', 'ep45_milf_55_korridor')
 
-    $ events.pop('ep45_milf_52_skip', 0)
+    $ events_pop('ep45_milf_52_skip', 0)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

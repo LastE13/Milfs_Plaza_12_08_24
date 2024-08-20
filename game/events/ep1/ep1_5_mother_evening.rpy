@@ -2,7 +2,7 @@ image ep1_movie_cinema 1 = 'cg/ep1/movie/cinema_1.png'
 image ep1_movie_cinema 2 = 'cg/ep1/movie/cinema_2.png'
 image ep1_movie_cinema 3 = 'cg/ep1/movie/cinema_3.png'
 label ep1_5_mother_evening:
-    $ events.pop('ep1_5_mother_evening', 0)
+    $ events_pop('ep1_5_mother_evening', 0)
     call show_bg_image_label from _call_show_bg_image_label_88
     call show_additional_images_label from _call_show_additional_images_label_74
     show Milf Night_Normal

@@ -10,7 +10,7 @@ image christie_root_11_JayBob_Store_blur = Composite((1920, 1080),
 
 
 label christie_root_11:
-    $ events.pop("christie_root_11", 0)
+    $ events_pop("christie_root_11", 0)
 
 
 

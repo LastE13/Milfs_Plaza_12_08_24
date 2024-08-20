@@ -1,24 +1,31 @@
-init:
-    image cg_readroom_gg 1 = "images/cg/biblio/wank/gg/1.png"
-    image cg_readroom_gg 2 = "images/cg/biblio/wank/gg/2.png"
-    image cg_readroom_gg 3 = "images/cg/biblio/wank/gg/3.png"
-    image cg_readroom_gg 4 = "images/cg/biblio/wank/gg/4.png"
-    image cg_readroom_gg 5 = "images/cg/biblio/wank/gg/5.png"
+init 10:
+    image cg_readroom_gg 1 = "cg/biblio/wank/gg_read_book.png"
+    image cg_readroom_gg 2 = "cg/biblio/wank/gg_left_eye.png"
+    image cg_readroom_gg 3 = "cg/biblio/wank/gg_blushes_01.png"
+    image cg_readroom_gg 4 = "cg/biblio/wank/gg_blushes_03.png"
+    image cg_readroom_gg 5 = "cg/biblio/wank/gg_blushes_02.png"
 
-    image cg_readroom_nency 1 = "images/cg/biblio/wank/nency/1.png"
-    image cg_readroom_nency 2 = "images/cg/biblio/wank/nency/2.png"
-    image cg_readroom_nency enter = "images/cg/biblio/wank/nency/enter.png"
-    image cg_readroom_nency_shadow = "images/cg/biblio/wank/nency/shadow.png"
-    image cg_readroom_lamp = "images/cg/biblio/wank/lamp.png"
+    image cg_readroom_nency 1 = "cg/biblio/wank/bibliogirl_sits.png"
+    image cg_readroom_nency 2 = "cg/biblio/wank/bibliogirl_sits_tits.png"
+    image cg_readroom_nency enter = "cg/biblio/wank/Nensi.png"
+    image cg_readroom_nency_shadow = "cg/biblio/wank/tits_shodow.png"
+    image cg_readroom_lamp = "cg/biblio/wank/lamp.png"
 
-    image cg_readroom_nency gg = "images/cg/biblio/wank/nency/up.png"
+    image cg_readroom_nency gg = "cg/biblio/wank/gg_and_bibliogirl.png"
 
-    image cg_readroom_fap 1 = "images/cg/biblio/wank/fap/1.png"
-    image cg_readroom_fap 2 = "images/cg/biblio/wank/fap/2.png"
-    image cg_readroom_fap 3 = "images/cg/biblio/wank/fap/3.png"
-    image cg_readroom_fap 4 = "images/cg/biblio/wank/fap/4.png"
-    image cg_readroom_fap 5 = "images/cg/biblio/wank/fap/5.png"
-    image cg_readroom_fap 6 = "images/cg/biblio/wank/fap/6.png"
+    image cg_readroom_fap 1 = "cg/biblio/wank/01.png"
+    image cg_readroom_fap 2 = "cg/biblio/wank/02.png"
+    image cg_readroom_fap 3 = "cg/biblio/wank/03.png"
+    image cg_readroom_fap 4 = "cg/biblio/wank/04.png"
+    image cg_readroom_fap 5 = "cg/biblio/wank/05.png"
+    image cg_readroom_fap 6 = "cg/biblio/wank/06.png"
+
+    image cg readroom = "cg/biblio/wank/bg.png"
+    image cg_readroom table = "cg/biblio/wank/fg_01.png"
+
+    image cg_readroom_peoples 01 = "cg/biblio/wank/people_01.png"
+    image cg_readroom_peoples 02 = "cg/biblio/wank/people_02.png"
+
 
 
     image cg_readroom_fap anim1:
@@ -92,12 +99,12 @@ init:
         0.1
         repeat
 
-    image cg_readroom_fap_cum 1 = "images/cg/biblio/wank/cum/1.png"
-    image cg_readroom_fap_cum 2 = "images/cg/biblio/wank/cum/2.png"
-    image cg_readroom_fap_cum 3 = "images/cg/biblio/wank/cum/3.png"
-    image cg_readroom_fap_cum 4 = "images/cg/biblio/wank/cum/4.png"
-    image cg_readroom_fap_cum 5 = "images/cg/biblio/wank/cum/5.png"
-    image cg_readroom_fap_cum 6 = "images/cg/biblio/wank/cum/6.png"
+    image cg_readroom_fap_cum 1 = "cg/biblio/wank/s_01.png"
+    image cg_readroom_fap_cum 2 = "cg/biblio/wank/s_02.png"
+    image cg_readroom_fap_cum 3 = "cg/biblio/wank/s_03.png"
+    image cg_readroom_fap_cum 4 = "cg/biblio/wank/s_04.png"
+    image cg_readroom_fap_cum 5 = "cg/biblio/wank/s_05.png"
+    image cg_readroom_fap_cum 6 = "cg/biblio/wank/s_06.png"
 
     image cg_readroom_fap_cum anim:
         "cg_readroom_fap_cum 1"
@@ -111,23 +118,23 @@ init:
         "cg_readroom_fap_cum 5"
         0.1
         "cg_readroom_fap_cum 6"
+image cg_readroom table xray = FlashLight('cg/biblio/wank/fg_01.png')
 
     
 
 label biblio_15:
     # Description: Мне стоит вновь увидеться с Нэнси. Мне кажется, или у нас закручивается очень странный роман?..
     # Task: Активировать Нэнси в библиотеке утром или днём.
-    
-    call show_bg_image_label
+    $ events_pop("biblio_15", 0)
+
+    $ Event("biblio_15.restart", location = "City_Library_BiblioGirl", time=["morning", "afternoon"], button_name="Общаться")
+    call show_bg_image_label from _call_show_bg_image_label_268
 
     show GG Normal
     show GG Normal:
         xalign .15
-    # show BiblioGirl Surprise
-    # show BiblioGirl Surprise:
-    #     xalign .85
-    show BiblioGirl Normal
-    show BiblioGirl Normal:
+    show BiblioGirl Surprise
+    show BiblioGirl Surprise:
         xalign .85
     with my_dissolve
     
@@ -138,7 +145,7 @@ label biblio_15:
     "[gg]" "Что произошло, Нэнси?!"
     show GG Angry with my_dissolve
     "[gg]" "Тебя кто-то обидел?"
-    # show BiblioGirl Embarrassment with my_dissolve
+    show BiblioGirl Embarrassment with my_dissolve
     "Нэнси" "О! Нет-нет! Что ты!"
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Новые завсегдатаи библиотеки... Ну, те самые, за которых мы с тобой «бились», чтобы им у нас понравилось."
@@ -146,11 +153,11 @@ label biblio_15:
     "[gg]" "Они разочарованы? Опять?!"
     "Нэнси" "Наоборот."
     "Нэнси" "Ребята с упоением читают книги, но совсем не умеют вести себя прилично."
-    # show BiblioGirl Angry with my_dissolve
+    show BiblioGirl Angry with my_dissolve
     "Нэнси" "Вскрикивают! Громко воздыхают. Переговариваются друг с другом или юубнят под нос..."
     "Нэнси" "Библиотека любит тишину, а не вот это вот всё!"
     "[gg]" "Предлагаешь их погнать всех шею?"
-    # show BiblioGirl Surprise with my_dissolve
+    show BiblioGirl Surprise with my_dissolve
     "Нэнси" "Не сходи с ума, [gg]!"
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Следи за поведением посетителей – этого будет достаточно."
@@ -164,7 +171,7 @@ label biblio_15:
     show BiblioGirl Normal:
         ease 1 xalign 1.5
     with None
-    scene bg readroom
+    scene readroom_people bg
     with my_dissolve #my_fade #TODO а куда my_fade делся?
     show GG Normal:
         xalign -.5
@@ -176,7 +183,7 @@ label biblio_15:
 
     show GG Normal with my_dissolve
     "[gg]" "Выдашь соответствующее вооружение?"
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Ты не охранник, а вахтёр."
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Если кто-то начнёшь шуметь, просто подойти и тихонько сделай замечание."
@@ -196,7 +203,9 @@ label biblio_15:
         ease 1 xalign 1.5
     pause 1
     hide BiblioGirl
-
+    hide GG
+    show screen silence_mini_game("biblio_15.lose", "biblio_15.win")
+    pause
     # //Мини-игра «Тишина» #TODO тут мини-игра - не трогаю
     # //Над головами посетителей переодически появляются иконки/диограмы звука, которые, пока висят, заполняют главную шкалу «звука», как только шкала заполнится, игрок проиграл
     # //Кликнув на иконку посетителя с диограмой звука, игроку отображается маленькая шкала с бегающим шариком и черточкой в случайном месте. Игроку надо поймать момент, когда шарик находится в чёрточке на шкале, и кликнуть мышкой (не важно куда). Успех – шкала «звука» ощутимо снижается (например, 2/3 от самой длины пустой шкалы)
@@ -206,65 +215,76 @@ label biblio_15:
     # //То же помещение с теми же спрайтами читателей
     # //GG_Normal
     # //Выезжает справа BiblioGirl_Angry
+    label .lose:
+        hide screen silence_mini_game
+        show GG Normal
+        show BiblioGirl Angry:
+            xalign 1.5
+            ease 1 xalign .85
+        with my_dissolve
+        "Нэнси" "Что произошло?!"
+        "Нэнси" "Почему тут такой галдёж?!!"
+        show GG Chagrin with my_dissolve
+        "[gg]" "Извини, я не справился..."
+        "[gg]" "Они меня совсем не слушают, да и я не особо успеваю подобрать нужные слова."
+        show GG Embarrassment with my_dissolve
+        "[gg]" "Бедняжка."
+        "[gg]" "Я слишком много на тебя возлагаю."
+        "[gg]" "Попробуешь ещё или в другой раз?"
+        $ time.time_now = 'evening'
     
-    # show BiblioGirl Angry with my_dissolve
-    "Нэнси" "Что произошло?!"
-    "Нэнси" "Почему тут такой галдёж?!!"
-    show GG Chagrin with my_dissolve
-    "[gg]" "Извини, я не справился..."
-    "[gg]" "Они меня совсем не слушают, да и я не особо успеваю подобрать нужные слова."
-    show GG Embarrassment with my_dissolve
-    "[gg]" "Бедняжка."
-    "[gg]" "Я слишком много на тебя возлагаю."
-    "[gg]" "Попробуешь ещё или в другой раз?"
-    
-    # //Если «в другой раз»
-    # //Time: Evening
-    # //Хол библиотеки
-    # //библиотекарши нет
-    # //В любой другой день при повторном разговоре
-    
-    show GG Normal with my_dissolve
-    "[gg]" "Посетители все ещё шумят?"
-    show BiblioGirl Normal with my_dissolve
-    "Нэнси" "Ещё как."
-    "[gg]" "Давай утихомирю."
-    # show BiblioGirl Smile with my_dissolve
-    "Нэнси" "Хи-хи-хи!"
-    "Нэнси" "Мне нравится твой настрой."
-    
-    # //Оба спрайта движутся вправо
-    # //Читальный зал
-    # //Оба спрайта выдвигаются слева
-    
-    "Нэнси" "Готов?"
-    "[gg]" "Абсолютно."
+        # //Если «в другой раз»
+        # //Time: Evening
+        # //Хол библиотеки
+        # //библиотекарши нет
+        # //В любой другой день при повторном разговоре
+    label .restart:
+        hide screen silence_mini_game
+        scene readroom_people bg
+        show GG Normal with my_dissolve
+        "[gg]" "Посетители все ещё шумят?"
+        show BiblioGirl Normal with my_dissolve
+        "Нэнси" "Ещё как."
+        "[gg]" "Давай утихомирю."
+        show BiblioGirl Smile with my_dissolve
+        "Нэнси" "Хи-хи-хи!"
+        "Нэнси" "Мне нравится твой настрой."
+        
+        # //Оба спрайта движутся вправо
+        # //Читальный зал
+        # //Оба спрайта выдвигаются слева
+        
+        "Нэнси" "Готов?"
+        "[gg]" "Абсолютно."
+        show screen silence_mini_game("biblio_15.lose", "biblio_15.win")
+        pause
     
     # //Мини-игра
     # //При победе в мини-игре
 
     #TODO возвращаюсь в код тут
-    
-    show GG Think 
-    with my_dissolve
-    "[gg]" "Ха, я отлично справился с задачей."
-    "[gg]" "Уже продолжительное время тишина. Ни писка."
-    "[gg]" "Схожу поищу Нэнси."
-    "[gg]" "Расскажу ей о своих успехах."
-    
-    # //GG_Normal движется вправо
-    # //Книжный полки
-    
-    show GG Normal:
-        ease 1 xalign 1.5
-    with None
-    pause 1
-    scene bg bookshelves
-    with my_dissolve #my_fade #TODO а куда my_fade делся?
-    show GG Normal:
-        xalign -.5
-        ease 1 xalign .25
-    pause 1
+    label .win:
+        hide screen silence_mini_game
+        show GG Think 
+        with my_dissolve
+        "[gg]" "Ха, я отлично справился с задачей."
+        "[gg]" "Уже продолжительное время тишина. Ни писка."
+        "[gg]" "Схожу поищу Нэнси."
+        "[gg]" "Расскажу ей о своих успехах."
+        
+        # //GG_Normal движется вправо
+        # //Книжный полки
+        
+        show GG Normal:
+            ease 1 xalign 1.5
+        with None
+        pause 1
+        scene bookshelves bg
+        with my_dissolve #my_fade #TODO а куда my_fade делся?
+        show GG Normal:
+            xalign -.5
+            ease 1 xalign .25
+        pause 1
 
     show GG Chagrin with my_dissolve
     "[gg]" "Ну вот... В который раз это повторяется."
@@ -279,7 +299,7 @@ label biblio_15:
     scene cg readroom
     show cg_readroom table
     show cg_readroom_lamp
-    show cg_readroom_peoples
+    show cg_readroom_peoples 01
     show cg_readroom_gg 1
     with my_dissolve #my_fade #TODO а куда my_fade делся?
 
@@ -289,6 +309,8 @@ label biblio_15:
     "[gg]" "Судя по содержанию, это не просто фэнтези, но и настоящий детектив."
     "[gg]" "Главный герой, как и положено, бескомпромиссно прав, честолюбив и подкован идеологически."
     "[gg]" "К моему удивлению, жена главного героя тоже выступает действующим лицом романа."
+    show cg_readroom_peoples 02
+    with my_dissolve
     "[gg]" "Наверное, эта отважная, но красивая женщина, была списана с любимой дамы автора книги."
     
     # //Art_Read_Book_2 (Нэнси стоит у стола)
@@ -302,7 +324,9 @@ label biblio_15:
     
     "Нэнси" "Увлекательно?"
     "Нэнси" "Хи-хи-хи!"
-    show cg_readroom_gg 2 with my_dissolve
+    show cg_readroom_gg 2 
+    show cg_readroom_peoples 02
+    with my_dissolve
     "[gg]" "Извини, я не смог тебя найти и решил хоть как-то убить время."
     "Нэнси" "О, ты правильно поступил."
     "Нэнси" "Не хочу, чтобы ты зависит от моей благодарности."
@@ -420,8 +444,8 @@ label biblio_15:
     show BiblioGirl Normal
     show BiblioGirl Normal:
         xalign .85
-    show BiblioGirl Embarrassment
-    show BiblioGirl Embarrassment:
+    show GG Embarrassment
+    show GG Embarrassment:
         xalign .15
     with my_dissolve #my_fade #TODO а куда my_fade делся?
 
@@ -430,7 +454,12 @@ label biblio_15:
 
     $ time.time_now = "evening"
     
-    $ events.pop("biblio_15", 0)
-    $ Event("biblio_16", location = "City_Library_BiblioGirl", time=["morning", "afternoon"], button_name="ХЗ КАК НАЗВАТЬ") #TODO !!!!!!!!!!!!!
+    $ events_pop("biblio_15.restart", 0)
+    $ events_pop("biblio_15", 0)
+    $ descript_BiblioGirl = _("Если я соскучился по Нэнси, нужно заскочить в библиотеку.")
+    $ Event("biblio_16", location = "City_Library_BiblioGirl", time=["morning", "afternoon"], button_name="Поздароваться") #TODO !!!!!!!!!!!!!
+
+    $ check_event_in_allowed_events("biblio_16")
+
     
     jump main_interface_label

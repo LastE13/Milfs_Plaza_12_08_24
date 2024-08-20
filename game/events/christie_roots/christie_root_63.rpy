@@ -448,7 +448,7 @@ image _test_leaf_8 = Composite(
     )
 label christie_root_63:
     if not from_gallery_check():
-        $ events.pop('christie_root_63', 0)
+        $ events_pop('christie_root_63', 0)
     else:
         $ location_now = 'Corridor'
         $ time          = Time()

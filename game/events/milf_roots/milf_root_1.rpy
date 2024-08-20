@@ -16,7 +16,7 @@ label milf_root_1:
         "[gg]" "Сначала мне нужно купить анальную пробку."
         jump main_interface_label
     $ block_change_milf_position   = False
-    $ events.pop('milf_root_1', 0)
+    $ events_pop('milf_root_1', 0)
     call show_bg_image_label from _call_show_bg_image_label_104
     call show_additional_images_label from _call_show_additional_images_label_89
 

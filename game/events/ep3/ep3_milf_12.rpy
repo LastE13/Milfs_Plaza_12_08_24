@@ -61,7 +61,7 @@ label ep3_milf_12:
     $ time.time_now = 'evening'
     call show_bg_image_label from _call_show_bg_image_label_24
     call show_additional_images_label from _call_show_additional_images_label_19
-    $ events.pop('ep3_milf_12', 0)
+    $ events_pop('ep3_milf_12', 0)
 
     show GG Normal
     show GG Normal:

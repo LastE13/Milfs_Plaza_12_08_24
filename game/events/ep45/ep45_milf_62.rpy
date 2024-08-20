@@ -210,7 +210,7 @@ image ep45_night_sex_3_fastest:
 
 
 label ep45_milf_62:
-    $ events.pop('ep45_milf_62', 0)
+    $ events_pop('ep45_milf_62', 0)
 
     if events.get('night_girl'):
         $ events['night_girl'].complete = True
@@ -249,7 +249,7 @@ label ep45_milf_62:
     scene expression 'images/cg/ep1/night_collector/Night_collector_2.png'
     with vpunch
 
-    $ events.pop('stump_milf_sleep_61', 0)
+    $ events_pop('stump_milf_sleep_61', 0)
 
 
     stop music fadeout 1.5

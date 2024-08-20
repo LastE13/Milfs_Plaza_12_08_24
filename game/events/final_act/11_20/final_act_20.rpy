@@ -1,5 +1,5 @@
 label final_act_20:    #Final_Act_20
-    $ events.pop('final_act_20', 0)
+    $ events_pop('final_act_20', 0)
     #$ time.time_now = "evening"
 
     #with Dissolve(.4)

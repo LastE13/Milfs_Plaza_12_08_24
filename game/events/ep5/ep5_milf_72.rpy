@@ -101,7 +101,7 @@ label ep5_milf_72:
 
 
 label ep5_milf_72_2:
-    $ events.pop('ep5_milf_72_2', 0)
+    $ events_pop('ep5_milf_72_2', 0)
     scene black
     with Dissolve(.5)
     call show_all_images_label from _call_show_all_images_label_48

@@ -1,5 +1,5 @@
 label christie_root_9:
-    $ events.pop("christie_root_9", 0)
+    $ events_pop("christie_root_9", 0)
 
 
 

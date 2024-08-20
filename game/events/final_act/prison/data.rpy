@@ -732,7 +732,7 @@ label final_act_blind_transition_to_black_fast_label:
                     xp_fin = n,
                     )
                 ])
-        
+        #трансформ вертикальной жалюзи
         renpy.pause(0.3, hard = True)
 
     return

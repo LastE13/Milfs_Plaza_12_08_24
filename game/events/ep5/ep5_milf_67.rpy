@@ -1,6 +1,6 @@
 
 label ep5_milf_67:
-    $ events.pop('ep5_milf_67', 0)
+    $ events_pop('ep5_milf_67', 0)
     $ remove_from_inventory('Слабительное')
     call show_bg_image_label from _call_show_bg_image_label_59
     call show_additional_images_label from _call_show_additional_images_label_53

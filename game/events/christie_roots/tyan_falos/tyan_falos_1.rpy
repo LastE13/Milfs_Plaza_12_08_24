@@ -24,7 +24,7 @@ label tyan_falos_1:
 
 
 
-    $ events.pop('tyan_falos_1', 0)
+    $ events_pop('tyan_falos_1', 0)
 
     $ add_items_for_storein_shop_fixed.remove(rezak_at_web_shop)
     $ del rezak_at_web_shop

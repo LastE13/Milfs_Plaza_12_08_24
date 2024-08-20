@@ -142,7 +142,7 @@ label tyan_falos_9:
     $ add_to_gallery(48)
     $ renpy.music.stop(fadeout=.5)
     $ renpy.music.play('audio/late-night-radio-by-kevin-macleod-from-filmmusic-io.mp3', fadein = 1.5)
-    $ events.pop('tyan_falos_9', 0)
+    $ events_pop('tyan_falos_9', 0)
     scene image 'cg/ep86/bg.png'
     show GG Invis
     show GG Invis:

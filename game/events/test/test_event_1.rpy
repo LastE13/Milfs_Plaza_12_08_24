@@ -14,7 +14,7 @@ label test_event_1:
 
     "[gg]" "test_event_1"
 
-    $ events.pop("test_event_1", 0)
+    $ events_pop("test_event_1", 0)
     $ Event("test_event_2", location = "Kitchen_Milf", button_name = "TEST EVENT 2")
 
     jump main_interface_label

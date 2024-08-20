@@ -265,7 +265,7 @@ screen christie_root_60_mini_game:
 
 
 label christie_root_60:
-    $ events.pop('christie_root_60', 0)
+    $ events_pop('christie_root_60', 0)
     call show_bg_image_label from _call_show_bg_image_label_212
     with Dissolve(.5)
     #Отправиться в Гетто Утром или Днём с плакатом, полученным от Зудилы и Бубнилы.
@@ -657,7 +657,7 @@ label christie_root_60_kick:
     #$ check_ev = True
     $ unlock_city_getto = False
 
-    $ events.pop('christie_root_60', 0)
+    $ events_pop('christie_root_60', 0)
     $ descript_Christie = __("Прочесть смс.")
     jump main_interface_label
     

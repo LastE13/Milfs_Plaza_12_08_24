@@ -264,7 +264,7 @@ image christie_root_43 gg_bg = 'cg/ep89/masha/gg_bg.png'
 
 label christie_root_43:
     
-    $ events.pop('christie_root_43', 0)
+    $ events_pop('christie_root_43', 0)
 
     scene image 'locations/bg/ClothesStore/afternoon.png'
     show image 'cg/ep89/shop/masha.png'
@@ -1258,7 +1258,7 @@ label christie_root_43_sex_4:
 
 
 label christie_root_43_1:
-    $ events.pop('christie_root_43_1', 0)
+    $ events_pop('christie_root_43_1', 0)
     
     #//Korridor_Evening
     #$ location_now  = 'Corridor'
@@ -1415,18 +1415,19 @@ label christie_root_43_1:
     $ block_sister_home  = True
     $ block_time_forward = True
 
+    $ Event('christie_root_43_2', 'GG_Room')
     if not hasattr(store, 'allowed_events'):
         $ allowed_events = []
     $ allowed_events.append('christie_root_43_2')
-    $ Event('christie_root_43_2', 'GG_Room')
+    $ list_event_mandatory.append('christie_root_43_2')
 
     $ descript_Christie = _("Вернуться в комнату.")
     jump main_interface_label
 
 
 label christie_root_43_2:
-    $ events.pop('christie_root_43_2', 0)
-    $ allowed_events.remove('christie_root_43_2')
+    $ events_pop('christie_root_43_2', 0)
+
 
 
     

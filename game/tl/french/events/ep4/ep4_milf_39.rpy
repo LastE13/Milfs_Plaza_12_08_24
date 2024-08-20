@@ -1398,7 +1398,7 @@ translate french ep4_milf_39_49e16d2b:
 
 
 
-    "Марина" '''Hé, je peux voir cette étincelle dans tes yeux.'''
+    "Марина" '''Hé, je peux voir cette étIncelle dans tes yeux.'''
 
 
 

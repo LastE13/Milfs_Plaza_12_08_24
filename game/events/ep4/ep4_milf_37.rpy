@@ -41,7 +41,7 @@ label ep4_milf_37_block_igor:
 # id == "25"
     return
 label ep4_milf_37:
-    $ events.pop('ep4_milf_37', 0)
+    $ events_pop('ep4_milf_37', 0)
 
     call ep4_milf_37_block_igor from _call_ep4_milf_37_block_igor
     # $ igor_position = {

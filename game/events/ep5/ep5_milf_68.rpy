@@ -36,7 +36,7 @@ label ep5_milf_68:
             jump talk_with_milf_label
 
 
-    $ events.pop('ep5_milf_68', 0)
+    $ events_pop('ep5_milf_68', 0)
 
     show Milf Normal
     show GG:
@@ -108,7 +108,7 @@ label ep5_milf_68_after_sms:
     $ descript = _('Купить два костюма: себе и Кэт.')
     $ storein_costumes_shop_items = ['Костюм 1', 'Костюм 2']
 
-    $ events.pop('talk_with_clothes_store_woman_menu', 0)
+    $ events_pop('talk_with_clothes_store_woman_menu', 0)
     $ Event('ep5_milf_68_0', 'ClothesStore')
 
     $ Location('ClothesStore',
@@ -118,7 +118,7 @@ label ep5_milf_68_after_sms:
             )
     jump main_interface_label
 label ep5_milf_68_0:
-    $ events.pop('ep5_milf_68_0', 0)
+    $ events_pop('ep5_milf_68_0', 0)
     $ Event('talk_with_clothes_store_woman_menu', 'ClothesStore')
     #"!" "!"
     $ Event('ep5_milf_68_2', 'City_Home')
@@ -131,19 +131,19 @@ label ep5_milf_68_2:
     $ location_now = 'City_Home'
     $ renpy.play('audio/Door.mp3')
     scene expression '#000' with Dissolve(.5)
-    $ events.pop('ep5_milf_68_2', 0)
+    $ events_pop('ep5_milf_68_2', 0)
     if get_item('Костюм 1', True, True) and get_item('Костюм 2', True, True):
 
         $ pass
     elif True:
         $ location_now = 'City_Home'
-        $ events.pop('talk_with_clothes_store_woman_menu', 0)
+        $ events_pop('talk_with_clothes_store_woman_menu', 0)
         $ Event('ep5_milf_68_0', 'ClothesStore')
 
 
         $ JumpToLocation('City_Home')
         jump main_interface_label
-    $ events.pop('ep5_milf_68_0', 0)
+    $ events_pop('ep5_milf_68_0', 0)
     call show_all_images_label from _call_show_all_images_label_83
     with Dissolve(.5)
 

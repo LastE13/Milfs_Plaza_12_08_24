@@ -1057,7 +1057,8 @@ init -500 python:
     'Нэнси' : 'BiblioGirl',
     'Офицер':'Officer',
     'Офицерша':'GirlOfficer',
-
+    'Incel' : "Incel", 
+    'Simp' : "simp1", 
 
     'Christie':'Christie',
     'Кристи':'Christie',

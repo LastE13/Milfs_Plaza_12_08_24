@@ -16,8 +16,52 @@ transform biblio_search_book_arrow_transform(pos_finish=1650):
     #     easein .5 yalign .5 xpos 1650
     # on hover:
     #     easein .5 yalign .5 xpos 1720
-
+transform biblio_search_book_arrow_transform2(pos_finish=50):
+    yalign .5
+    xzoom -1
+    easein .5 xpos pos_finish
 init -100 python:
+
+    win_label_for_searh_book_game = ""
+    win_2_label_for_searh_book_game = ""
+    lose_label_for_searh_book_game = ""
+    pos_people = []
+    def end_mini_game_search_book():
+        if  hasattr(store, '_ttdd_ll'):
+            k = 0
+            w = 0
+            for i in store._ttdd_ll:
+                if i is None:
+                    break
+                k += 1 
+                #store._ttdd_ll = [None, None, None]
+            if k == 3:
+                k = 0
+                searh_dict = sorted(store._ttdd_ll)
+                need_dict = []
+                for book in biblio_mini_games_books_need:
+                    need_dict.append(book["book"])
+                print("____________________")
+                for i in range(3):
+                    print("____________________")
+                    print("store._ttdd_ll ", store._ttdd_ll[i]["book"])
+                    print("biblio_mini_games_books_need ", biblio_mini_games_books_need[i]["book"])
+                    print("____________________")
+                    if searh_dict[i]["book"] in need_dict:
+                        w += 1
+                
+                print("____________________")
+                if w == 3:
+                    w = 0
+                    renpy.jump("winwin")
+                if w == 2:
+                    w = 0
+                    renpy.jump("winwin2")
+                else:
+                    w = 0
+                    renpy.jump("loselose")
+        if biblio_search_book_time_line <= 0.01:
+            renpy.jump("loselose")
     def _add_book_to_inventory(book_dict):
 
         if not hasattr(store, '_ttdd_ll'):
@@ -145,7 +189,7 @@ init -100 python:
 screen biblio_search_book_timer_screen:
 
 
-
+    timer .1 repeat True action Function(end_mini_game_search_book)
 
     timer 1 repeat True action SetVariable('biblio_search_book_time_line', biblio_search_book_time_line-.01)
 
@@ -199,7 +243,8 @@ transform easein_back_transform(dur, ypos_finish):
     easein_back dur ypos ypos_finish
 
 label biblio_mini_games_test_start:
-    $ biblio_search_book_time_line = .55
+
+    $ biblio_search_book_time_line = .45
     
     call biblio_mini_games_test_create_books_list from _call_biblio_mini_games_test_create_books_list
     jump biblio_mini_games_test
@@ -213,13 +258,15 @@ label biblio_mini_games_test_create_books_list:
             (1250, 280),
             (525, 260),
             (640, 237),]
-        renpy.random.shuffle(_t)
-        renpy.random.shuffle(_r)
+        pos_people = []
+        renpy.random.shuffle(_t)# перемешиваем в случайный порядок
+        renpy.random.shuffle(_r)# перемешиваем в случайный порядок
         biblio_mini_games_books_need = []
         for i in range(3):
-            biblio_mini_games_books_need.append({'book':_t[0], 'pos':_r[0]})
+            biblio_mini_games_books_need.append({'book':_t[0], 'pos':_r[0]})# добавляем словарь в массив из пары книга и позиция x3 (искомые книги)
             _t.pop(0)
             _r.pop(0)
+            pos_people.append(_r[0])
 
 
 
@@ -251,7 +298,7 @@ label biblio_mini_games_end:
     return
 
 label biblio_mini_games_test:
-    call final_act_blind_transition_to_black_fast_label from _call_final_act_blind_transition_to_black_fast_label
+    call final_act_blind_transition_to_black_fast_label from _call_final_act_blind_transition_to_black_fast_label # трансформ вертикальной жалюзи
     python:
         for i in range(1, 20):
             n = (19-i)*102
@@ -266,7 +313,7 @@ label biblio_mini_games_test:
                     dur = .25+i*.015,
                     xp_fin = n,
                     )
-                ])
+                ]) # по идее 2ая часть трансформа жалюзи
         renpy.pause(0.3, hard = True)
     scene image 'mini_games/biblio/books_search/bg.png'
 
@@ -279,7 +326,7 @@ label biblio_mini_games_test:
                 (150, 180),
                 (0, 0), 'mini_games/biblio/books_search/frame.png',
                 (0, 0), Image('mini_games/biblio/books_search/'+str(i['book'])+'.png'),
-                )
+                )# те самые 3 книги
             renpy.show( 
             'biblio_search_book_'+str(j), what = _img, 
             at_list=[
@@ -366,6 +413,7 @@ label biblio_mini_games_test_books:
                     )
                 ])
         renpy.pause(0.3, hard = True)
+        
     scene image 'mini_games/biblio/books_search/bg_2.png'
     show  image 'mini_games/biblio/books_search/green_shadow.png'
     with my_dissolve
@@ -414,6 +462,10 @@ label biblio_mini_games_test_books:
         renpy.random.shuffle(_t)
         renpy.random.shuffle(_r)
         biblio_mini_games_books = []
+        for i in biblio_mini_games_books_need:
+            biblio_mini_games_books.append({'book':i['book'], 'pos':_r[0]})
+            _r.pop(0)
+            _t.remove(i['book'])
         for i in range(len(_r)):
             biblio_mini_games_books.append({'book':_t[0], 'pos':_r[0]})
             _t.pop(0)
@@ -482,7 +534,36 @@ label biblio_mini_games_test_books:
                      )
                 ])
             j += 1
+            renpy.show( 
+                'biblio_search_book_arrow_button', what = ImageButton(
+                idle_image  = 'alpha_solid', 
+                hover_image = 'alpha_solid', 
+                hovered     = Function(renpy.show, 
+                    'biblio_search_book_arrow', what = Image('mini_games/biblio/books_search/arrow.png'), 
+                    at_list=[
+                    biblio_search_book_arrow_transform2(
+                        pos_finish=50
+                        )
+                    ]),
+                unhovered = Function(renpy.show, 
+                'biblio_search_book_arrow', what = Image('mini_games/biblio/books_search/arrow.png'), 
+                at_list=[
+                biblio_search_book_arrow_transform2(
+                    pos_finish=50
+                    )
+                ]),
+                clicked    = Jump('biblio_mini_games_test'),
+                focus_mask = None,
+                ),
 
+                    at_list=[
+                    Transform(
+                        size   = (175, 300),
+                        yalign = .5, 
+                        xzoom = -1.0,
+                        xpos   = 100,
+                        ),
+            ])
 
         try:
             del _book_number
@@ -497,11 +578,13 @@ label biblio_mini_games_test_books:
 
     $ renpy.game.log.block()
     call screen empty_screen
-
+    if biblio_search_book_time_line <= 0.01:
+        jump loselose
 call screen empty_scree
 
 #label biblio_mini_games_add_book_to_inventory:
 
+                
 screen biblio_search_book_inventory_screen:
     if hasattr(store, '_ttdd_ll'):
         for i in range(3):
@@ -515,3 +598,32 @@ screen biblio_search_book_inventory_screen:
                     idle    'alpha_solid'
                     hover   'red_solid'
                     action  NullAction()
+
+label winwin:
+    hide screen biblio_search_book_timer_screen
+    hide screen biblio_search_book_inventory_screen
+    if win_label_for_searh_book_game != "":
+        $ renpy.jump(win_label_for_searh_book_game)
+    else:
+        "winwin"
+    pause
+    return
+label winwin2:
+    hide screen biblio_search_book_timer_screen
+    hide screen biblio_search_book_inventory_screen
+    
+    if win_2_label_for_searh_book_game != "":
+        $ renpy.jump(win_2_label_for_searh_book_game)
+    else:
+        "win 2/3"
+    pause
+    return
+label loselose:
+    hide screen biblio_search_book_timer_screen
+    hide screen biblio_search_book_inventory_screen
+    if lose_label_for_searh_book_game != "":
+        $ renpy.jump(lose_label_for_searh_book_game)
+    else:
+        "lose"
+    pause
+    return

@@ -3,9 +3,9 @@ label bed_night_milf_34:
     hide screen main_interface
     '[gg]' "Сейчас некогда отдыхать!"
 
-    $ events.pop('bed_night_milf_34', 0)
+    $ events_pop('bed_night_milf_34', 0)
 
-    $ events.pop('bed_night_milf_35', 0)
+    $ events_pop('bed_night_milf_35', 0)
     jump main_interface_label
 
 label bed_night_milf_35:
@@ -13,13 +13,13 @@ label bed_night_milf_35:
     hide screen main_interface
     '[gg]' "Сейчас некогда отдыхать!"
 
-    $ events.pop('bed_night_milf_34', 0)
+    $ events_pop('bed_night_milf_34', 0)
 
-    $ events.pop('bed_night_milf_35', 0)
+    $ events_pop('bed_night_milf_35', 0)
 
     jump main_interface_label
 label ep3_milf_32:
-    $ events.pop('ep3_milf_32', 0)
+    $ events_pop('ep3_milf_32', 0)
     $ location_now = 'Corridor'
 
     hide screen main_interface
@@ -88,7 +88,7 @@ label ep3_milf_32:
     $ add_to_gallery(9)
     if not from_gallery_check():
         $ block_time_forward = True
-        $ events.pop('ep3_milf_28', 0)
+        $ events_pop('ep3_milf_28', 0)
         $ Event('ep3_milf_33',     'Milf_Room')
 
         $ descript = _("Поторопить Игоря.")

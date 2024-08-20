@@ -1,5 +1,7 @@
 init python:
-
+    import sys 
+    path123 = sys.path[0]
+    list_event_mandatory = []
 
 
     def get_check_ev_buttons(check_ev,):
@@ -59,13 +61,14 @@ init python:
         #if location:
             
         #    location_now = location
-        
+        nnn = []
         return_events = []
         
         for event in events:
 
             _event = events[event]
             enc    = store._events_need_costume
+            nnn.append(_event.name)
             if _event.name in enc:
                 if getattr(store, 'milf_costume', 'n_body') != enc[_event.name]:
                     continue
@@ -107,7 +110,7 @@ init python:
                         return_events.append(_event)
                         if only_first:
                             return return_events
-        
+
         return return_events
 
 
@@ -125,8 +128,10 @@ init python:
         
         
         sort_events()
-        
+
         for event in sorted_events:
+            
+            
             if event in events and events[event].check():
                 if getattr(store, 'milf_costume', 'n_body') != 'n_body' or getattr(store, 'christie_costume', 'n_body') != 'n_body':
                     if 'christie_root_' in events[event].label:
@@ -313,19 +318,38 @@ init python:
 
 
     def events_pop(what_pop, rtrn=0):
+        global allowed_events, list_event_mandatory
         if (not hasattr(store, 'events')) or (not hasattr(store, 'completed_events')):
             return 'error'
-
         
+        if hasattr(store, 'allowed_events'):
+            if what_pop in allowed_events:
+                allowed_events.remove(what_pop)
+        if what_pop in list_event_mandatory:
+            list_event_mandatory.remove(what_pop)
         if what_pop not in store.completed_events:
             store.completed_events.append(what_pop)
         
         return dict.pop(store.events, what_pop, rtrn)
     
+    def if_in_allowed_events(name):
+        global allowed_events
+        if not hasattr(store, 'allowed_events'):
+            allowed_events = []
+        else:
+            allowed_events.append(name)
 
     # def check_where_we_at_root(what_root, number):
     #     for i in 
-
+    def check_event_in_allowed_events(name):
+        global allowed_events, list_event_mandatory
+        if not hasattr(store, 'allowed_events'):
+            allowed_events = []
+        else:
+            for n in list_event_mandatory:
+                if n in allowed_events:
+                    allowed_events.append(name)
+                    break
 init python:
     event_for_preview = 0
 

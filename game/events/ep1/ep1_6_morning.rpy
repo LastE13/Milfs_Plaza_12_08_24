@@ -1,5 +1,5 @@
 label ep1_6_morning:
-    $ events.pop('ep1_6_morning', 0)
+    $ events_pop('ep1_6_morning', 0)
 
     stop music fadeout 1.5
     play music 'audio/n_girl.mp3' fadein 1.5

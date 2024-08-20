@@ -38,7 +38,7 @@ label christie_root_50_1:
     scene black with Dissolve(.5)
 
     $ renpy.pause(.5, hard = True)
-    $ events.pop('christie_root_50_1', 0)
+    $ events_pop('christie_root_50_1', 0)
     $ location_now  = 'GG_Room'
     $ time.time_now = 'morning'
 
@@ -86,7 +86,7 @@ label christie_root_50_1:
     if not hasattr(store, 'allowed_events'):
         $ allowed_events = []
     
-    $ allowed_events.append('christie_root_50_2')
+    $ if_in_allowed_events('christie_root_50_2')
 
     $ descript_Christie = _("Надо во всём сознаться и объяснить сложившуюся ситуацию!")
     
@@ -95,12 +95,11 @@ label christie_root_50_1:
     jump main_interface_label
     #//GG_Normal исчезает влево
 label christie_root_50_2:
-    $ events.pop('christie_root_50_2', 0)
-    $ allowed_events.remove('christie_root_50_2')
+    $ events_pop('christie_root_50_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_195
     with my_dissolve
 
-    $ events.pop('christie_root_50_2', 0)
+    $ events_pop('christie_root_50_2', 0)
     show GG Normal
     show GG Normal at go_from_left(xxalign = .2)
     #//Зал
@@ -125,7 +124,7 @@ label christie_root_50_2:
     "[gg]" "Но где же сама Кристи?"
     
     $ Event('christie_root_50_3', 'Kitchen')
-    $ allowed_events.append('christie_root_50_3')
+    $ if_in_allowed_events('christie_root_50_3')
 
     jump main_interface_label
     #//GG_Normal исчезает влево
@@ -422,13 +421,13 @@ label christie_root_50_3:
 
 label christie_root_50_end_label:
 
-    $ events.pop('christie_root_50', 0)
-    $ events.pop('christie_root_50_1', 0)
-    $ events.pop('christie_root_50_2', 0)
-    $ events.pop('christie_root_50_3', 0)
+    $ events_pop('christie_root_50', 0)
+    $ events_pop('christie_root_50_1', 0)
+    $ events_pop('christie_root_50_2', 0)
+    $ events_pop('christie_root_50_3', 0)
 
-    $ events.pop('christie_root_48', 0)
-    $ events.pop('christie_root_49', 0)
+    $ events_pop('christie_root_48', 0)
+    $ events_pop('christie_root_49', 0)
 
     $ christie_root_50_end_2 = True
 

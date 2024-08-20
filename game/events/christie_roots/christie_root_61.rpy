@@ -1,6 +1,6 @@
 label christie_root_61:
     
-    $ events.pop('christie_root_61', 0)
+    $ events_pop('christie_root_61', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_215
     show Jay Normal

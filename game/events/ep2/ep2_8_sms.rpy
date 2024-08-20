@@ -12,7 +12,7 @@ label ep2_8_sms:
 
     with Dissolve(.5)
 
-    $ events.pop('ep2_8_sms', 0)
+    $ events_pop('ep2_8_sms', 0)
 
 
     play sound 'audio/sms.ogg'
@@ -51,12 +51,10 @@ label ep2_8_corridor:
 
 label ep2_8_pants:
     $ locations['GG_Room'].image_buttons.pop('pants', 0)
-    $ events.pop('ep2_8_corridor', 0)
+    $ events_pop('ep2_8_corridor', 0)
 
     menu:
         "Надеть штаны." if True:
-            if 'ep2_8_corridor' in allowed_events:
-                $ allowed_events.remove('ep2_8_corridor')
             
             if 'ep2_8_sms' in allowed_events:
                 $ allowed_events.remove('ep2_8_sms')

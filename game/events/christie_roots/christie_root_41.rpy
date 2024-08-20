@@ -28,7 +28,7 @@ image christie_root_41_officer_masha 2 = 'cg/ep89/shop/officer_masha_2.png'
 
 
 label christie_root_41:
-    $ events.pop('christie_root_41', 0)
+    $ events_pop('christie_root_41', 0)
 
 
     $ Hide('main_city_screen')()

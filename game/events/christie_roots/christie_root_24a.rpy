@@ -170,7 +170,7 @@ image christie_root_24a_anim 5:
     repeat
 label christie_root_24a:
     if not from_gallery_check():
-        $ events.pop('christie_root_24a', 0)
+        $ events_pop('christie_root_24a', 0)
     elif True:
         $ time          = Time()
         $ time.time_now = 'morning'
@@ -545,8 +545,9 @@ label christie_root_24a_meu_2:
     "[gg]" "Пожалуй, я дождусь завтра и отдам ей реферат с утра."
 
     $ Event('christie_root_24a_ref', 'City_Library_BiblioGirl', button_name = _("Реферат"), priority = -1)
-    $ events.pop('christie_root_21', 0)
-    $ events.pop('christie_root_24', 0)
+    $ events_pop('christie_root_21', 0)
+    $ events_pop('christie_root_24', 0)
+    $ check_event_in_allowed_events("christie_root_24a_ref")
 
 
     $ unlock_city_library = True
@@ -564,7 +565,7 @@ label christie_root_24a_meu_2:
 
 label christie_root_24a_ref:
 
-    $ events.pop('christie_root_24a_ref', 0)
+    $ events_pop('christie_root_24a_ref', 0)
 
 
 
@@ -755,16 +756,16 @@ label christie_root_24a_ref:
 
 
 
-    $ events.pop('christie_root_24a', 0)
-    $ events.pop('christie_root_24a_ref',  0)
+    $ events_pop('christie_root_24a', 0)
+    $ events_pop('christie_root_24a_ref',  0)
     $ descript_Christie_tmp_0 = ''
     if not len(getattr(store, 'descript_Christie_tmp_1', '')):
         $ descript_Christie = _("Дождаться завтра и отдать Кристи реферат по «Обществознанию».")
-
+    
 
         $ Event('christie_root_25', 'GG_Room', time = ['morning',], button_name = _("Реферат"), priority = -1)
 
-
+        $ if_in_allowed_events("christie_root_25")
 
 
     jump main_interface_label

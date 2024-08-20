@@ -5,7 +5,7 @@ init:
     image library_bookshelves_book = "cg/christie_root/library/bibliogirl/book.png"
     image library_bookshelves_bibliogirl_start = "cg/christie_root/library/bibliogirl/start.png"
     image library_bookshelves_bibliogirl_end = "cg/christie_root/library/bibliogirl/end.png"
-    image library_bookshelves_smerm_anim:
+    image library_bookshelves_smerm_anim_1:
         "cg/christie_root/library/bibliogirl/smerm/5.png"
         pause .15
         "cg/christie_root/library/bibliogirl/smerm/4.png"
@@ -17,75 +17,136 @@ init:
         "cg/christie_root/library/bibliogirl/smerm/1.png"
         pause .15
         "cg/christie_root/library/bibliogirl/smerm/0.png"
+
+    image library_bookshelves_smerm_anim_2:
+        alpha 0.0
+        pause .4
+        alpha 1.0
+        "cg/christie_root/library/bibliogirl/smerm/5.png"
         pause .15
+        "cg/christie_root/library/bibliogirl/smerm/4.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/3.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/2.png"
+        pause .15
+        xoffset 48
+        yoffset -13
+        "cg/christie_root/library/bibliogirl/smerm/1.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/0.png"
+    image library_bookshelves_smerm_anim_3:
+        alpha 0.0
+        xzoom -1
+        xoffset 20
+        pause 0.9
+        alpha 1.0
+        "cg/christie_root/library/bibliogirl/smerm/5.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/4.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/3.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/2.png"
+        pause .15
+        xoffset 89
+        yoffset -19
+        "cg/christie_root/library/bibliogirl/smerm/1.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/0.png"
+    image library_bookshelves_smerm_anim_4:
+        alpha 0.0
+        xzoom -1
+        xoffset 30
+        pause 1.2
+        alpha 1.0
+        "cg/christie_root/library/bibliogirl/smerm/5.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/4.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/3.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/2.png"
+        pause .15
+        xoffset 107
+        yoffset 9
+        "cg/christie_root/library/bibliogirl/smerm/1.png"
+        pause .15
+        "cg/christie_root/library/bibliogirl/smerm/0.png"
+    image library_bookshelves_smerm_anim = LiveComposite((1920, 1080),
+    (0, 0), "library_bookshelves_smerm_anim_1",
+    (0, 0), "library_bookshelves_smerm_anim_2",
+    (0, 0), "library_bookshelves_smerm_anim_3",
+    (0, 0), "library_bookshelves_smerm_anim_4",
+    )
     image library_bookshelves_paizuri_anim 1:
         "cg/christie_root/library/bibliogirl/paizuri_1.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_2.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_3.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_4.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_5.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_6.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_7.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_8.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_9.png"
-        pause .25
+        pause .19
         "cg/christie_root/library/bibliogirl/paizuri_10.png"
-        pause .25
+        pause .19
         repeat
     image library_bookshelves_paizuri_anim 2:
         "cg/christie_root/library/bibliogirl/paizuri_1.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_2.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_3.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_4.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_5.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_6.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_7.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_8.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_9.png"
-        pause .18
+        pause .11
         "cg/christie_root/library/bibliogirl/paizuri_10.png"
-        pause .18
+        pause .11
         repeat    
     image library_bookshelves_paizuri_anim 3:
         "cg/christie_root/library/bibliogirl/paizuri_1.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_2.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_3.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_4.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_5.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_6.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_7.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_8.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_9.png"
-        pause .1
+        pause .06
         "cg/christie_root/library/bibliogirl/paizuri_10.png"
-        pause .1
+        pause .06
         repeat
 
-
+    image chair_book = "locations/imagebuttons/City_Library/biblio_book.png"
 label biblio_BookW:
     show GG Normal:
         xalign .15
@@ -134,6 +195,12 @@ label biblio_BookW:
     "[gg]" "Я уже на взлёте, как чёртов шатл."
     show BiblioGirl Smile with my_dissolve
     "Нэнси" "Ну вперёд, красавчик."
+    show BiblioGirl Smile:
+        xzoom -1
+        ease 1 xalign 1.5
+    with None
+    pause 1
+
     # Повторение мини-игры
     # //При успехе мини-игры появляется табличка «Вы победили» (которая у нас есть)
     show GG Think with my_dissolve
@@ -152,12 +219,13 @@ label biblio_BookW:
     with None
     pause 1
     scene bookshelves bg
+    show chair_book
     with my_dissolve #my_fade #TODO а куда my_fade делся?
     show GG Normal:
         xalign -.5
-        ease 1 xalign .25
+        ease 1 xalign .1
     pause 1
-
+    call screen book_action
     show GG Surprise
     "[gg]" "Книга?"
     show GG Surprise
@@ -172,11 +240,13 @@ label biblio_BookW:
     show GG Think
     "[gg]" "Стоит поискать."
     # //Boobs_Read_1
+    scene black with Dissolve(.5)
     scene library_bookshelves_bg 
     show library_bookshelves_paizuri_anim 1:
         zoom .5
         alpha 0
     show library_bookshelves_book
+    with Dissolve(.5)
     "[gg]" "Нет…"
     "[gg]" "Здесь определённо ничего нет."
     "[gg]" "Как странно."
@@ -245,12 +315,12 @@ label biblio_BookW:
     # //Выбор скорости/кончить
     # //Кончить
     # //Boobs_Read_END_anim
-    menu bibliogirl_cum_menu:
+    menu bibliogirl_cum_menu1:
         "Кончить":
             $ pass
         "Продолжить в том же темпе" if True:
-            call wait_click_label
-            jump bibliogirl_cum_menu
+            call wait_click_label from _call_wait_click_label_63
+            jump bibliogirl_cum_menu1
     "[gg]" "Кончаааааюююююю!!!"
     "[gg]" "О дааааааа…."
     "[gg]" "К чёрту эту книгу, Нэнси. Я обожаю твои сиськи!"
@@ -267,10 +337,10 @@ label biblio_BookW:
     # //Книжные полки
     scene bookshelves bg 
     show GG Embarrassment:
-        xalign .15
+        xalign .1
     show BiblioGirl Embarrassment:
         xalign .85
-    "[gg]" ""
+
     show BiblioGirl Embarrassment
     "Нэнси" "Чтоб ты понимал, [gg], ты первый, кого я так отблагодарила за помощь."
     show GG Embarrassment
@@ -294,8 +364,15 @@ label biblio_BookW:
     show GG Passion
     "[gg]" "Увидимся."
     scene black with Dissolve(.5)
-    $ events.pop('biblio_BookW', 0)
+    $ events_pop('biblio_BookW', 0)
     $ descript_BiblioGirl = _('')
     $ time.time_now = "morning"
     jump main_interface_label
     return
+
+screen book_action():
+    imagebutton:
+        focus_mask True
+        idle "locations/imagebuttons/City_Library/biblio_book.png"
+        hover im.MatrixColor("locations/imagebuttons/City_Library/biblio_book.png", im.matrix.brightness(0.1))
+        action Return()

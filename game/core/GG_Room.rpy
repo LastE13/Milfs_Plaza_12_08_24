@@ -21,7 +21,7 @@ label go_sleep_to_morning:
         $ block_uborka      = False
     if hasattr(store, 'christie_every_day_events_block'):
         $ christie_every_day_events_block = []
-        $ events.pop('christie_night_mischief_night', 0)
+        $ events_pop('christie_night_mischief_night', 0)
         $ christie_night_mischief_text = _("Кристи мучают ночные кошмары. Стоит поговорить с ней об этом, может я смогу ей помочь.")
 
     $ sitost    = max(0,  sitost-2)
@@ -120,8 +120,14 @@ label gg_room_bed:
 label gg_room_pc_black:
     scene expression '#000' with Dissolve(.5)
 label gg_room_pc:
+
     if getattr(store, 'watch_porn_ep2', False) and time.time_now == 'night':
         jump watch_porn_ep2
+    if getattr(store, 'allowed_events', False):
+        if 'biblio_5' in allowed_events:
+            jump round_1
+        if "biblio_8" in allowed_events:
+            jump round_2
     $ location_now = 'gg_room_pc_enter'
     $ check_ev = check_events()
 

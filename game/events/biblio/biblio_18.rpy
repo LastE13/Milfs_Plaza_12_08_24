@@ -10,24 +10,344 @@ init:
     image biblio_cuni nude_2 = "images/cg/biblio/cuni/nude_2.png"
     image biblio_cuni pants = "images/cg/biblio/cuni/pants.png"
 
-    image biblio_cuni_gg 1 = "images/cg/biblio/cuni/gg/1.png"
-    image biblio_cuni_gg 2 = "images/cg/biblio/cuni/gg/2.png"
-    image biblio_cuni_gg 3 = "images/cg/biblio/cuni/gg/3.png"
-    image biblio_cuni_gg 4 = "images/cg/biblio/cuni/gg/4.png"
+    image biblio_cuni_gg 1 = "images/cg/biblio/cuni/1.png"
+    image biblio_cuni_gg 2 = "images/cg/biblio/cuni/2.png"
+    image biblio_cuni_gg 3 = "images/cg/biblio/cuni/3.png"
+    image biblio_cuni_gg 4 = "images/cg/biblio/cuni/4.png"
 
-    image biblio_cuni scenes anim 1 = "images/cg/biblio/cuni/scenes/1.png"
-    image biblio_cuni scenes anim 2 = "images/cg/biblio/cuni/scenes/1.png"
-    image biblio_cuni scenes anim 3 = "images/cg/biblio/cuni/scenes/1.png"
-    image biblio_cuni scenes anim 4 = "images/cg/biblio/cuni/scenes/2.png"
-    image biblio_cuni scenes anim 5 = "images/cg/biblio/cuni/scenes/2.png"
-    image biblio_cuni scenes anim 6 = "images/cg/biblio/cuni/scenes/2.png"
+    # image biblio_cuni scenes anim 1 = "images/cg/biblio/cuni/scenes/1.png"
+    # image biblio_cuni scenes anim 2 = "images/cg/biblio/cuni/scenes/1.png"
+    # image biblio_cuni scenes anim 3 = "images/cg/biblio/cuni/scenes/1.png"
+    # image biblio_cuni scenes anim 4 = "images/cg/biblio/cuni/scenes/2.png"
+    # image biblio_cuni scenes anim 5 = "images/cg/biblio/cuni/scenes/2.png"
+    # image biblio_cuni scenes anim 6 = "images/cg/biblio/cuni/scenes/2.png"
 
+    image biblio_cuni scenes anim 1:
+        "cg/biblio/cuni/kuk_sek/Kuk00000.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00001.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00002.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00003.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00004.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00005.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00006.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00007.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00008.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00009.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00010.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00011.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00012.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00013.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00014.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00015.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00016.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00017.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00018.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00019.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00020.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00021.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00022.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00023.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00024.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00025.png"
+        pause .08
+        "cg/biblio/cuni/kuk_sek/Kuk00026.png"
+        pause .08
+        repeat
 
+    image biblio_cuni scenes anim 3:
+        "cg/biblio/cuni/kuk_sek/Kuk00000.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00001.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00002.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00003.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00004.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00005.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00006.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00007.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00008.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00009.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00010.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00011.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00012.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00013.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00014.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00015.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00016.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00017.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00018.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00019.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00020.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00021.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00022.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00023.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00024.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00025.png"
+        pause .045
+        "cg/biblio/cuni/kuk_sek/Kuk00026.png"
+        pause .045
+        repeat
+
+    image biblio_cuni scenes anim 5:
+        "cg/biblio/cuni/kuk_sek/Kuk00000.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00001.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00002.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00003.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00004.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00005.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00006.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00007.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00008.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00009.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00010.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00011.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00012.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00013.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00014.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00015.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00016.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00017.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00018.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00019.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00020.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00021.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00022.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00023.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00024.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00025.png"
+        pause .025
+        "cg/biblio/cuni/kuk_sek/Kuk00026.png"
+        pause .025
+        repeat
+
+    image biblio_cuni scenes anim 2:
+        "cg/biblio/cuni/kuk_down/kuk girl view00000.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00001.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00002.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00003.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00004.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00005.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00006.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00007.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00008.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00009.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00010.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00011.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00012.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00013.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00014.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00015.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00016.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00017.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00018.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00019.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00020.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00021.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00022.png"
+        pause .08
+        "cg/biblio/cuni/kuk_down/kuk girl view00023.png"
+        pause .08
+        repeat
+    image biblio_cuni scenes anim 4:
+        "cg/biblio/cuni/kuk_down/kuk girl view00000.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00001.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00002.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00003.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00004.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00005.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00006.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00007.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00008.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00009.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00010.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00011.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00012.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00013.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00014.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00015.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00016.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00017.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00018.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00019.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00020.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00021.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00022.png"
+        pause .045
+        "cg/biblio/cuni/kuk_down/kuk girl view00023.png"
+        pause .045
+        repeat
+    image biblio_cuni scenes anim 6:
+        "cg/biblio/cuni/kuk_down/kuk girl view00000.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00001.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00002.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00003.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00004.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00005.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00006.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00007.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00008.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00009.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00010.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00011.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00012.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00013.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00014.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00015.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00016.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00017.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00018.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00019.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00020.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00021.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00022.png"
+        pause .025
+        "cg/biblio/cuni/kuk_down/kuk girl view00023.png"
+        pause .025
+        repeat 
 label biblio_18:
     # Description: Подарить Нэнси шкатулку. Как всегда, её можно найти в библиотеке.
     # Task: Активировать Нэнси в библиотеке утром или днём.
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_261
     show GG Normal
     show GG Normal:
         xalign .15
@@ -39,17 +359,17 @@ label biblio_18:
     "[gg]" "Привет, Нэнси!"
     "Нэнси" "Приветик."
     "[gg]" "Как дела?"
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Отлично."
     "Нэнси" "Не без твоей помощи, конечно."
     "[gg]" "Какие планы на сегодня? Разношу книги или слежу за порядком?"
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Ничего."
     "Нэнси" "Сегодня я решила не обременять тебя никакими делами."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Напротив, я хочу, чтобы ты насладился умиротворением и просто отдохнул."
     "Нэнси" "А потому вот. Маленький подарок от меня."
-    # show BiblioGirl Embarrassment with my_dissolve
+    show BiblioGirl Embarrassment with my_dissolve
     "Нэнси" "Хочу подарить тебе книгу, которой заинтерисовался однажды, когда ждал моего появления в читальном зале."
     show GG Surprise with my_dissolve
     "[gg]" "О! Это же то фэнтези «Под знаком мантикоры»."
@@ -60,7 +380,7 @@ label biblio_18:
     "[gg]" "Вот, эта необычная шкатулка с сюрпризом внутри для тебя."
     "Нэнси" "Ух ты! Как мило с твоей стороны, [gg]."
     "[gg]" "Я, признаюсь, и сам не знаю, что там содержится, но продавец заверил, что ты будешь в восторге."
-    # show BiblioGirl Surprise with my_dissolve
+    show BiblioGirl Surprise with my_dissolve
     "Нэнси" "Даже так?.."
     "Нэнси" "Ты умеешь нагнать саспенс..."
     "Нэнси" "Мне уже не терпится всё узнать!"
@@ -68,11 +388,11 @@ label biblio_18:
     "[gg]" "Сразу открыть не получится."
     "[gg]" "Шкатулка закрыта на замок-пазл."
     "[gg]" "Надеюсь, тебя обрадует этот элемент, учитывая, как сильно ты любишь всякие загадки."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Ещё бы! Конечно!"
     "Нэнси" "Я и мечтать о таком не могла..."
     "Нэнси" "Ещё раз спасибо тебе, [gg]!"
-    # show BiblioGirl Embarrassment with my_dissolve
+    show BiblioGirl Embarrassment with my_dissolve
     "Нэнси" "Меня всю распирает от любопытства!"
     "Нэнси" "Я так тебе благодарна, [gg]! Ты такой классный, такой внимательный парень! Меня переполняют чувства благодарности."
     show GG Smile with my_dissolve
@@ -90,13 +410,14 @@ label biblio_18:
     scene cg readroom
     show cg_readroom table
     show cg_readroom_lamp
-    show cg_readroom_peoples
+    show cg_readroom_peoples 01
     show cg_readroom_gg 1
     with my_dissolve #my_fade #TODO а куда my_fade делся?
     
     "[gg]" "Ну вот, наконец-то я смогу ознакомиться с этим фэнтези романом."
     "[gg]" "Хотя..."
     "[gg]" "Очень странные ощущение."
+    show cg_readroom_peoples 02
     "[gg]" "Такое чувство, будто бы книга стала ощутимо легче."
     "[gg]" "Она и без того не особо плотная..."
     "[gg]" "Ну и ладно. Какое мне до этого дело? Я собрался читать книгу, а не употреблять её в пищу."
@@ -109,7 +430,8 @@ label biblio_18:
     
     # //Читальный зал
     # //Спрайты читателей
-    scene bg readroom
+    label .qqq:
+    scene readroom_people bg
     
     show GG Normal
     show GG Normal:
@@ -128,17 +450,17 @@ label biblio_18:
         ease 1 xalign 1.5
     with None
     pause 1
-    scene bg bookshelves
+    scene bookshelves bg
     with my_dissolve
 
     show BiblioGirl Normal
     show BiblioGirl Normal:
         xalign .85
-    show GG Normal
-    show GG Normal:
-        xalign -.5
-        ease 1 xalign .15
-    pause 1
+    # show GG Normal
+    # show GG Normal:
+    #     xalign -.5
+    #     ease 1 xalign .15
+    # pause 1
 
     show biblio_cuni pants
     show biblio_cuni pants:
@@ -149,7 +471,12 @@ label biblio_18:
     "[gg]" "Я нашёл эти трусики у себя в книге."
     "Нэнси" "Да ну?"
     "Нэнси" "Кому бы они могли пренадлежать?"
+    show GG Normal:
+        xalign .15
+    hide biblio_cuni
+    with my_dissolve
     "[gg]" "Чьи бы они не были, подарок-то я не собираюсь возвращать."
+
     "Нэнси" "Хи-хи-хи."
     "Нэнси" "Но выяснить-то всё равно надо."
     "[gg]" "Этим я и планирую сейчас заняться."
@@ -173,20 +500,20 @@ label biblio_18:
         tmp_biblio_18 = 0
     menu:
         "Снять свитер.":
-            call biblio_18_sweetear
+            call biblio_18_sweetear from _call_biblio_18_sweetear
         "Снять юбку.":
-            call biblio_18_skirt
+            call biblio_18_skirt from _call_biblio_18_skirt
     menu:
         "Снять свитер." if tmp_biblio_18 == 1:
-            call biblio_18_sweetear
+            call biblio_18_sweetear from _call_biblio_18_sweetear_1
         "Снять юбку." if tmp_biblio_18 == 2:
-            call biblio_18_skirt  
+            call biblio_18_skirt from _call_biblio_18_skirt_1  
     python:
         del tmp_biblio_18
     
 
     # //Когда Window_Biblio_2 (цифра абстрактна, но суть такова, что она без юбки и с голыми сиськами)
-    
+
     "[gg]" "Все ответы я знаю и так, Нэнси."
     "[gg]" "Но по регламенту, чтобы у тебя не возникли сомнения в моём профессионализме, я проведу экспертизу полученных улик."
     "Нэнси" "Что ж..."
@@ -195,14 +522,15 @@ label biblio_18:
     
     # // Window_Biblio_3 (там в 2 слайда разрывает колготки)
     # // Window_Biblio_3 (пялится на киску)
-    show biblio_cuni_gg 3
+    show biblio_cuni_gg 3 
     with my_dissolve
-    show biblio_cuni nude_1
-    show biblio_cuni_gg 4
+    show biblio_cuni_gg 4 
+    show biblio_cuni nude_1 
     with my_dissolve
-    show biblio_cuni_gg 1
+
+    show biblio_cuni_gg 1 
     with my_dissolve
-    show biblio_cuni_gg 2
+    show biblio_cuni_gg 2 
     with my_dissolve
 
     "[gg]" "Воу!.."
@@ -216,7 +544,11 @@ label biblio_18:
     
     # //Kuni_1_anim (анимация куни)
     # //x1
-    scene biblio_cuni scenes anim 1 with my_dissolve
+    scene bg biblio_cuni:
+        xalign .5
+        yalign .5
+        zoom 1.5
+    show biblio_cuni scenes anim 1 with my_dissolve
     
     "[gg]" "Ох, Нэннси, ты такая сладкая на вкус."
     "[gg]" "Касаться тебя язычком сплошное наслаждение."
@@ -226,7 +558,7 @@ label biblio_18:
     # //Kuni_2_anim (анимация сиськи вид снизу)
     # //x1
 
-    scene biblio_cuni scenes anim 4 with my_dissolve
+    show biblio_cuni scenes anim 2 with my_dissolve
 
     
     "Нэнси" "Боже, [gg], твои комплименты будоражат меня изнутри."
@@ -235,7 +567,7 @@ label biblio_18:
     
     # //Kuni_1_anim (анимация куни)
     # //x2
-    scene biblio_cuni scenes anim 2 with my_dissolve
+    show biblio_cuni scenes anim 3 with my_dissolve
 
     
     "[gg]" "Ты стала такой мокрой, Нэнси."
@@ -246,7 +578,7 @@ label biblio_18:
     
     # //Kuni_2_anim (анимация куни)
     # //x2
-    scene biblio_cuni scenes anim 5 with my_dissolve
+    show biblio_cuni scenes anim 4 with my_dissolve
 
     
     "Нэнси" "О дааа, [gg]!"
@@ -259,7 +591,7 @@ label biblio_18:
     
     # //Kuni_1_anim (анимация куни)
     # //x3
-    scene biblio_cuni scenes anim 3 with my_dissolve
+    show biblio_cuni scenes anim 5 with my_dissolve
 
     
     "[gg]" "Значит мне стоит налегать ещё сильнее, иначе ты я буду считать, что выполнил свою задачу не полностью."
@@ -272,7 +604,7 @@ label biblio_18:
     
     # //Kuni_2_anim (анимация куни)
     # //x3
-    scene biblio_cuni scenes anim 6 with my_dissolve
+    show biblio_cuni scenes anim 6 with my_dissolve
     
     "Нэнси" "Охххххх!!..."
     "Нэнси" "Только бы не закричать! Только бы не закричать!"
@@ -296,12 +628,13 @@ label biblio_18:
     # // BiblioGirl_Surprise
     # //Симп выезжает слева
 
-    scene bg bookshelves
-    show GG Normal
-    show GG Normal:
-        xalign .70
-    show BiblioGirl Normal
-    show BiblioGirl Normal:
+    scene bookshelves bg
+    show GG Surprise
+    show GG Surprise:
+        xalign .65
+        xzoom -1
+    show BiblioGirl Surprise
+    show BiblioGirl Surprise:
         xalign .90
     with my_dissolve
     with vpunch
@@ -330,7 +663,7 @@ label biblio_18:
     show BiblioGirl Normal:
         ease 1 xalign -.5
     with None
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_262
     with my_dissolve #my_fade #TODO а куда my_fade делся?
     show GG Normal
     show GG Normal:
@@ -344,25 +677,30 @@ label biblio_18:
     
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Чуть не попались!"
-    show GG Normal with my_dissolve
+    show GG Normal:
+        xzoom -1
+    with my_dissolve
     "[gg]" "Этого следовало ожидать. Мы переступаем черту, хе-хе."
     "Нэнси" "Согласна. И нам, наверное, пора остановиться."
     show GG Chagrin with my_dissolve
     "[gg]" "Но ведь мы можем встречаться в другом месте, в другое время..."
-    # show BiblioGirl Chagrin with my_dissolve
+    show BiblioGirl Chagrin with my_dissolve
     "Нэнси" "Тогда в наших встречах не будет ничего интересного."
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Обычный, ничем не примечательный роман и скорое затухание чувство от однообразия."
     "[gg]" "Значит, это и была последняя наша встреча?.."
     "Нэнси" "Не знаю..."
     "[gg]" "Твоя неопределённость меня убивает."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Ага. Я просто плыву по течению. И тебе советую."
     "[gg]" "...."
     
-    $ events.pop("biblio_18", 0)
+    $ events_pop("biblio_18", 0)
+    $ descript_BiblioGirl = _("Это всё или нет? Если я захочу вновь увидеть Нэнси, мне надо посетить её в библиотеке.")
     $ Event("biblio_19", day_start=time.day_now+1, location = "City_library")
-    
+
+    $ check_event_in_allowed_events("biblio_19")
+
     jump main_interface_label
 
 label biblio_18_sweetear:

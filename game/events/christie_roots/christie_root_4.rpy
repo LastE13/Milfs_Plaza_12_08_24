@@ -1,10 +1,10 @@
 label christie_root_4:
-    $ events.pop('christie_root_4', 0)
+    $ events_pop('christie_root_4', 0)
 
-    $ events.pop('Обсудить психолога (Задание Кристи)', 0)
+    $ events_pop('Обсудить психолога (Задание Кристи)', 0)
 
 
-    $ events.pop(_('Обсудить психолога (Задание Кристи)'), 0)
+    $ events_pop(_('Обсудить психолога (Задание Кристи)'), 0)
 
 
     call show_bg_image_label from _call_show_bg_image_label_124

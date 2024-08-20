@@ -305,7 +305,7 @@ label ep3_milf_24_final:
 
     $ events.get('ep3_milf_24', 0)
 
-    $ events.pop('ep3_milf_24_2', 0)
+    $ events_pop('ep3_milf_24_2', 0)
 
     show GG Think
 

@@ -7,7 +7,7 @@ image BlackGuy_5 = "images/characters/BlackGuy/EMO/Normal.png"
 image BlackGuy_6 = "images/characters/BlackGuy/EMO/Normal.png"
 
 label misha_root_1:
-    $ events.pop("misha_root_1", 0)
+    $ events_pop("misha_root_1", 0)
 
 
 

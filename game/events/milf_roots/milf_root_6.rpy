@@ -1,5 +1,5 @@
 label milf_root_6:
-    $ events.pop('milf_root_6', 0)
+    $ events_pop('milf_root_6', 0)
     show GG Normal
     show GG Normal at go_from_left
     "[gg]" "Марина, открой, это я."

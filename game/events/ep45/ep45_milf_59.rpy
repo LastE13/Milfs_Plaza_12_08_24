@@ -56,7 +56,7 @@ label ep45_milf_59:
 
     $ descript = _("Установить горшок с растением в коридоре. Сделать это следует или Утром, или Днём.")
 
-    $ events.pop('ep45_milf_59', 0)
+    $ events_pop('ep45_milf_59', 0)
 
 
     #$ locations['Corridor'].buttons[0].update({'ep5_milf_60': ((1350, 250, 100, 145), [Jump('ep5_milf_60')])})

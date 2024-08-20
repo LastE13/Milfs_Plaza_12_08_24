@@ -3,10 +3,11 @@ label christie_root_27_activate:
     $ christie_root_27_start = True
     $ descript_Christie      = _("Сходить на сеанс к Сьюзан.")
     $ Event('christie_root_27', 'City_Psi', time = ['morning', 'afternoon'])
-    $ events.pop('christie_root_21', 0)
-    $ events.pop('christie_root_22', 0)
-    $ events.pop('christie_root_23', 0)
-    $ events.pop('christie_root_24', 0)
+    $ check_event_in_allowed_events('christie_root_27')
+    $ events_pop('christie_root_21', 0)
+    $ events_pop('christie_root_22', 0)
+    $ events_pop('christie_root_23', 0)
+    $ events_pop('christie_root_24', 0)
     $ unlock_city_psi   = True
     return
 
@@ -35,7 +36,7 @@ label christie_root_27_repeat:
     $ Hide('main_city_screen')()
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
-    $ events.pop('christie_root_27_repeat', 0)
+    $ events_pop('christie_root_27_repeat', 0)
 
     scene black with Dissolve(.5)
 
@@ -93,7 +94,7 @@ label christie_root_27:
     call screen rtrn_screen
 
     if not from_gallery_check():
-        $ events.pop('christie_root_27', 0)
+        $ events_pop('christie_root_27', 0)
     show Psi Normal
     show Psi Normal:
         xalign .5
@@ -299,11 +300,12 @@ label christie_root_27_menu_1:
     scene expression '#000' with Dissolve(.5)
     $ time.time_now   = "evening"
     $ location_now    = "City_Home"
-    $ unlock_city_psi = False
+    if 'bag' not in locations['City_Psi'].image_buttons:
+        $ unlock_city_psi = False
 
-    $ events.pop("christie_root_27", 0)
+    $ events_pop("christie_root_27", 0)
 
-    $ events.pop("christie_root_27_repeat", 0)
+    $ events_pop("christie_root_27_repeat", 0)
 
 
     $ sister_position['morning']   = ['Hall',  'sister_hall']

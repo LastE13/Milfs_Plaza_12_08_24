@@ -41,7 +41,7 @@ image ep4_divan_7a3:
 
 
 label ep4_milf_39:
-    $ events.pop('ep4_milf_39', 0)
+    $ events_pop('ep4_milf_39', 0)
 
     $ Hide('main_interface')()
     call show_all_images_label from _call_show_all_images_label_84

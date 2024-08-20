@@ -1,6 +1,6 @@
 label ep3_4_talk_with_igor_in_park:
 
-    $ events.pop('ep3_4_talk_with_igor_in_park', 0)
+    $ events_pop('ep3_4_talk_with_igor_in_park', 0)
     call show_bg_image_label from _call_show_bg_image_label_16
     call show_additional_images_label from _call_show_additional_images_label_13
 

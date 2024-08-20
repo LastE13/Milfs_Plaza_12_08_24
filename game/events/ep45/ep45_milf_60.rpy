@@ -1,7 +1,7 @@
 
 
 label ep5_milf_60:
-    $ events.pop('ep5_milf_60', 0)
+    $ events_pop('ep5_milf_60', 0)
 
     # if time.time_now in ['evening', 'night']:
 

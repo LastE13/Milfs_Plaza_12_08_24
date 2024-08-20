@@ -93,27 +93,13 @@ label ep2_7_wash_pants:
 
 
     $ locations['Restroom'].buttons[0]['washer'] = ((0, 650, 453, 429), [Jump('restroom_washer_label')])
-    if "ep2_7_need_wash_pants_k" in allowed_events:
-        $ allowed_events.remove("ep2_7_need_wash_pants_k")
-    
-    if "ep2_7_need_wash_pants_h" in allowed_events:
-        $ allowed_events.remove("ep2_7_need_wash_pants_h")
-    
-    if "ep2_7_need_wash_pants_ch" in allowed_events:
-        $ allowed_events.remove("ep2_7_need_wash_pants_ch")
-    
-    if "ep2_7_need_wash_pants_s_r" in allowed_events:
-        $ allowed_events.remove("ep2_7_need_wash_pants_s_r")
-    
-    if "ep2_7_need_wash_pants_g_r" in allowed_events:
-        $ allowed_events.remove("ep2_7_need_wash_pants_g_r")
-    $ allowed_events.append('ep2_8_corridor')
-    $ allowed_events.append('ep2_8_sms')
-    $ events.pop('ep2_7_need_wash_pants_k',  0)
-    $ events.pop('ep2_7_need_wash_pants_h',   0)
-    $ events.pop('ep2_7_need_wash_pants_ch',  0)
-    $ events.pop('ep2_7_need_wash_pants_s_r', 0)
-    $ events.pop('ep2_7_need_wash_pants_g_r', 0)
+    $ if_in_allowed_events('ep2_8_corridor')
+    $ if_in_allowed_events('ep2_8_sms')
+    $ events_pop('ep2_7_need_wash_pants_k',  0)
+    $ events_pop('ep2_7_need_wash_pants_h',   0)
+    $ events_pop('ep2_7_need_wash_pants_ch',  0)
+    $ events_pop('ep2_7_need_wash_pants_s_r', 0)
+    $ events_pop('ep2_7_need_wash_pants_g_r', 0)
     $ block_exit_home   = False
     $ block_sister_home = False
 

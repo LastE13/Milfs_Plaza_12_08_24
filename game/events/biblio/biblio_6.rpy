@@ -15,7 +15,7 @@ label biblio_6:
         '[gg]' '{i}Вернуть “Кама-сутру» Нэнси в библиотеке в {b}пятницу{/b}.{/i}'
         jump main_interface_label
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_259
     show GG Smile
     show GG Smile:
         xalign .15
@@ -23,28 +23,27 @@ label biblio_6:
     show BiblioGirl Normal:
         xalign .85
     with my_dissolve
-    
     "[gg]" "Нэнси, верно?"
-    # show BiblioGirl Embarrassment #TODO нет вообще никаких эмоций, оставлю пока так
+    show BiblioGirl Embarrassment #TODO нет вообще никаких эмоций, оставлю пока так
     "Нэнси" "Вы запомнили."
     "[gg]" "Ага. Я пришёл вернуть вашу книгу."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Хи-хи-хи."
-    # show BiblioGirl Normal with my_dissolve
+    show BiblioGirl Normal with my_dissolve
     "Нэнси" "Вам понравилось?"
     show GG Embarrassment with my_dissolve
     "[gg]" "Признаюсь... я совсем не читал её."
-    # show BiblioGirl Chagrin with my_dissolve
+    show BiblioGirl Chagrin with my_dissolve
     show GG Normal with my_dissolve
     "[gg]" "Но!"
     "[gg]" "Предугадывая ваш следующий вопрос, я оценил вашу любовь к эпопеи Толкина."
-    # show BiblioGirl Embarrassment with my_dissolve
+    show BiblioGirl Embarrassment with my_dissolve
     "Нэнси" "Значит, вы пришли сюда не просто так..."
     show GG Smile with my_dissolve
     "[gg]" "Только если сегодня пятница."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Хи-хи-хи."
-    # show BiblioGirl Embarrassment with my_dissolve
+    show BiblioGirl Embarrassment with my_dissolve
     "Нэнси" "Так волнительно и приятно."
     "Нэнси" "Как бы то ни было, сейчас мы находимся в библиотеке, и всё, что мы можем себе позволить, это познавать друг друга через книги."
     show GG Normal with my_dissolve
@@ -55,10 +54,10 @@ label biblio_6:
         ease 1 xalign 1.5
     show BiblioGirl Normal:
         ease 1 xalign 1.5
-    scene bg bookshelves with my_dissolve #my_fade #TODO а куда my_fade делся?
+    scene bookshelves bg with my_dissolve #my_fade #TODO а куда my_fade делся?
     show GG Normal:
         xalign -.5
-        ease 1 xalign .15
+        ease 1 xalign .1
     show BiblioGirl Normal:
         xalign -.5
         ease 1 xalign .85
@@ -78,7 +77,7 @@ label biblio_6:
     #show BiblioGirl Passionl with my_dissolve
     "Нэнси" "Пока не попробуете, не узнаете."
     
-    scene bg bookshelves
+    scene bookshelves bg
     # //Biblio_Komnata_1
     show stairs stay 
     show BiblioGirl Invis
@@ -98,8 +97,8 @@ label biblio_6:
     "Нэнси" "Хи-хи-хи."
     
     # //Для продолжения нужно кликнуть по Нэнси на лестницу 
-    call screen rtrn_screen("images/cg/biblio/stairs/stay.png", show_icons_interface = False)
-    scene bg bookshelves:
+    call screen rtrn_screen("images/cg/biblio/stairs/stay_b.png", show_icons_interface = False)
+    scene bookshelves bg:
         blur 15
     #show stairs stay:
     #    blur 15
@@ -125,7 +124,7 @@ label biblio_6:
     "Нэнси" "Вот и всё, я справилась."
 
     hide stairs ass with my_dissolve
-    scene bg bookshelves:
+    scene bookshelves bg:
         blur 15
         ease 1 blur 0
     pause 1
@@ -151,14 +150,14 @@ label biblio_6:
     "[gg]" "А знаете, Нэнси..."
     "Нэнси" "Да?"
     "[gg]" "Я, наверное, всё таки возьму книгу для домашнего чтения."
-    # show BiblioGirl Smile with my_dissolve
+    show BiblioGirl Smile with my_dissolve
     "Нэнси" "Передумали?"
     show GG Embarrassment with my_dissolve
     "[gg]" "Ага. Решил пристраститься. Посоветуете что-нибудь? В том же духе, как и предыдущая книга."
     show BiblioGirl Normal with my_dissolve
     "Нэнси" "Вот и замечательно."
     "Нэнси" "У меня как раз есть подходящий экземпляр."
-    # show BiblioGirl Passion with my_dissolve
+    show BiblioGirl Passion with my_dissolve
     "Нэнси" "В этой книге вы обязательно найдёте повод, чтобы посетить меня вновь."
     "Нэнси" "Вот, держите."
     show GG Smile with my_dissolve
@@ -169,15 +168,16 @@ label biblio_6:
     hide screen give_item_screen
     
     # //Библиотека Холл
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_260
     with my_dissolve #my_fade #TODO а куда my_fade делся?
 
     pause 1
 
     # //Библиотекарши нет #TODO как её убрать на локации??
-
+    $ remove_from_inventory(name = 'Камасутра')
     $ add_to_inventory(name = 'Книга «Анжелика и Король»')
     
-    $ events.pop("biblio_6", 0)
-    
+    $ events_pop("biblio_6", 0)
+    $ descript_BiblioGirl = _("Просмотреть книгу на наличие записок.")
+
     jump main_interface_label

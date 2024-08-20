@@ -29,7 +29,7 @@ label ep3_milf_30:
     $ renpy.music.play('audio/funk-game-loop-by-kevin-macleod-from-filmmusic-io.mp3', fadein = 1)
 
     $ block_exit_home                = True
-    $ events.pop('ep3_milf_30', 0)
+    $ events_pop('ep3_milf_30', 0)
     $ location_now = 'Corridor'
     hide screen main_interface
     call show_all_images_label from _call_show_all_images_label_72
@@ -390,7 +390,7 @@ label ep3_milf_30:
 
 
     $ Event('ep3_milf_31',       'Milf_Room')
-    $ events.pop('ep3_milf_28', 0)
+    $ events_pop('ep3_milf_28', 0)
     $ Event('ep3_milf_30_stump', 'Restroom')
 
     $ add_to_gallery("11_1")

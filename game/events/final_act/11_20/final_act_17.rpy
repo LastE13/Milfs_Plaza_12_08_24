@@ -1,5 +1,5 @@
 label final_act_17:    #Final_Act_14
-   # $ events.pop('final_act_17', 0)
+   # $ events_pop('final_act_17', 0)
     
     call prison_talk_with_girl_officer_start from _call_prison_talk_with_girl_officer_start_2
     "Офицерша" "В чём твой секрет?"

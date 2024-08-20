@@ -18,7 +18,7 @@ label ep2_5_jay_bob_work_1:
         "1. Работа (у вас есть [inventory_drugs] пакетиков товара)" if getattr(store, 'inventory_drugs', 0) > 0 and money < 3000:
 
 
-            $ events.pop('ep2_5_jay_bob_work_1', 0)
+            $ events_pop('ep2_5_jay_bob_work_1', 0)
             $ Event('ep2_6_blins',   'Corridor', time = ['morning', 'afternoon', 'evening'])
 
             $ descript = _('Дождусь новостей от Игоря и тогда уж решу окончательно, валить из города, или принять свою участь и сдохнуть, как собака. ')

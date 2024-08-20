@@ -7,7 +7,7 @@ label tyan_falos_7_debug:
     $ renpy.pause(.5, hard = True)
     call wait_click_label from _call_wait_click_label_36
 label tyan_falos_7_0:
-    $ events.pop('tyan_falos_7_0', 0)
+    $ events_pop('tyan_falos_7_0', 0)
     
     call show_bg_image_label from _call_show_bg_image_label_176
     "[gg]" "Теперь мне нужно выждать момент, когда Кристи не будет дома и начать пилить стену."
@@ -176,12 +176,12 @@ label tyan_falos_7_final_debug:
 
 label tyan_falos_7:
     $ location_now = 'GG_Room'
-    $ events.pop('tyan_falos_7_1', 0)
-    $ events.pop('tyan_falos_7_2', 0)
-    $ events.pop('tyan_falos_7_3', 0)
-    $ events.pop('tyan_falos_7_4', 0)
+    $ events_pop('tyan_falos_7_1', 0)
+    $ events_pop('tyan_falos_7_2', 0)
+    $ events_pop('tyan_falos_7_3', 0)
+    $ events_pop('tyan_falos_7_4', 0)
     
-    $ events.pop('tyan_falos_7_5', 0)
+    $ events_pop('tyan_falos_7_5', 0)
     scene black with Dissolve(.5)
 
     $ renpy.pause(.5, hard = True)

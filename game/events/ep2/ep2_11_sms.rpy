@@ -1,6 +1,6 @@
 
 label ep2_11_sms:
-    $ events.pop('ep2_11_sms', 0)
+    $ events_pop('ep2_11_sms', 0)
 
     call show_all_images_label from _call_show_all_images_label_17
 
@@ -40,9 +40,9 @@ label ep2_11_sms:
 
         $ allowed_events = []
 
-    # $ allowed_events.append('ep2_12_milf')
+    # $ if_in_allowed_events('ep2_12_milf')
     
-    # $ allowed_events.append('ep2_12_corridor')
+    # $ if_in_allowed_events('ep2_12_corridor')
 
 
 

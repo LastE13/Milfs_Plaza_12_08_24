@@ -2,7 +2,7 @@
 
 label christie_root_19:
     if get_item("Реферат", True):
-        $ events.pop("christie_root_19", 0)
+        $ events_pop("christie_root_19", 0)
 
 
 

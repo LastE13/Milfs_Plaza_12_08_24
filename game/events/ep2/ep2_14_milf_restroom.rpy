@@ -1,5 +1,5 @@
 label ep2_14_milf_restroom:
-    $ events.pop('ep2_14_milf_restroom', 0)
+    $ events_pop('ep2_14_milf_restroom', 0)
 
     $ block_change_milf_position    = False
 

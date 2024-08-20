@@ -1,7 +1,7 @@
 
 
 label ep4_milf_44:
-    $ events.pop('ep4_milf_44', 0)
+    $ events_pop('ep4_milf_44', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_121
     call show_additional_images_label from _call_show_additional_images_label_100

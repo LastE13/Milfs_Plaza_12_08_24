@@ -145,7 +145,7 @@ image christie_root_17_4_anim_fg = Composite((1920, 1080),
 
 label christie_root_17:
     if not from_gallery_check():
-        $ events.pop('christie_root_17', 0)
+        $ events_pop('christie_root_17', 0)
 
     scene black with Dissolve(.5)
 

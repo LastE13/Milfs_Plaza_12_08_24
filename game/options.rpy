@@ -830,6 +830,8 @@ init -1000 python:
     'Masha',
     'BandtiWithPistol',
     'BiblioGirl',
+    'Simp',
+    'Incel',
     ):
 
 

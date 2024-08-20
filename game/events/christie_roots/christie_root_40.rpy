@@ -16,7 +16,7 @@ label christie_root_40_0:
     
     call christie_root_try_to_del_descript_christie_block_igor from _call_christie_root_try_to_del_descript_christie_block_igor_2
     
-    $ events.pop('christie_root_40_0', 0)
+    $ events_pop('christie_root_40_0', 0)
     $ Event('christie_root_40', 'City_Psi', time = ['morning', 'afternoon'])
     
     $ unlock_city_psi = True
@@ -31,7 +31,7 @@ label christie_root_40:
     
         jump main_interface_label
 
-    $ events.pop('christie_root_40', 0)
+    $ events_pop('christie_root_40', 0)
 
 
     $ Hide('main_city_screen')()

@@ -1,7 +1,7 @@
 label ep5_milf_64:
     scene black
     with Dissolve(.5)
-    $ events.pop('ep5_milf_64', 0)
+    $ events_pop('ep5_milf_64', 0)
 
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
@@ -164,7 +164,7 @@ label ep5_milf_64:
 
 
     $ Event('ep5_milf_65_1', 'StoreIn')
-    $ events.pop('talk_with_store_woman_label', 0)
+    $ events_pop('talk_with_store_woman_label', 0)
     $ location_now = 'City_Home'
 
     jump main_interface_label

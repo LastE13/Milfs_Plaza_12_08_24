@@ -3,7 +3,7 @@ label ep2_10_corridor:
 
     call show_additional_images_label from _call_show_additional_images_label_55
 
-    $ events.pop('ep2_10_corridor', 0)
+    $ events_pop('ep2_10_corridor', 0)
 
     show Christie Angry
     show Christie Angry:

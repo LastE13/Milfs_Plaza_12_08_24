@@ -1,5 +1,5 @@
 label ep3_milf_17:
-    $ events.pop('ep3_milf_17', 0)
+    $ events_pop('ep3_milf_17', 0)
 
 
     $ locations['Milf_Room'].buttons[0]['picture_2'] = [(425, 0, 175, 235,), [SetVariable('money_boost_label_now', 'milf_room_picture_2_label'), Jump('money_boost_label')]]

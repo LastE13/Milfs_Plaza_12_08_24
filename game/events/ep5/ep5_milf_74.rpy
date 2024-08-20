@@ -1,6 +1,6 @@
 
 label ep5_milf_74:
-    $ events.pop('ep5_milf_74', 0)
+    $ events_pop('ep5_milf_74', 0)
 
 
     call show_all_images_label from _call_show_all_images_label_35

@@ -457,11 +457,11 @@ label ep45_milf_56_2:
 
     $ location_now = 'City_Home'
 
-    $ events.pop('ep45_milf_52_skip', 0)
+    $ events_pop('ep45_milf_52_skip', 0)
 
 
 
-    $ events.pop('ep45_milf_park', 0)
+    $ events_pop('ep45_milf_park', 0)
 
     $ Event('ep45_milf_57',     'JayBob')
 

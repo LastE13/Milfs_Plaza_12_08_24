@@ -1,7 +1,7 @@
 label ep3_milf_33:
-    $ events.pop('ep3_milf_33', 0)
+    $ events_pop('ep3_milf_33', 0)
 
-    $ events.pop('ep3_milf_30_stump', 0)
+    $ events_pop('ep3_milf_30_stump', 0)
 
     $ location_now = 'Hall'
     hide screen main_interface

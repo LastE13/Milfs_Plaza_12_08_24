@@ -1,5 +1,5 @@
 label christie_root_7:
-    $ events.pop('christie_root_7', 0)
+    $ events_pop('christie_root_7', 0)
    # $ block_milf_home = False
     call show_bg_image_label from _call_show_bg_image_label_96
     call show_additional_images_label from _call_show_additional_images_label_81

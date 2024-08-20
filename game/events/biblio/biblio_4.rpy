@@ -2,7 +2,7 @@ label biblio_4:
     # Description: Дать Кристи время, прежде чем она разберётся с переводом.
     # Task: Ждать 2 дня и оказаться в любой комнате Утром, Днём или Вечером, кроме собственной Комнаты.
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_258
     show GG Smile
     show GG Smile at go_from_left(xxalign = .15)
     show Christie Normal
@@ -30,8 +30,10 @@ label biblio_4:
     show GG Think with my_dissolve
     "[gg]" "Чёрт, я надеялся избежать гемороя..."
     "[gg]" "Всё таки Игорь ошибался, и мой интеллект, хочу я этого или нет, таки пройдёт вынужденную проверку."
-    
-    $ events.pop("biblio_4", 0)
-    $ Event("biblio_5", location = "gg_room_pc_enter")
-    
+    $ descript_BiblioGirl = _('Расшифровать фразу, воспользовавшись своим рабочим столом.')
+    $ events_pop("biblio_4", 0)
+    $ Event("round_1", location = "gg_room_pc_enter")
+    $ check_event_in_allowed_events("round_1")
+
+    #jump biblio_5
     jump main_interface_label

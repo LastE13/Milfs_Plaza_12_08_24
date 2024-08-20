@@ -3,7 +3,7 @@ label christie_root_48:
     
     #Купить отвёртку. (30 баксов)
 
-    $ events.pop('christie_root_48', 0)
+    $ events_pop('christie_root_48', 0)
     show GG Think
     show GG Think:
         xalign .5

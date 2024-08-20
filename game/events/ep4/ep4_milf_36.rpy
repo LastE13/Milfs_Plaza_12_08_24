@@ -9,7 +9,7 @@ label ep4_milf_36:
     $ descript = _('Дождаться новостей от Игоря. Если за день он так ничего и не напишет, написать ему самому.')
     if getattr(store, 'help_ep5_milf', 0)  < 2:
         $ help_ep5_milf = 2
-    $ events.pop('ep4_milf_36', 0)
+    $ events_pop('ep4_milf_36', 0)
     
     $ block_igor_position = True
     $ Event('ep4_milf_36_2', None, time = ['evening'])
@@ -23,9 +23,9 @@ label ep4_milf_36_2:
     $ time.time_now = 'evening'
     if location_now  in ['gg_room_bed', 'gg_room_pc']:
         $ location_now = 'GG_Room'
-    $ events.pop('ep4_milf_36_2', 0)
-    $ events.pop('ep4_milf_36_3', 0)
-    $ events.pop('ep4_milf_36', 0)
+    $ events_pop('ep4_milf_36_2', 0)
+    $ events_pop('ep4_milf_36_3', 0)
+    $ events_pop('ep4_milf_36', 0)
 
     $ sms_now = SmsBlock('Игорь', 'igor', "14", Jump('ep4_milf_36_3'))
     $ sms_now.add_sms('GG: Бро, ну как там?')
@@ -41,9 +41,9 @@ label ep4_milf_36_3:
 
     $ Hide('empty_interface')()
 
-    $ events.pop('ep4_milf_36_2', 0)
+    $ events_pop('ep4_milf_36_2', 0)
 
-    $ events.pop('ep4_milf_36_3', 0)
+    $ events_pop('ep4_milf_36_3', 0)
 
     call show_all_images_label from _call_show_all_images_label_67
     
@@ -70,7 +70,7 @@ label ep4_milf_36_3:
 
     "[gg]" " Проведаю его лично. "
 
-    $ events.pop('night_girl', 0)
+    $ events_pop('night_girl', 0)
 
 
 

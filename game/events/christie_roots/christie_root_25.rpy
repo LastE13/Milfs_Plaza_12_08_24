@@ -1,7 +1,7 @@
 label christie_root_25:
 
 
-    $ events.pop('christie_root_25', 0)
+    $ events_pop('christie_root_25', 0)
 
 
 
@@ -43,10 +43,10 @@ label christie_root_25:
 
     $ block_milf_home = True
 
-    $ events.pop('christie_root_23_block', 0)
+    $ events_pop('christie_root_23_block', 0)
 
 
     $ Event('christie_root_26', 'Christie', time = "morning")
-
+    $ check_event_in_allowed_events("christie_root_26")
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

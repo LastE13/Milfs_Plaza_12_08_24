@@ -317,9 +317,9 @@ init: # Не уверена где объявлять картинки, пото
         "game_kristy_cum 2"
 
 label steam_bonus_1:
-    $ events.pop('steam_bonus_1', 0)
+    $ events_pop('steam_bonus_1', 0)
 
-    $ events.pop('steam_bonus_1_0', 0)
+    $ events_pop('steam_bonus_1_0', 0)
     scene black with my_dissolve
 
     call show_bg_image_label from _call_show_bg_image_label_237
@@ -493,7 +493,7 @@ label steam_bonus_1:
 
 label steam_bonus_4:
 
-    $ events.pop('steam_bonus_4', 0)
+    $ events_pop('steam_bonus_4', 0)
     #4 Ивент
 
     # "Разблокировка" "TETRIANDOH"
@@ -997,7 +997,7 @@ label steam_bonus_2_0:
 
 label steam_bonus_2:
     
-    $ events.pop('steam_bonus_2', 0)
+    $ events_pop('steam_bonus_2', 0)
     
     show GG Passion
     show GG Passion at go_from_left()
@@ -1188,7 +1188,7 @@ label steam_bonus_2_cum_menu:
 
 label steam_bonus_3:
 
-    $ events.pop('steam_bonus_3', 0)
+    $ events_pop('steam_bonus_3', 0)
     #Igra_1
 
 

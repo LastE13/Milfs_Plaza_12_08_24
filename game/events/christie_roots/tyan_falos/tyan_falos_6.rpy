@@ -8,7 +8,7 @@ label tyan_falos_6_debug:
     call wait_click_label from _call_wait_click_label_48
 
 label tyan_falos_6:
-    $ events.pop('tyan_falos_6', 0)
+    $ events_pop('tyan_falos_6', 0)
     #A task: 
     #1. Активировать комнату Кристи (тут надо чот придумать, чтобы не было конфликтов с другими квестами).
     #Scene:

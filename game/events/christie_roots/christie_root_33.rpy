@@ -1,7 +1,7 @@
 
 label christie_root_33:
     if get_item('Костюм Харли Квин.', True, True):
-        $ events.pop('christie_root_33', 0)
+        $ events_pop('christie_root_33', 0)
         $ storein_costumes_shop_items.remove('Костюм Харли Квин.')
 
 

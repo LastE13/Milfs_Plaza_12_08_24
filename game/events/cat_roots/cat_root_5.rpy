@@ -49,9 +49,9 @@ label cat_root_5:
     $ renpy.pause(.5, hard = True)
 
     if not getattr(store, 'kat_shalost', False):
-        $ events.pop('cat_root_5_0', 0)
+        $ events_pop('cat_root_5_0', 0)
 
-        $ events.pop('cat_root_5', 0)
+        $ events_pop('cat_root_5', 0)
 
         show GG Normal
         show GG Normal at go_from_left(xxalign = .07)

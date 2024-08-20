@@ -1,7 +1,7 @@
 label misha_root_3_5:
     
     call show_bg_image_label from _call_show_bg_image_label_174
-    $ events.pop('misha_root_3_5', 0)
+    $ events_pop('misha_root_3_5', 0)
     $ phone_warning  = True
     $ descript_Misha = _('Прочесть СМС от Мишванды.')
     play sound 'audio/sms.ogg'
@@ -68,8 +68,8 @@ label misha_root_4:
 
     $ descript_Misha     = _("Встретить Мишванду после работы у магазина Ночью.")
 
-    $ events.pop('misha_root_3_5', False)
-    $ events.pop('misha_root_3_75', False)
+    $ events_pop('misha_root_3_5', False)
+    $ events_pop('misha_root_3_75', False)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

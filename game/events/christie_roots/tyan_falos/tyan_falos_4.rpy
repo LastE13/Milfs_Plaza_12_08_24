@@ -8,7 +8,7 @@ label tyan_falos_4_debug:
     call wait_click_label from _call_wait_click_label_46
 
 label tyan_falos_4:
-    $ events.pop('tyan_falos_4', 0)
+    $ events_pop('tyan_falos_4', 0)
 #A task: 
     call show_bg_image_label from _call_show_bg_image_label_171
 #1. Активировать Кристи Утром или Днём.

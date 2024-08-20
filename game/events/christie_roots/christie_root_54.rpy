@@ -5,7 +5,7 @@ label christie_root_54:
 
         $ events['christie_root_54'].day_start = time.day_now + 1
         jump main_interface_label
-    $ events.pop('christie_root_54', 0)
+    $ events_pop('christie_root_54', 0)
     #Поговорить с Игорем в парке Утром, узнав у него, смог он взломать телефон Маши или нет.
     #"ext" "Активировать Игоря в Парке"
     #"ext" "GG_Normal"

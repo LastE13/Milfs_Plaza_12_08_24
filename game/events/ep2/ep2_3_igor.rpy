@@ -11,7 +11,7 @@ label ep2_3_igor:
         "mini_games/cleaning_mini_game/l_6.png",
         
         ]) from _call_comic_frame_v2_predict_label_6
-    $ events.pop('ep2_3_igor', 0)
+    $ events_pop('ep2_3_igor', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_42
     call show_additional_images_label from _call_show_additional_images_label_36

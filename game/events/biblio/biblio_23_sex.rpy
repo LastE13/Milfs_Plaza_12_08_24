@@ -1,19 +1,628 @@
+init:
+    image Biblio_Final_bg 1 = "cg/biblio/final/bg_0.png"
+    image Biblio_Final_bg 2 = "cg/biblio/final/table_01.png"
+    image Biblio_Final_bg 3 = "cg/biblio/final/table_02.png"
+    image Biblio_Final_bg 4 = "cg/biblio/final/table_03.png"
+    image Biblio_Final_bg 5 = "cg/biblio/final/table_04.png"
+    image Biblio_Final 1 = "cg/biblio/final/Bibliogirl_01.png"
+    image Biblio_Final 2 = "cg/biblio/final/gg_and_bibliogirl_01.png"
+    image Biblio_Final 3 = "cg/biblio/final/gg_and_bibliogirl_02.png"
+    image Biblio_Final 4 = "cg/biblio/final/gg_and_bibliogirl_03_1.png"
+    image Biblio_Final 5 = "cg/biblio/final/gg_and_bibliogirl_03_2.png"
+    image end_bg_tables = "cg/christie_root/library/evening.png"
+    image Biblio_Final 3_anim_01:
+        "cg/biblio/final/back_ses/back_ses_00000.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00001.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00002.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00003.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00004.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00005.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00006.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00007.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00008.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00009.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00010.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00011.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00012.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00013.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00014.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00015.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00016.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00017.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00018.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00019.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00020.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00021.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00022.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00023.png"
+        pause .045
+        "cg/biblio/final/back_ses/back_ses_00024.png"
+        pause .045
+        repeat
+
+    image Biblio_Final 3_anim_02:
+        "cg/biblio/final/back_ses/back_ses_00000.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00001.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00002.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00003.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00004.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00005.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00006.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00007.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00008.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00009.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00010.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00011.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00012.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00013.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00014.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00015.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00016.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00017.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00018.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00019.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00020.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00021.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00022.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00023.png"
+        pause .025
+        "cg/biblio/final/back_ses/back_ses_00024.png"
+        pause .025
+        repeat
+
+    image Biblio_Final 3_anim_03:
+        "cg/biblio/final/back_ses/back_ses_00000.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00001.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00002.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00003.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00004.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00005.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00006.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00007.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00008.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00009.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00010.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00011.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00012.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00013.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00014.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00015.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00016.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00017.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00018.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00019.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00020.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00021.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00022.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00023.png"
+        pause .01
+        "cg/biblio/final/back_ses/back_ses_00024.png"
+        pause .01
+        repeat
+        
+    image Biblio_Final 4_anim_01:
+        "cg/biblio/final/back_asus/back_asus00000.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00001.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00002.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00003.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00004.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00005.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00006.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00007.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00008.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00009.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00010.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00011.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00012.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00013.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00014.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00015.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00016.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00017.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00018.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00019.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00020.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00021.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00022.png"
+        pause .045
+        "cg/biblio/final/back_asus/back_asus00023.png"
+        pause .045
+        repeat
+
+    image Biblio_Final 4_anim_02:
+        "cg/biblio/final/back_asus/back_asus00000.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00001.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00002.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00003.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00004.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00005.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00006.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00007.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00008.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00009.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00010.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00011.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00012.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00013.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00014.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00015.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00016.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00017.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00018.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00019.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00020.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00021.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00022.png"
+        pause .025
+        "cg/biblio/final/back_asus/back_asus00023.png"
+        pause .025
+        repeat
+
+    image Biblio_Final 4_anim_03:
+        "cg/biblio/final/back_asus/back_asus00000.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00001.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00002.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00003.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00004.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00005.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00006.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00007.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00008.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00009.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00010.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00011.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00012.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00013.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00014.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00015.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00016.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00017.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00018.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00019.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00020.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00021.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00022.png"
+        pause .01
+        "cg/biblio/final/back_asus/back_asus00023.png"
+        pause .01
+        repeat
+      
+
+
+    image Biblio_Final 5_anim_01:
+        "cg/biblio/final/front_ses/front_ses00000.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00001.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00002.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00003.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00004.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00005.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00006.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00007.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00008.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00009.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00010.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00011.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00012.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00013.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00014.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00015.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00016.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00017.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00018.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00019.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00020.png"
+        pause .045
+        "cg/biblio/final/front_ses/front_ses00021.png"
+        pause .045
+        repeat
+    image Biblio_Final 5_anim_02:
+        "cg/biblio/final/front_ses/front_ses00000.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00001.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00002.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00003.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00004.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00005.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00006.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00007.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00008.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00009.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00010.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00011.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00012.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00013.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00014.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00015.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00016.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00017.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00018.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00019.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00020.png"
+        pause .03
+        "cg/biblio/final/front_ses/front_ses00021.png"
+        pause .03
+        repeat
+    image Biblio_Final 5_anim_03:
+        "cg/biblio/final/front_ses/front_ses00000.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00001.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00002.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00003.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00004.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00005.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00006.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00007.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00008.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00009.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00010.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00011.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00012.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00013.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00014.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00015.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00016.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00017.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00018.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00019.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00020.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00021.png"
+        pause .02
+        repeat
+    image Biblio_Final 5_anim_end:
+        "cg/biblio/final/front_cum/frofa_kam00000.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00001.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00002.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00003.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00004.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00005.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00006.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00007.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00008.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00009.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00010.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00011.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00012.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00013.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00014.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00015.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00016.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00017.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00018.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00019.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00020.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00021.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00022.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00023.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00024.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00025.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00026.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00027.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00028.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00029.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00030.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00031.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00032.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00033.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00034.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00035.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00036.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00037.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00038.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00039.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00040.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00041.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00042.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00043.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00044.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00045.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00046.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00047.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00048.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00049.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00050.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00051.png"
+        pause .02
+        "cg/biblio/final/front_cum/frofa_kam00052.png"
+
+    image Biblio_Final_5_anim_end_cum:
+        alpha 0.0
+        pause .7
+        linear .1  alpha 1.0
+        "cg/biblio/final/s_01.png"
+        pause .1
+        "cg/biblio/final/s_02.png"
+        pause .1
+        "cg/biblio/final/s_03.png"
+        pause .1
+        "cg/biblio/final/s_04.png"
+        pause .1
+        "cg/biblio/final/s_05.png"
+        
+
+
+
+
+
+
+
+
+
 label biblio_23_sex:
     
     # //GG_Smile исчезает вправо
     # //Читальный зал
     # //Biblio_Final (спрайт Нэнси на столе)
     # // GG_Surprise выезжает слева
-    show GG Surprise with my_dissolve
+    scene Biblio_Final_bg 1
+    show Biblio_Final 1
+    show GG Surprise
+    show GG Surprise at go_from_left(xxalign = .13)
+    show BiblioGirl Invis:
+        xalign .56
+    with my_dissolve
     "[gg]" "Очуметь!.."
     "[gg]" "Я тебя не узнаю... Ты... Ты..."
     "Нэнси" "Одета как развратная шлюха, да? Хи-хи-хи."
-    show GG Embarrassment with my_dissolve
+    show GG Embarrassment 
+    with my_dissolve
     "[gg]" "Ты выглядишь неотразимо."
-    
+    call screen rtrn_screen("cg/biblio/final/Bibliogirl_01.png", show_icons_interface = False)
     # //Необходимо кликнуть по Biblio_Final
     # //Biblio_Sex_0 (стоят друг с дружкой)
     
+    scene Biblio_Final_bg 2
+    
+    show GG Invis:
+        xalign .35
+    show BiblioGirl Invis:
+        xalign .55
+    show Biblio_Final 2
+    with my_dissolve
     "[gg]" "Внутри шкатулки был этот костюм?"
     "Нэнси" "Хи-хи-хи!"
     "Нэнси" "Ага. Если его можно таковым назвать."
@@ -28,6 +637,11 @@ label biblio_23_sex:
     # //Biblio_Sex_1anim
     # //x1
     
+    scene Biblio_Final_bg 3
+    show Biblio_Final 3_anim_01
+    show BiblioGirl Invis:
+        xalign .75
+    with my_dissolve
     "[gg]" "Боже, ты прекрасна..."
     "[gg]" "Стоило мне лишь коснуться тебя, как ты уже пылаешь."
     "Нэнси" "О даа..."
@@ -39,6 +653,8 @@ label biblio_23_sex:
     
     # //Biblio_Sex_1anim
     # //x2
+    show Biblio_Final 3_anim_02
+    with my_dissolve
     
     "Нэнси" "Аххх!!!.."
     "Нэнси" "Да-да-да!"
@@ -53,6 +669,8 @@ label biblio_23_sex:
     
     # //Biblio_Sex_1anim
     # //x3
+    show Biblio_Final 3_anim_03
+    with my_dissolve
     
     "Нэнси" "Аххх, [gg]! Ты распылился не на шутку!"
     "[gg]" "Ещё бы..."
@@ -73,6 +691,13 @@ label biblio_23_sex:
     
     # //Biblio_Sex_2anim
     # //x1
+    scene Biblio_Final_bg 4
+    show Biblio_Final 4_anim_01
+    show BiblioGirl Invis:
+        xalign .35
+    show GG Invis:
+        xalign .99
+    with my_dissolve
     
     "[gg]" "Тебе не больно?.."
     "Нэнси" "Разве что совсем чуточку..."
@@ -84,6 +709,8 @@ label biblio_23_sex:
     
     # //Biblio_Sex_2anim
     # //x2
+    show Biblio_Final 4_anim_02
+    with my_dissolve
     
     "[gg]" "Кажется мы затронули щепетильную тему девственности."
     "Нэнси" "Охххх... Ахххх... Да-да-да!"
@@ -98,17 +725,22 @@ label biblio_23_sex:
     
     # //Biblio_Sex_2anim
     # //x3
+    show Biblio_Final 4_anim_03
+    with my_dissolve
     
     "[gg]" "Значит ты впервые чувствуешь, как член пронзает твоё тело?"
     "Нэнси" "Мгу... Всё верно."
     "Нэнси" "Это самые потрясающие ощущения, что я когда-либо испытывала."
-    "Нэнси" "При чём в попку мне нравится больше, чем в иску, ахххх!..."
+    "Нэнси" "При чём в попку мне нравится больше, чем в киску, ахххх!..."
     "[gg]" "Чёрт, да ты настоящая извращека!"
     "[gg]" "О даааа!"
     "[gg]" "Мне это нравится."
     
     # //Biblio_Sex_3anim
     # //x1
+    scene Biblio_Final_bg 5
+    show Biblio_Final 5_anim_01
+    with my_dissolve
     
     "Нэнси" "Или очень прагматичная, хи-хи-хи"
     "Нэнси" "Ведь если ты кончишь в мою попку, я не забеременею."
@@ -121,6 +753,8 @@ label biblio_23_sex:
     
     # //Biblio_Sex_3anim
     # //x2
+    show Biblio_Final 5_anim_02
+    with my_dissolve
     
     "Нэнси" "А так?... Хи-хи-хи!"
     "[gg]" "О божеее! Уфффффффффф!!!.."
@@ -136,6 +770,8 @@ label biblio_23_sex:
     
     # //Biblio_Sex_3anim
     # //x3
+    show Biblio_Final 5_anim_03
+    with my_dissolve
     
     "Нэнси" "Аффффф! Ухххххх! Оххххххххх!!.."
     "Нэнси" "Судя по твоему напору, ты явно намереваешься закончить."
@@ -148,10 +784,37 @@ label biblio_23_sex:
     "Нэнси" "Хочу, чтобы мой первый раз был именно таким, [gg]!"
     "[gg]" "Я уже на грани, детка...."
     "[gg]" "Я почти...."
-    
+    menu sex_scene_biblio_end:
+        "Поза 1":
+            scene Biblio_Final_bg 3
+            show Biblio_Final 3_anim_03
+            with my_dissolve
+            window hide
+            pause
+            jump sex_scene_biblio_end
+
+        "Поза 2":
+            scene Biblio_Final_bg 4
+            show Biblio_Final 4_anim_03
+            with my_dissolve
+            window hide
+            pause
+            jump sex_scene_biblio_end
+
+        "Поза 3":
+            scene Biblio_Final_bg 5
+            show Biblio_Final 5_anim_03
+            with my_dissolve
+            window hide
+            pause
+            jump sex_scene_biblio_end
+        "Кончить":
+            scene Biblio_Final_bg 5
+            with my_dissolve
     # //кончить
     # //Biblio_Sex_3_ENDanim
-    
+    show Biblio_Final 5_anim_end
+    show Biblio_Final_5_anim_end_cum
     "[gg]" "Кончааааааюююююююююююююю!"
     "Нэнси" "Аххххх!!! Я тоже кончаю, [gg]! Это блаженство!"
     "Нэнси" "Моя попка полыхает от наслаждения!"
@@ -159,10 +822,15 @@ label biblio_23_sex:
     "[gg]" "Твоей шикарной заднице можно поставить рукотворный памятник."
     "Нэнси" "Хи-хи-хи."
     "Нэнси" "Но только не перед библиотекой."
+    $ time.time_now = 'evening'
     
     # //Читальный зал
-    
-    show GG Smile with my_dissolve
+    scene end_bg_tables
+    show GG Smile:
+        xalign .15
+    show BiblioGirl Passion:
+        xalign .85
+    with my_dissolve
     "[gg]" "Мы отлично провели время."
     "Нэнси" "В последний раз?.."
     show GG Passion with my_dissolve
@@ -175,7 +843,8 @@ label biblio_23_sex:
     "Нэнси" "До встречи, [gg]."
     show GG Smile with my_dissolve
     "[gg]" "До свидания."
+    $ descript_BiblioGirl = _("")
     
-    $ events.pop("biblio_23", 0)
-    
+    $ events_pop("biblio_23", 0)
+
     jump main_interface_label

@@ -70,7 +70,9 @@ label talk_with_clothes_store_woman_menu_2:
             if events.get('cat_root_3_0'):
                 if 'Чёрные очки' not in storein_costumes_shop_items:
                     $ storein_costumes_shop_items_fix_0_8_9_d.append('Чёрные очки')
-
+            if events.get('biblio_22'):
+                if 'Платья' not in storein_costumes_shop_items:
+                    $ storein_costumes_shop_items_fix_0_8_9_d.append('Платья')#
             
 
             python:

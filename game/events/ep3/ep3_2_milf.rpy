@@ -7,7 +7,7 @@ label ep3_2_milf_kitchen:
         'evening'   : ('None',      'milf_evening_hall'),
         'night'     : ('Milf_Room', 'milf_room'),
         }
-    $ events.pop('ep3_2_milf_kitchen', 0)
+    $ events_pop('ep3_2_milf_kitchen', 0)
 
 
     show GG Normal
@@ -51,8 +51,8 @@ label ep3_2_milf_kitchen:
 
 
 label ep3_2_milf_hall:
-    $ events.pop('ep3_2_milf_kitchen', 0)
-    $ events.pop('ep3_2_milf_hall', 0)
+    $ events_pop('ep3_2_milf_kitchen', 0)
+    $ events_pop('ep3_2_milf_hall', 0)
 
     show GG Normal
     show GG Normal:

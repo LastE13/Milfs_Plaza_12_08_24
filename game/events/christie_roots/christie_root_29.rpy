@@ -26,12 +26,13 @@ label christie_root_29:
     "[gg]" "Что вообще она там такое делает, что аж стена трясётся?"
     #show GG Think
     "[gg]" "И судя по крикам, она не в состоянии утолить свою жажду…"
-   # show GG Think
+    # show GG Think
     "[gg]" "Что ж, пришло время узнать правду."
 
     if not hasattr(store, 'allowed_events'):
         $ allowed_events = []
-    $ allowed_events.append("christie_root_30")
+    $ allowed_events.append('christie_root_30')
+    $ list_event_mandatory.append('christie_root_30')
     
     $ block_exit_home_tmp = copy.deepcopy(block_exit_home)
     $ block_exit_home     = True

@@ -1,6 +1,6 @@
 label ep3_milf_20:
 
-    $ events.pop('ep3_milf_20', 0)
+    $ events_pop('ep3_milf_20', 0)
 
     show Jay Normal
     show Jay Normal:

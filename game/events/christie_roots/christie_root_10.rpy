@@ -1,7 +1,7 @@
 label christie_root_10:
 
 
-    $ events.pop('christie_root_10', 0)
+    $ events_pop('christie_root_10', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_120
     call show_additional_images_label from _call_show_additional_images_label_99
@@ -64,8 +64,8 @@ label christie_root_10_shower_bath:
 
     $ gigiena  = 100
 
-    $ events.pop('christie_root_10_shower_bath', 0)
-    $ events.pop('christie_root_10_shower', 0)
+    $ events_pop('christie_root_10_shower_bath', 0)
+    $ events_pop('christie_root_10_shower', 0)
     play audio 'audio/water_click.ogg'
 
 
@@ -91,7 +91,7 @@ label christie_root_10_shower_bath:
     jump main_interface_label
 
 label christie_root_10_crane:
-    $ events.pop('christie_root_10_crane', 0)
+    $ events_pop('christie_root_10_crane', 0)
 
     show expression 'images/cg/gg_activities/gg_tooth_restroom.png'
     with Dissolve(.5)
@@ -150,7 +150,7 @@ label christie_root_10_costume:
 
 label christie_root_10_5:
 
-    $ events.pop('christie_root_10_5', 0)
+    $ events_pop('christie_root_10_5', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_43
     call show_additional_images_label from _call_show_additional_images_label_37

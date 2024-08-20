@@ -102,11 +102,11 @@ label ep3_milf_16_final:
             $ renpy.music.play('audio/day.mp3', fadein = 1.5)
     $ location_now = 'Corridor'
 
-    $ events.pop('ep3_milf_16_1', 0)
-    $ events.pop('ep3_milf_16_2', 0)
-    $ events.pop('ep3_milf_16_3', 0)
-    $ events.pop('ep3_milf_16_4', 0)
-    $ events.pop('ep3_milf_16_5', 0)
+    $ events_pop('ep3_milf_16_1', 0)
+    $ events_pop('ep3_milf_16_2', 0)
+    $ events_pop('ep3_milf_16_3', 0)
+    $ events_pop('ep3_milf_16_4', 0)
+    $ events_pop('ep3_milf_16_5', 0)
 
     call show_all_images_label from _call_show_all_images_label_105 #from _call_show_all_images_label_41
     with Dissolve(.5)

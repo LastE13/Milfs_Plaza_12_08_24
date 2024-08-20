@@ -1,10 +1,5 @@
 label ep2_12_corridor:
     
-    if 'ep2_12_corridor' in allowed_events:
-        $ allowed_events.remove('ep2_12_corridor')
-    
-
-
 
     if 'ep2_12_milf' in allowed_events:
         $ allowed_events.remove('ep2_12_milf')
@@ -13,7 +8,7 @@ label ep2_12_corridor:
 
     
 
-    $ events.pop('ep2_12_corridor', 0)
+    $ events_pop('ep2_12_corridor', 0)
 
     call show_all_images_label from _call_show_all_images_label_68
 
@@ -135,10 +130,8 @@ image look_milf_pancu_anim:
     repeat
 
 label ep2_12_milf:
-    if 'ep2_12_milf' in allowed_events:
-        $ allowed_events.remove('ep2_12_milf')
 
-    $ events.pop('ep2_12_milf', 0)
+    $ events_pop('ep2_12_milf', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_55
     call show_additional_images_label from _call_show_additional_images_label_49
@@ -168,7 +161,7 @@ label ep2_12_milf:
     'Марина' "Без проблем. Давай 150 долларов."
 
     show GG Smile
-    '[gg]' "Я думала ты доверяешь мне."
+    '[gg]' "Я думал ты доверяешь мне."
 
     show Milf Smile
     'Марина' "Деньги на стол, хитрец."
@@ -217,6 +210,7 @@ label ep2_12_milf:
         $ allowed_events = []
     $ descript = _('Сходить в спальню Марины за её телефоном.')
     $ allowed_events.append('ep2_12_end')
+    $ list_event_mandatory.append('ep2_12_end')
 
     
 
@@ -361,7 +355,7 @@ label ep2_12_milf_underpants:
 
 
 label ep2_12_end:
-    $ events.pop('ep2_12_end', 0)
+    $ events_pop('ep2_12_end', 0)
 
 
 
@@ -425,9 +419,6 @@ label ep2_12_end:
     $ del block_exit_home_tmp_tmp
     $ del block_time_forward_tmp_tmp
 
-    if 'ep2_12_end' in allowed_events: 
-
-        $ allowed_events.remove('ep2_12_end')
 
 
     jump main_interface_label

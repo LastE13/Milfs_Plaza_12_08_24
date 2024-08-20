@@ -1,6 +1,6 @@
 image christie_root_20_gg_touch_ass = 'cg/christie_root/gg_touch_ass.png'
 label christie_root_20:
-    $ events.pop('christie_root_20', 0)
+    $ events_pop('christie_root_20', 0)
 
 
 
@@ -182,6 +182,7 @@ label christie_root_20:
 
     $ remove_from_inventory(name = 'Реферат')
     $ Event('christie_root_21', 'City_Library_BiblioGirl', button_name = _("Реферат"), time = ['morning', 'afternoon'], priority = -1)
+
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

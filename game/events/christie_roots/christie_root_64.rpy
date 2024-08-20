@@ -1,5 +1,5 @@
 label christie_root_64:
-    $ events.pop("christie_root_64")
+    $ events_pop("christie_root_64")
     call show_bg_image_label from _call_show_bg_image_label_207
     with Dissolve(.5)
     #Наслаждаться отношениями с Кристи

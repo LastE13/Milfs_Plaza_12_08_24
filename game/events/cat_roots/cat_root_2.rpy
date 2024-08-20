@@ -1,5 +1,5 @@
 label cat_root_2:
-    $ events.pop('cat_root_2', 0)
+    $ events_pop('cat_root_2', 0)
     $ renpy.music.stop(fadeout=1.5)
 
     $ renpy.music.play('audio/sneaky-adventure-by-kevin-macleod-from-filmmusic-io.mp3', fadein = 1.5)
@@ -86,7 +86,7 @@ label cat_root_2:
     "[gg]" "Чёрные очки, например."
     $ block_exit_home = False
     $ Event('cat_root_3_0', 'ClothesStore')
-    $ events.pop('talk_with_clothes_store_woman_menu', 0)
+    $ events_pop('talk_with_clothes_store_woman_menu', 0)
 
     $ storein_costumes_shop_items = ['Чёрные очки']
     $ old_descript_Cat = 'S'

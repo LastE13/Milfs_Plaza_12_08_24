@@ -1,5 +1,5 @@
 label ep3_milf_27:
-    $ events.pop('ep3_milf_27', 0)
+    $ events_pop('ep3_milf_27', 0)
 
 
     play sound 'audio/zvonok.mp3'
@@ -30,7 +30,7 @@ label ep3_milf_27_2:
     $ renpy.music.play('audio/hidden-agenda-by-kevin-macleod-from-filmmusic-io.mp3', fadein = 1.5)
 
 
-    $ events.pop('ep3_milf_27_2', 0)
+    $ events_pop('ep3_milf_27_2', 0)
 
 
 

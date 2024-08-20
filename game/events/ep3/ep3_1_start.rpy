@@ -59,7 +59,7 @@ label ep3_1_start:
 
 
 
-    $ events.pop('ep3_1_start', 0)
+    $ events_pop('ep3_1_start', 0)
 
     '[gg]' "Как на счёт того, чтобы посмотреть «Лолиту» и выпить немножко вина? "
 
@@ -114,9 +114,9 @@ label ep3_1_stumb_tumba_under_tv:
 label ep3_1_stumb:
     if 'ep3_1_stumb_1' in getattr(store, 'completed_events', [1, 0]):
 
-        $ events.pop('ep3_1_stumb',   0)
-        $ events.pop('ep3_1_stumb_1', 0)
-        $ events.pop('ep3_1_stumb_2', 0)
+        $ events_pop('ep3_1_stumb',   0)
+        $ events_pop('ep3_1_stumb_1', 0)
+        $ events_pop('ep3_1_stumb_2', 0)
         jump main_interface_label
 
     $ Hide('main_interface')()
@@ -323,9 +323,9 @@ label ep3_1_wine_sex_milf_label:
     
     if hasattr(store, 'events'):
             
-        $ events.pop('ep3_1_stumb',   0)
-        $ events.pop('ep3_1_stumb_1', 0)
-        $ events.pop('ep3_1_stumb_2', 0)
+        $ events_pop('ep3_1_stumb',   0)
+        $ events_pop('ep3_1_stumb_1', 0)
+        $ events_pop('ep3_1_stumb_2', 0)
 
 
     if not from_gallery_check() and not hasattr(store, 'unlock_film_lolita'):

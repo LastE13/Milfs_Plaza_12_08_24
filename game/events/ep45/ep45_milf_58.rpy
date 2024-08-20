@@ -1,5 +1,5 @@
 label ep45_milf_58:
-    $ events.pop('ep45_milf_58', 0)
+    $ events_pop('ep45_milf_58', 0)
     $ locations['Restroom'].buttons[0].update({'washer': ((0, 650, 453, 429), [Jump('ep45_milf_58_2')])})
     $ location_now = 'Restroom'
     $ locations['Restroom'].buttons[0].update({'Corridor': ((683, 995, 535, 80),  [Jump('ep45_milf_58_corridor')])})

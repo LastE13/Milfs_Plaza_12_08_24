@@ -1,5 +1,5 @@
 label ep2_16_sms:
-    $ events.pop('ep2_16_sms', 0)
+    $ events_pop('ep2_16_sms', 0)
 
     call show_all_images_label from _call_show_all_images_label_14
 
@@ -74,7 +74,7 @@ label in_store_gloves_ep2_1:
     jump main_interface_label
 
 label in_store_gloves_ep2_2:
-    $ events.pop('in_store_gloves_ep2_2', 0)
+    $ events_pop('in_store_gloves_ep2_2', 0)
     $ location_now = 'StoreIn'
     call show_all_images_label from _call_show_all_images_label_15
     show GG Normal
@@ -120,12 +120,12 @@ label in_store_gloves_ep2_2:
 label ep2_16_mother:
 
     $ Event('talk_with_store_woman_label', 'StoreIn')
-    $ events.pop('ep2_16_mother', 0)
-    $ events.pop('InStoreGloves_ep2_1', 0)
-    $ events.pop('InStoreGloves_ep2_2', 0)
+    $ events_pop('ep2_16_mother', 0)
+    $ events_pop('InStoreGloves_ep2_1', 0)
+    $ events_pop('InStoreGloves_ep2_2', 0)
 
-    $ events.pop('in_store_gloves_ep2_1', 0)
-    $ events.pop('in_store_gloves_ep2_2', 0)
+    $ events_pop('in_store_gloves_ep2_1', 0)
+    $ events_pop('in_store_gloves_ep2_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_14
     call show_additional_images_label from _call_show_additional_images_label_11
     show expression 'cg/ep2/table_ass_cg.png':

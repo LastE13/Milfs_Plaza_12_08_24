@@ -535,15 +535,6 @@ label CardAnimLabel:
 
 
 
-
-
-
-
-
-
-
-
-
     if not card_now_2 != 'images/interface/cards/CardCover.png':
 
         show expression CardCoverBlackImage onlayer overlay:

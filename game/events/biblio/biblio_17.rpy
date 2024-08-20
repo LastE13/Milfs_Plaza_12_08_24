@@ -2,7 +2,7 @@ label biblio_17:
     # Description: Нужно придумать, что подарить Нэнси. Если уж я сам не смогу додуматься, то следует поспрашивать знакомых.
     # Task: Активировать спрайт Таинственный продавец в гетто.
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_267
     show Jay Silence
     show Jay Silence:
         ypos 1085
@@ -32,7 +32,7 @@ label biblio_17:
     "Зудило" "Если, конечно, ты не во фрэндзоне. Тогда это бесполезная трата времени и денег."
     "[gg]" "Спасибо за совет, пацаны."
     "[gg]" "Попробую уж сам."
-    $ events.pop("biblio_17", 0)
+    $ events_pop("biblio_17", 0)
     $ unlock_city_getto = True
     
     $ Location(
@@ -123,7 +123,11 @@ label biblio_17_buy_menu:
             python:
                 Event("biblio_18", location = "City_Library_BiblioGirl", time=["morning", "afternoon"], button_name="Подарить коробку")
                 time.time_now = "evening"
+                descript_BiblioGirl = _("Подарить Нэнси шкатулку. Как всегда, её можно найти в библиотеке.")
                 locations['City_Getto'].image_buttons["secretman"] = NullAction() #TODO Или его вообще с локации убрать?
+            
+
+            $ check_event_in_allowed_events("biblio_18")
 
         "Не сейчас":
             "SecretMan" "Возвращайся, когда будешь готов купить шкатулку."

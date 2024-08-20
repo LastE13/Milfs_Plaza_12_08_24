@@ -1,7 +1,7 @@
 
 label gg_room_bita_jay_bob_label:
     $ locations['GG_Room'].image_buttons.pop('bita', 0)
-    $ events.pop('ep2_4_5_igor', 0)
+    $ events_pop('ep2_4_5_igor', 0)
 
 
 
@@ -203,7 +203,7 @@ label ep2_4_jay_bob:
         "[gg]" "Теперь я могу торговать наркотиками. Но прежде, чем делать это, я должен отправиться в парк и откопать несколько закладок"
 
 
-        $ events.pop('ep2_4_jay_bob', 0)
+        $ events_pop('ep2_4_jay_bob', 0)
 
         $ descript = _('Заработать немного денег на продаже наркотиков. Если мне понадобится товар для сбыта, я всегда могу добыть новые закладки в Парке. ')
 

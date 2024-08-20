@@ -5,7 +5,7 @@ label christie_root_56:
     #"ext" "Kristy_Normal"
     $ sister_position['evening']  = ['None',  'sister_room']
 
-    $ events.pop('christie_root_56', 0)
+    $ events_pop('christie_root_56', 0)
     call show_bg_image_label from _call_show_bg_image_label_210
     call show_additional_images_label from _call_show_additional_images_label_106
     show Christie Normal

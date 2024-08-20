@@ -12,7 +12,7 @@ image jlob_6 = Transform('cg/ep5/jlob/6.png', xzoom = -1)
 image jlob_8 = Transform('cg/ep5/jlob/8.png', xzoom = -1)
 label ep5_milf_75:
 
-    $ events.pop('ep5_milf_75', 0)
+    $ events_pop('ep5_milf_75', 0)
     scene black
     with Dissolve(.5)
     $ location_now = 'Milf_Room'
@@ -670,7 +670,7 @@ label ep5_milf_75_circle_2:
 
     
     $ phone_warning = True
-    $ events.pop('ep5_milf_75', 0)
+    $ events_pop('ep5_milf_75', 0)
     $ block_exit_home = True
     $ block_time_forward = True
     $ block_sister_home  = False

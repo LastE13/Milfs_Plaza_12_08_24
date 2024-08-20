@@ -93,8 +93,8 @@ label christie_root_47:
     $ del christie_root_47_restroom
 
 
-    $ events.pop('christie_root_47_sister_room', 0)
-    $ events.pop('christie_root_47_restroom', 0)
+    $ events_pop('christie_root_47_sister_room', 0)
+    $ events_pop('christie_root_47_restroom', 0)
     $ location_now = 'Corridor'
     call show_bg_image_label from _call_show_bg_image_label_184
 

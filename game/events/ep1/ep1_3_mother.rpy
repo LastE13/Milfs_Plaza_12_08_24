@@ -1,6 +1,6 @@
 
 label ep1_3_mother:
-    $ events.pop('ep1_3_mother', 0)
+    $ events_pop('ep1_3_mother', 0)
     call show_bg_image_label from _call_show_bg_image_label
     call show_additional_images_label from _call_show_additional_images_label
     show Milf Angry
@@ -266,7 +266,7 @@ label ep1_3_final:
 
     $ nude = 'morning_nude'
 
-    $ events.pop('ep1_3_mother_2', 0)
+    $ events_pop('ep1_3_mother_2', 0)
 
     $ block_change_milf_position = True
     $ milf_position = {

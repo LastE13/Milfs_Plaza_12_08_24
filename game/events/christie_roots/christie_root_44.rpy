@@ -4,7 +4,7 @@ label christie_root_44:
     #Купить книгу в Магазине (150 долларов)
 
     #"Scene" ""
-    $ events.pop('christie_root_44', 0)
+    $ events_pop('christie_root_44', 0)
     show GG Think
     "[gg]" "Замечательная вёрстка. Кристи будет в восторге. "
     

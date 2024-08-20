@@ -1,5 +1,5 @@
 label misha_root_7:
-    $ events.pop("misha_root_7", 0)
+    $ events_pop("misha_root_7", 0)
 
     $ locations['City_Shop'].image_buttons_times['night'].pop('misha', 0)
 

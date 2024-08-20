@@ -3,7 +3,7 @@ label ep4_milf_46:
 
 
 
-    $ events.pop('ep4_milf_45', 0)
+    $ events_pop('ep4_milf_45', 0)
 
 
 
@@ -74,7 +74,7 @@ label ep4_milf_46:
 label ep4_milf_46b:
     $ Hide('main_interface')()
 
-    $ events.pop('ep4_milf_46b', 0)
+    $ events_pop('ep4_milf_46b', 0)
 
     $ location_now = 'Corridor'
 

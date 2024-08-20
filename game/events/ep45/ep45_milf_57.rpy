@@ -1,6 +1,6 @@
 label ep45_milf_57:
 
-    $ events.pop('ep45_milf_57', 0)
+    $ events_pop('ep45_milf_57', 0)
     $ location_now = 'City_Shop'
     call show_bg_image_label from _call_show_bg_image_label_35
 
@@ -116,7 +116,7 @@ label ep45_milf_57:
     "[gg]" "По рукам."
 
     $ descript =  _("Украсть у Кристи трусики, пока она принимает ванну и обменять их на горшок у Зудилы и Бубнилы.")
-    $ events.pop('ep45_milf_57', 0)
+    $ events_pop('ep45_milf_57', 0)
 
     $ Event('ep45_milf_58', 'Restroom', time = ['afternoon'])
 
@@ -128,7 +128,7 @@ label ep45_milf_57:
     scene black with Dissolve(.5)
     $ renpy.pause(1)
     $ time.time_now = 'evening'
-    $ events.pop('ep45_milf_52_skip', 0)
+    $ events_pop('ep45_milf_52_skip', 0)
 
     $ location_now  = 'City_Shop'
     jump main_interface_label

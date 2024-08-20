@@ -9,7 +9,7 @@ label christie_root_46:
         $ events['christie_root_46'].day_start = time.day_now + 1
         jump main_interface_label
     # "Scene" ""
-    $ events.pop('christie_root_46', 0)
+    $ events_pop('christie_root_46', 0)
     #//Парк
 
     call show_bg_image_label from _call_show_bg_image_label_188

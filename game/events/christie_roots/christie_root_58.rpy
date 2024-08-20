@@ -115,7 +115,7 @@ image christie_root_58_pot_fail =     Composite(
 #                 easein .15 rotate 0
 #                 repeat
 label christie_root_58:
-    $ events.pop('christie_root_58', 0)
+    $ events_pop('christie_root_58', 0)
     $ christie_root_58_fail_nums = 0
 
 label christie_root_58_1:

@@ -14,7 +14,7 @@ label ep5_milf_69:
         xalign .5
     with Dissolve(.5)
     "[gg]" "Кажется, это ко мне."
-    $ events.pop('ep5_milf_69', 0)
+    $ events_pop('ep5_milf_69', 0)
 
     $ descript = _('Активировать входную верь в коридоре.')
 
@@ -53,7 +53,7 @@ label ep5_milf_69:
 
 
 label ep5_milf_69_2:
-    $ events.pop('ep5_milf_69_2', 0)
+    $ events_pop('ep5_milf_69_2', 0)
     $ location_now    = 'Corridor'
     $ block_exit_home = True
     call show_all_images_label from _call_show_all_images_label_11

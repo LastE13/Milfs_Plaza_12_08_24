@@ -23,7 +23,7 @@ image ep4_milf_45_m5:
 
 label ep4_milf_45:
 
-    $ events.pop('ep4_milf_45', 0)
+    $ events_pop('ep4_milf_45', 0)
 
 
 

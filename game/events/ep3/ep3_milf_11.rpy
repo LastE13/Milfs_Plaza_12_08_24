@@ -11,7 +11,7 @@ label ep3_milf_11:
 
     $ renpy.music.play('audio/plain-loafer-by-kevin-macleod-from-filmmusic-io.mp3', fadein = 1.5)
 
-    $ events.pop('ep3_milf_11', 0)
+    $ events_pop('ep3_milf_11', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_22
     call show_additional_images_label from _call_show_additional_images_label_17

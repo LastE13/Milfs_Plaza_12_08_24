@@ -94,6 +94,6 @@ label christie_root_32:
 
 
     $ descript_Christie= _("Сходить в магазин и купить костюм Харли Квин для Кристи.")
-    $ events.pop('christie_root_32', 0)
+    $ events_pop('christie_root_32', 0)
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

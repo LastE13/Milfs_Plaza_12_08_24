@@ -1,5 +1,5 @@
 label ep2_4_5_igor:
-    $ events.pop('ep2_4_5_igor', 0)
+    $ events_pop('ep2_4_5_igor', 0)
 
 
     call show_bg_image_label from _call_show_bg_image_label_117

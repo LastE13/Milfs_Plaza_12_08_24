@@ -1,6 +1,6 @@
 label ep3_milf_23:
 
-    $ events.pop('ep3_milf_23', 0)
+    $ events_pop('ep3_milf_23', 0)
 
 
     show GG Normal

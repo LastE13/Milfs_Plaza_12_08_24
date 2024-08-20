@@ -1,5 +1,5 @@
 label ep45_milf_61:
-    $ events.pop('ep45_milf_61', 0)
+    $ events_pop('ep45_milf_61', 0)
 
     scene expression '#000'
     $ Hide('main_interface')()

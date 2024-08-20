@@ -14,7 +14,7 @@
 
 label ep3_milf_15:
 
-    $ events.pop('ep3_milf_15', 0)
+    $ events_pop('ep3_milf_15', 0)
 
     $ renpy.music.stop(fadeout=1.5)
 
@@ -104,7 +104,7 @@ label ep3_milf_15:
     $ Event('ep3_milf_16_3', 'Kitchen', 'ep3_milf_16_3')
     $ Event('ep3_milf_16_4', 'Hall', 'ep3_milf_16_4')
     $ Event('ep3_milf_16_5', 'Milf_Room', 'ep3_milf_16_5')
-    $ events.pop('ep2_14_milf_restroom', 0)
+    $ events_pop('ep2_14_milf_restroom', 0)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

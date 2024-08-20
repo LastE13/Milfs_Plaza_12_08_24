@@ -11,7 +11,7 @@ image eat_blin_8:
     repeat
 
 label ep2_2_blin:
-    $ events.pop('ep2_2_blin', 0)
+    $ events_pop('ep2_2_blin', 0)
 
     $ location_now = 'Kitchen'
     call show_bg_image_label from _call_show_bg_image_label_10

@@ -30,7 +30,7 @@ label christie_root_62:
     
     
     $ descript_Christie = __("Поговорить с Кристи о пикнике.")
-    $ events.pop('christie_root_62')
+    $ events_pop('christie_root_62')
     $ Event("christie_root_63", "Christie", button_name = "Пикник")
     $ location_now = "Kitchen"
     if time.time_now == "evening":

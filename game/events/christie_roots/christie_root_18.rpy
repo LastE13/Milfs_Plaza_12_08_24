@@ -2,7 +2,7 @@ image christie_root_18_gg_listening = 'cg/christie_root/gg_listening.png'
 
 label christie_root_18:
 
-    $ events.pop('christie_root_18', 0)
+    $ events_pop('christie_root_18', 0)
 
     call show_bg_image_label from _call_show_bg_image_label_129
 

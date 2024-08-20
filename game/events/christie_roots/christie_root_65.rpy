@@ -526,7 +526,7 @@ label christie_root_65:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
     if not from_gallery_check():
-        $ events.pop('christie_root_65', 0)
+        $ events_pop('christie_root_65', 0)
 
     scene black with Dissolve(.5)
 

@@ -26,29 +26,29 @@ init 102 python:
 None  : store._original_names,
 "rus" : store._original_names,
 
-"eng" :["Christie", "Officer", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Officer", "Girl-Officer", "Igor", "Girl", "Guy", "Night Guest", "Bandit", "Big Guy", "Robber", ],
+"eng" :["Christie", "Officer", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Officer", "Girl-Officer", "Igor", "Girl", "Guy", "Night Guest", "Bandit", "Big Guy", "Robber", "Simp", "Incel",],
 
-"french" :["Christie", "Agent", "Itchy", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Hélène", "Agent", "Femme officier", "Igor", "Fille", "Mec", "Visiteuse nocturne", "Bandit", "Grand type", "Voleur", ],
+"french" :["Christie", "Agent", "Itchy", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Hélène", "Agent", "Femme officier", "Igor", "Fille", "Mec", "Visiteuse nocturne", "Bandit", "Grand type", "Voleur", "Simp", "Incel",],
 
-"dutch" :["Christie", "Agent", "Itchy", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Agent", "Vrouwelijke Officier", "Igor", "Meisje", "Jongen", "Nacht Gast", "Bandiet", "Grote Gast", "Overvaller", ],
+"dutch" :["Christie", "Agent", "Itchy", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Agent", "Vrouwelijke Officier", "Igor", "Meisje", "Jongen", "Nacht Gast", "Bandiet", "Grote Gast", "Overvaller", "Simp", "Incel",],
 
-"spn" :["Christie", "Oficial", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Oficial", "Chica-Oficial", "Igor", "Chica", "Novio", "Visitante nocturno", "Bandido", "Grandote", "Ladrón", ],
+"spn" :["Christie", "Oficial", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Oficial", "Chica-Oficial", "Igor", "Chica", "Novio", "Visitante nocturno", "Bandido", "Grandote", "Ladrón", "Simp", "Incel",],
 
-"por" :["Christie", "Oficial", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Oficial", "Oficial mulher", "Igor", "Garota", "Homem", "Convidado noturno", "Bandido", "Cara grande", "Ladrão", ],
+"por" :["Christie", "Oficial", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Oficial", "Oficial mulher", "Igor", "Garota", "Homem", "Convidado noturno", "Bandido", "Cara grande", "Ladrão", "Simp", "Incel",],
 
-"germ" :["Christie", "Wachmeister", "Itcher", "Mumbler", "Mary", "Mishwanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Wachmeister", "weiblicher Beamter", "Igor", "Mädchen", "Junge", "Nächtlicher Besucher", "Bandit", "Großer Typ", "Dieb", ],
+"germ" :["Christie", "Wachmeister", "Itcher", "Mumbler", "Mary", "Mishwanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Wachmeister", "weiblicher Beamter", "Igor", "Mädchen", "Junge", "Nächtlicher Besucher", "Bandit", "Großer Typ", "Dieb", "Simp", "Incel",],
 
-"pol" :["Christie", "Oficer", "Itchy", "Blubbermouth", "Mary", "Mishwanda", "Misha", "Kat", "Susan", "James", "Zbir", "Helene", "Oficer", "Pani oficer", "Igor", "Dziewczyna", "Facet", "Nocny Gość", "Bandyta", "Duży koleś", "Złodziej", ],
+"pol" :["Christie", "Oficer", "Itchy", "Blubbermouth", "Mary", "Mishwanda", "Misha", "Kat", "Susan", "James", "Zbir", "Helene", "Oficer", "Pani oficer", "Igor", "Dziewczyna", "Facet", "Nocny Gość", "Bandyta", "Duży koleś", "Złodziej", "Simp", "Incel",],
 
-"turk" :["Christie", "Memur", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Memur", "Kadın Memur", "Igor", "Kız", "Erkek", "Gece Misafiri", "Haydut", "Koca Adam", "Hırsız", ],
+"turk" :["Christie", "Memur", "Itcher", "Mumbler", "Mary", "Mishvanda", "Misha", "Kat", "Susan", "James", "Goon", "Helene", "Memur", "Kadın Memur", "Igor", "Kız", "Erkek", "Gece Misafiri", "Haydut", "Koca Adam", "Hırsız", "Simp", "Incel",],
 
-"jap" :["クリスティ", "警官", "イッチー", "ブラバーマウス", "メリー", "ミシュバンダ", "ミーシャ", "キャット", "スーザン", "ジェームス", "グーン", "ヘレン", "警官", "婦人警官", "イゴール", "若い女性", "若い男", "夜のゲスト", "極道", "キン肉マン", "強盗", ],
+"jap" :["クリスティ", "警官", "イッチー", "ブラバーマウス", "メリー", "ミシュバンダ", "ミーシャ", "キャット", "スーザン", "ジェームス", "グーン", "ヘレン", "警官", "婦人警官", "イゴール", "若い女性", "若い男", "夜のゲスト", "極道", "キン肉マン", "強盗", "Simp", "Incel",],
 
-"chinese_trad" :["克里斯蒂", "警官", "痒痒皮", "碎碎嘴", "瑪麗", "米莎旺達", "米沙", "凱特", "蘇珊", "詹姆斯", "古恩", "海倫娜", "警官", "女警官", "伊戈爾", "女孩", "男孩", "夜晚不速之客", "強盜", "大塊頭", "劫匪", ],
+"chinese_trad" :["克里斯蒂", "警官", "痒痒皮", "碎碎嘴", "瑪麗", "米莎旺達", "米沙", "凱特", "蘇珊", "詹姆斯", "古恩", "海倫娜", "警官", "女警官", "伊戈爾", "女孩", "男孩", "夜晚不速之客", "強盜", "大塊頭", "劫匪", "Simp", "Incel",],
 
-"chinese_simpl" :["克里斯蒂", "警官", "痒痒皮", "碎碎嘴", "玛丽", "米莎旺达", "米莎", "凯特", "苏珊", "詹姆斯", "古恩", "海伦娜", "警官", "女警官", "伊戈尔", "女孩", "男孩", "夜间的不速之客", "强盗", "大块头", "劫匪", ],
+"chinese_simpl" :["克里斯蒂", "警官", "痒痒皮", "碎碎嘴", "玛丽", "米莎旺达", "米莎", "凯特", "苏珊", "詹姆斯", "古恩", "海伦娜", "警官", "女警官", "伊戈尔", "女孩", "男孩", "夜间的不速之客", "强盗", "大块头", "劫匪", "Simp", "Incel",],
 
-"kor" :["크리스티", "경관", "이처", "멈블러", "메리", "미슈반다", "미샤", "캣", "수잔", "제임스", "구운", "헬렌", "경관", "여성 경관", "이고르", "젊은 여성", "젊은 남성", "밤 손님", "조폭", "근육맨", "강도", ],
+"kor" :["크리스티", "경관", "이처", "멈블러", "메리", "미슈반다", "미샤", "캣", "수잔", "제임스", "구운", "헬렌", "경관", "여성 경관", "이고르", "젊은 여성", "젊은 남성", "밤 손님", "조폭", "근육맨", "강도", "Simp", "Incel",],
 
 
     }
@@ -182,6 +182,10 @@ None  : store._original_names,
             'Girl': NameBox('Girl', 'Girl', '#30D5C8'),
             'Guy': NameBox('Guy', 'Guy', '#fff'),
             'Goon': NameBox('Goon', 'Goon', '#fff'),
+            'simp1': NameBox('Simp', 'simp1', '#fff'),
+            'Incel': NameBox('Incel', 'Incel', '#fff'),
+
+            
             
             
 
@@ -215,6 +219,8 @@ None  : store._original_names,
             'Girl': NameBox('Девушка', 'Girl', '#30D5C8'),
             'Guy': NameBox('Парень', 'Guy', '#fff'),
             'Goon': NameBox('Жлоб', 'Goon', '#fff'),
+            'simp1': NameBox('Simp', 'simp1', '#fff'),
+            'Incel': NameBox('Incel', 'Incel', '#fff'),
             
             
             

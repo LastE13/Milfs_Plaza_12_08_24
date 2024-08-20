@@ -1,5 +1,5 @@
 label christie_root_2:
-    $ events.pop('christie_root_2', 0)
+    $ events_pop('christie_root_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_97
     call show_additional_images_label from _call_show_additional_images_label_82
 
@@ -89,7 +89,7 @@ label christie_root_2:
     show Christie Normal
     "Кристи" "Знаешь, [gg], это правильные слова."
    # show Christie Normal
-    "Кристи" "Я думаю, нет, я уверен, что тебе нужна «нравственная реабилитация»!"
+    "Кристи" "Я думаю, нет, я уверена, что тебе нужна «нравственная реабилитация»!"
     show GG Skepticism
     "[gg]" "Это ещё что за херня?"
     show Christie Smile
@@ -136,7 +136,7 @@ label christie_root_2:
 
 
 label christie_root_2_2:
-    $ events.pop('christie_root_2_2', 0)
+    $ events_pop('christie_root_2_2', 0)
 
     $ location_now = 'Corridor'
     call show_bg_image_label from _call_show_bg_image_label_98

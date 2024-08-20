@@ -110,7 +110,7 @@ label christie_root_38:
 
 
     if not from_gallery_check():
-        $ events.pop('christie_root_38', 0)
+        $ events_pop('christie_root_38', 0)
     show Psi Normal
     show Psi Normal:
         xalign .5
@@ -506,7 +506,7 @@ label christie_root_38:
 
         $ location_now = "City_Home"
         $ unlock_city_psi = False
-        $ events.pop('christie_root_38', 0)
+        $ events_pop('christie_root_38', 0)
 
         $ christie_root_38_end = True
         $ descript_Christie    = _("Конец рута Кристи для эпизода [version_now]") #_("Сьюзен ведёт тебя странно, но раз уж я дал слово, нужно довести дело до конца и выяснить, изменяет ей муж или нет. Продолжу слежку завтра Утром.")

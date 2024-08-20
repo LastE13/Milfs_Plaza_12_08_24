@@ -2,7 +2,7 @@
 label milf_root_4:
 
 
-    $ events.pop('milf_root_4', 0)
+    $ events_pop('milf_root_4', 0)
     play sound 'audio/sms.ogg'
     $ milf_root_1_text = _("Проверить телефон.")
 
@@ -56,7 +56,7 @@ label milf_root_4_1:
     jump main_interface_label
 
 label milf_root_4_2:
-    $ events.pop('milf_root_4_2', 0)
+    $ events_pop('milf_root_4_2', 0)
 
     $ Event('milf_root_5', 'Corridor')
     jump main_interface_label

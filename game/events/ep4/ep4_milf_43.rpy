@@ -320,7 +320,7 @@ label ep4_milf_43_3:
     "Марина" "Хи-хи-хи."
     $ add_to_gallery(12)
     if not from_gallery_check():
-        $ events.pop('ep4_milf_39', 0)
+        $ events_pop('ep4_milf_39', 0)
 
         $ block_exit_home    = False
         $ block_time_forward = False

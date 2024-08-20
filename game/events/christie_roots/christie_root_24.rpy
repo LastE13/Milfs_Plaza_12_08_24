@@ -89,7 +89,7 @@
 
 label christie_root_24:
 
-    $ events.pop('christie_root_20', 0)
+    $ events_pop('christie_root_20', 0)
     "Библиотекарша" "Вы снова у нас!"
 
     "Библиотекарша" "Я знала, что вы вернётесь."
@@ -255,18 +255,30 @@ label christie_root_24:
 
 
     $ descript_Christie_tmp_0 = __("1. Отправиться в библиотеку и продолжить написание реферата по теме «Обществознание» (2/3).")
+    $ unlock_city_library = True
+    $ locations.update({
+        'City_Library':
+            Location(
+                'City_Library',
+                buttons       = [],
+                image_buttons = {
+                    'biblio_girl':Jump("christie_root_21_pre_menu")
+                    }
+                )}
 
+    )
     $ descript_Christie     = str(descript_Christie_tmp_0) + "\n" + str(descript_Christie_tmp_1)
 
     $ Event('christie_root_24a', 'Corridor', time = 'morning', priority = -1)
-
-    $ events.pop('christie_root_24', 0)
-
-
+    $ events_pop('christie_root_24', 0)
+    $ check_event_in_allowed_events("christie_root_24a")
 
 
 
-    $ unlock_city_library = False
+
+
+
+    #$ unlock_city_library = False
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

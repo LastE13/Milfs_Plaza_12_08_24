@@ -1,6 +1,6 @@
 label misha_root_7_5:
 
-    $ events.pop('misha_root_7_5', 0)
+    $ events_pop('misha_root_7_5', 0)
 
 
 
@@ -33,9 +33,9 @@ label misha_root_8:
 
     $ descript_Misha     = _("Повидаться с Мишвандой в магазине.")
 
-    $ events.pop('misha_root_7_5', False)
-    $ events.pop('misha_root_7_75', False)
-    $ events.pop('misha_root_8', False)
+    $ events_pop('misha_root_7_5', False)
+    $ events_pop('misha_root_7_75', False)
+    $ events_pop('misha_root_8', False)
 
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

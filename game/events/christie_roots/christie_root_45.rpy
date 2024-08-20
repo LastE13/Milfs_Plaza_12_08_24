@@ -225,9 +225,9 @@ label christie_root_45:
 
     $ del don_kihot_at_shop
 
-    $ events.pop('christie_root_44', 0)
+    $ events_pop('christie_root_44', 0)
 
-    $ events.pop('christie_root_45', 0)
+    $ events_pop('christie_root_45', 0)
 
     $ remove_from_inventory_by_id(22)
     #Description: Подарить Кристи книгу «Дона Кихот» Мигеля Де Сервантеса. 
@@ -379,7 +379,9 @@ label christie_root_45:
         $ block_time_forward = True
         $ block_exit_home    = True
         $ Event('christie_root_45_2', 'Sister_Room')
+
         $ allowed_events.append('christie_root_45_2')
+        $ list_event_mandatory.append('christie_root_45_2')
         
         jump main_interface_label
     else:
@@ -394,8 +396,8 @@ label christie_root_45_2:
             if not hasattr(store, 'christie_root_45_check'):
                 if not from_gallery_check():
 
-                    $ events.pop('christie_root_45_2', 0)
-                    $ allowed_events.remove('christie_root_45_2')
+                    $ events_pop('christie_root_45_2', 0)
+
                         
                     $ block_milf_home    = copy.deepcopy(block_milf_home_christie_root_45)
                     $ block_time_forward = copy.deepcopy(block_time_forward_christie_root_45)

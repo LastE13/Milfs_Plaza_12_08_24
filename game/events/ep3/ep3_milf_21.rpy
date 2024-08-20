@@ -162,7 +162,7 @@ label ep3_milf_21_get_rose:
 
 label ep3_milf_21_2:
 
-    $ events.pop('ep3_milf_21_2', 0)
+    $ events_pop('ep3_milf_21_2', 0)
 
 
     show GG Normal

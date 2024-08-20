@@ -2,7 +2,7 @@ label biblio_3:
     # Description: Поговорить с Кристи по поводу эльфийского языка.
     # Task: Активировать Кристи утром/днём/вечером.
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_254
     show GG Normal
     show GG Normal at go_from_left(xxalign = .15)
     show Christie Smile
@@ -57,7 +57,10 @@ label biblio_3:
     
     $ remove_from_inventory('Любовная записка')
     
-    $ events.pop("biblio_3", 0)
+    $ events_pop("biblio_3", 0)
     $ Event("biblio_4", location = "Corridor", day_start=time.day_now+3, time=["morning", "afternoon", "evening"])
-    
+    $ descript_BiblioGirl = _('Дать Кристи время, прежде чем она разберётся с переводом.')
+
+    $ check_event_in_allowed_events("biblio_4")
+
     jump main_interface_label

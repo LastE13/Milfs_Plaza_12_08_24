@@ -127,7 +127,7 @@ label tyan_falos_3:
 
 
     if search_game_ep5_need_find[17][2]:
-        $ events.pop('tyan_falos_3', 0)
+        $ events_pop('tyan_falos_3', 0)
         show GG Think
         with Dissolve(.5)
         "[gg]" "Ага, вот и лягушка."

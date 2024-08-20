@@ -25,7 +25,7 @@ label christie_root_16_repeat:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
     if not from_gallery_check():
-        $ events.pop('christie_root_16_repeat', 0)
+        $ events_pop('christie_root_16_repeat', 0)
 
     scene black with Dissolve(.5)
 
@@ -80,7 +80,7 @@ label christie_root_16:
     $ Hide('main_interface')()
     $ Hide('icons_interface')()
     if not from_gallery_check():
-        $ events.pop('christie_root_16', 0)
+        $ events_pop('christie_root_16', 0)
 
     scene expression '#000' with Dissolve(.5)
 
@@ -576,9 +576,9 @@ label christie_root_16_menu_2:
     $ location_now    = "City_Home"
     $ unlock_city_psi = False
 
-    $ events.pop("christie_root_16", 0)
+    $ events_pop("christie_root_16", 0)
 
-    $ events.pop("christie_root_16_repeat", 0)
+    $ events_pop("christie_root_16_repeat", 0)
 
 
 

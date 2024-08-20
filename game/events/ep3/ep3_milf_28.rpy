@@ -45,9 +45,9 @@ label ep3_milf_28_2:
 
 
 
-    $ events.pop('ep3_milf_28', 0)
+    $ events_pop('ep3_milf_28', 0)
 
-    $ events.pop('ep3_milf_28_2', 0)
+    $ events_pop('ep3_milf_28_2', 0)
 
     hide screen main_interface
     $ location_now = 'GG_Room'
@@ -88,7 +88,7 @@ label ep3_milf_28_2:
 
     jump main_interface_label
 label ep3_milf_28_officer_1:
-    $ events.pop('ep3_milf_28_officer_1', 0)
+    $ events_pop('ep3_milf_28_officer_1', 0)
 
 
 
@@ -194,7 +194,7 @@ label ep3_milf_28_officer_1:
     jump main_interface_label
 
 label ep3_milf_28_officer_2:
-    $ events.pop('ep3_milf_28_officer_2', 0)
+    $ events_pop('ep3_milf_28_officer_2', 0)
 
 
 
@@ -301,7 +301,7 @@ label ep3_milf_28_officer_2:
 
 
 label ep3_milf_28_3:
-    $ events.pop('ep3_milf_28_3', 0)
+    $ events_pop('ep3_milf_28_3', 0)
 
 
     $ location_now  = 'GG_Room'
@@ -344,9 +344,9 @@ label ep3_milf_28_3:
 
 label ep3_milf_28_4:
 
-    $ events.pop('ep3_milf_28_4', 0)
+    $ events_pop('ep3_milf_28_4', 0)
 
-    $ events.pop('ep3_milf_28_3', 0)
+    $ events_pop('ep3_milf_28_3', 0)
 
     $ block_time_forward = True
 
@@ -400,7 +400,7 @@ label ep3_milf_28_56:
 
 
 
-    $ events.pop('ep3_milf_28_56', 0)
+    $ events_pop('ep3_milf_28_56', 0)
     $ location_now  = 'Corridor'
 
     $ time.time_now = 'night'

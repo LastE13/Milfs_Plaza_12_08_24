@@ -12,7 +12,7 @@ label ep2_11_film:
 
 
     if not getattr(store, '_from_talk_with_milf', False):
-        $ events.pop('ep2_11_film', 0)
+        $ events_pop('ep2_11_film', 0)
     show Milf Night_Normal
     show Milf Night_Normal:
         xalign .85

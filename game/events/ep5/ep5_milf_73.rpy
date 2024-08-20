@@ -35,11 +35,11 @@ label ep5_milf_73:
 
 
     $ locations['GG_Room'].image_buttons.pop('pants_ep5_milf_72', 0)
-    $ events.pop('ep5_milf_73_stump_1', 0)
-    $ events.pop('ep5_milf_73_stump_2', 0)
-    $ events.pop('ep5_milf_73_stump_3', 0)
-    $ events.pop('ep5_milf_73_stump_4', 0)
-    $ events.pop('ep5_milf_73_stump_5', 0)
+    $ events_pop('ep5_milf_73_stump_1', 0)
+    $ events_pop('ep5_milf_73_stump_2', 0)
+    $ events_pop('ep5_milf_73_stump_3', 0)
+    $ events_pop('ep5_milf_73_stump_4', 0)
+    $ events_pop('ep5_milf_73_stump_5', 0)
     $ Event('ep5_milf_74', 'Hall')
     menu:
         "Переодеться." if True:

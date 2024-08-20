@@ -34,7 +34,7 @@ label final_act_4_debug:
     with my_dissolve 
     call wait_click_label from _call_wait_click_label_29
 label final_act_4:    #Final_Act_4 
-    $ events.pop('final_act_4', 0)
+    $ events_pop('final_act_4', 0)
     $ events['talk_with_store_woman_label'].complete = False
     #$ renpy.play('audio/Door.mp3')
     #scene expression '#000' with Dissolve(.3)

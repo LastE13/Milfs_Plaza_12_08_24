@@ -1,10 +1,10 @@
 label ep4_milf_38:
 
-    $ events.pop('hall_mother_5', 0)
+    $ events_pop('hall_mother_5', 0)
 
-    $ events.pop('ep4_milf_38', 0)
+    $ events_pop('ep4_milf_38', 0)
 
-    $ events.pop('ep4_milf_38_2', 0)
+    $ events_pop('ep4_milf_38_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_39
     call show_additional_images_label from _call_show_additional_images_label_33
 

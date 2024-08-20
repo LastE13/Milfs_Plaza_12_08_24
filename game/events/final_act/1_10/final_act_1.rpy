@@ -152,7 +152,7 @@ label final_act_setup:
 
 label final_act_1:    #Final_Act_1 (пусть будет в квесте Милфы)
 
-    $ events.pop('final_act_1', 0)
+    $ events_pop('final_act_1', 0)
     scene black
     show final_act_1 gg_on_bed
     show final_act_1 gg_on_bed:

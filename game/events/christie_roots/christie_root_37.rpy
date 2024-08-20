@@ -456,9 +456,9 @@ label christie_root_37_scene:
     $ debug_exit()
 
     if not from_gallery_check() and not _just_scene:
-        $ events.pop('christie_root_37', 0)
-        $ events.pop('christie_root_34', 0)
-        $ events.pop('christie_root_28', 0)
+        $ events_pop('christie_root_37', 0)
+        $ events_pop('christie_root_34', 0)
+        $ events_pop('christie_root_28', 0)
         $ Event('christie_root_38', 'City_Psi', time = ['morning', 'afternoon'])
 
 

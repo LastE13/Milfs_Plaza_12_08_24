@@ -3,7 +3,7 @@ label christie_root_39_0:
     $ descript_Christie    = _("Сьюзен ведёт тебя странно, но раз уж я дал слово, нужно довести дело до конца и выяснить, изменяет ей муж или нет. Продолжу слежку завтра Утром.")
     return
 label christie_root_39:
-    $ events.pop('christie_root_39', 0)
+    $ events_pop('christie_root_39', 0)
     $ christie_root_39_start = True
     #Tian_39
 

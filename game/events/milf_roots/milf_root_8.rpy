@@ -153,7 +153,7 @@ image milf_root_8_2_3:
     repeat
 
 label milf_root_8:
-    $ events.pop('milf_root_8', 0)
+    $ events_pop('milf_root_8', 0)
     $ time.time_now = 'night'
     $ ep2_milf_room_unlock = True
     call show_bg_image_label from _call_show_bg_image_label_112

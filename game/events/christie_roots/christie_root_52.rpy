@@ -370,7 +370,7 @@ image ep9_strip_christie 6 = 'cg/ep9/strip/christie/6.png'
 label christie_root_52:
     #Отдать костюм Кристи. Сделать это следует Утром или Днём.
     #"ext" "Активировать спрайт Кристи Утром или Днём."
-    $ events.pop('christie_root_52', 0)
+    $ events_pop('christie_root_52', 0)
     call show_bg_image_label from _call_show_bg_image_label_216
     call show_additional_images_label from _call_show_additional_images_label_108
     show Christie Normal
@@ -486,7 +486,8 @@ label christie_root_52:
     "[gg]" "Считай, я уже там."
     if not hasattr(store, 'allowed_events'):
         $ allowed_events = []
-    $ allowed_events.append("christie_root_52_1")
+    $ allowed_events.append('christie_root_52_1')
+    $ list_event_mandatory.append('christie_root_52_1')
     
     $ Event('christie_root_52_1', 'GG_Room')
     $ block_time_forward_christie_root_52 = copy.deepcopy(block_time_forward)
@@ -560,9 +561,8 @@ label hide_label_test:
 label christie_root_52_1:
     python:
         if not from_gallery_check():
-            events.pop('christie_root_52_1', 0)
-            if 'christie_root_52_1' in allowed_events:
-                allowed_events.remove("christie_root_52_1")
+            events_pop('christie_root_52_1', 0)
+
         
             block_exit_home = copy.deepcopy(block_exit_home_christie_root_52)
 

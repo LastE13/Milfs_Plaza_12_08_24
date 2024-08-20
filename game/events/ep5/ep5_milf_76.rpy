@@ -26,7 +26,7 @@ label ep5_milf_76:
     $ Hide('phone_sms_screen')()
     $ Hide('phone_contacts_screen')()
     $ Hide('phone_interface')()
-    $ events.pop('ep5_milf_76_stump', 0)
+    $ events_pop('ep5_milf_76_stump', 0)
 
 
 
@@ -60,7 +60,7 @@ label ep5_milf_76:
     $ Event('ep5_milf_76_2', 'Corridor')
     jump main_interface_label
 label ep5_milf_76_2:
-    $ events.pop('ep5_milf_76_2', 0)
+    $ events_pop('ep5_milf_76_2', 0)
 
     call show_all_images_label from _call_show_all_images_label_20
     show Christie Surprise
@@ -237,7 +237,7 @@ label ep5_milf_76_3:
 
 
     $ block_time_forward = False
-    $ events.pop('ep5_milf_76_3', 0)
+    $ events_pop('ep5_milf_76_3', 0)
     $ Event('ep5_milf_77', 'Milf_Room', time = ['night'])
     $ descript = _('Посетить спальню Марины сегодня ночью.')
     jump main_interface_label

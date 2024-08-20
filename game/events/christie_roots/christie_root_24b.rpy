@@ -64,14 +64,15 @@ label christie_root_24b:
         linear 1 xalign 1.3
 
     $ location_now = "Corridor"
-    $ events.pop('christie_root_24b', 0)
-
-    $ events.pop('christie_root_23_block', 0)
+    $ events_pop('christie_root_24b', 0)
+    $ events_pop('christie_root_23_block', 0)
     $ descript_Christie_tmp_1 = ''
     if not len(getattr(store, 'descript_Christie_tmp_0', '')):
         $ descript_Christie = _("Дождаться завтра и отдать Кристи реферат по «Обществознанию».")
 
         $ Event('christie_root_25', 'GG_Room', time = ['morning',], button_name = _("Реферат"), priority = -1)
+        $ check_event_in_allowed_events("christie_root_25")
+
     $ debug_exit()
 
     jump main_interface_label

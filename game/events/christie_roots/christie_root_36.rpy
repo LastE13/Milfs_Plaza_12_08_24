@@ -450,7 +450,7 @@ label christie_root_36:
 
     $ time.time_now = "night"
 
-    $ events.pop('christie_root_36', 0)
+    $ events_pop('christie_root_36', 0)
 
     $ Event('christie_root_37', "GG_Room", time = ['morning', ])
 

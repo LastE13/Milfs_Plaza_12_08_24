@@ -1,5 +1,5 @@
 label ep5_milf_66:
-    $ events.pop('ep5_milf_66', 0)
+    $ events_pop('ep5_milf_66', 0)
 
     show GG Think
     "[gg]" "Отлично!"

@@ -1707,7 +1707,7 @@ label ep4_milf_48_end:
     jump main_interface_label
 
 label end_ep4_korridor:
-    $ events.pop('end_ep4_korridor', 0)
+    $ events_pop('end_ep4_korridor', 0)
     call show_bg_image_label from _call_show_bg_image_label_38
     call show_additional_images_label from _call_show_additional_images_label_32
     hide screen main_interface
@@ -1771,7 +1771,7 @@ label end_ep4_korridor:
     "Кристи" "…."
     $ ep5_test = True
 
-    $ events.pop('ep4_milf_45', 0)
+    $ events_pop('ep4_milf_45', 0)
 
     jump ep45_milf_49_0
 

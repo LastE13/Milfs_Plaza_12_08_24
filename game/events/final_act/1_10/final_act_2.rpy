@@ -10,7 +10,7 @@ label final_act_2:    #Final_Act_2
 
     #Активировать Кэт или Дверь (время пропускать нельзя)
 
-    $ events.pop('final_act_2', 0)
+    $ events_pop('final_act_2', 0)
     $ location_now = "GG_Room"
 
     #GG_Normal

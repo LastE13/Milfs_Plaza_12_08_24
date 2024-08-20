@@ -40,8 +40,8 @@ label ep4_milf_40:
 
 
     $ block_change_milf_position = False
-    $ events.pop('ep4_milf_40',   0)
-    $ events.pop('ep4_milf_40_2', 0)
+    $ events_pop('ep4_milf_40',   0)
+    $ events_pop('ep4_milf_40_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_204 
     show GG Normal
     show GG Normal:

@@ -12,7 +12,7 @@ label christie_root_53:
         $ Event('christie_root_53', 'GG_Room',  time = ['morning'], day_start = time.day_now + 1,)
         
         jump main_interface_label
-    $ events.pop('christie_root_53', 0)
+    $ events_pop('christie_root_53', 0)
     call show_bg_image_label from _call_show_bg_image_label_224
     with my_dissolve
     show GG Think

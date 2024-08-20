@@ -184,7 +184,7 @@ label christie_root_28:
 
 
     $ unlock_city_psi   = True
-    $ events.pop('christie_root_28', 0)
+    $ events_pop('christie_root_28', 0)
     $ time.time_forward()
     jump main_interface_label
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,11 +1,11 @@
 
 label milf_root_3:
-    $ events.pop('milf_root_3', 0)
+    $ events_pop('milf_root_3', 0)
 
     $ Event('milf_root_3_2', 'Corridor')
     jump main_interface_label
 label milf_root_3_2:
-    $ events.pop('milf_root_3_2', 0)
+    $ events_pop('milf_root_3_2', 0)
     $ time.time_now = 'night'
     call show_bg_image_label from _call_show_bg_image_label_115
     call show_additional_images_label from _call_show_additional_images_label_95

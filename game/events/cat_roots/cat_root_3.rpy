@@ -1,6 +1,6 @@
 
 label cat_root_3_0:
-    $ events.pop('cat_root_3_0', 0)
+    $ events_pop('cat_root_3_0', 0)
     $ Event('talk_with_clothes_store_woman_menu', 'ClothesStore')
 
     $ Event('cat_root_3_1', 'City_Home')
@@ -13,10 +13,10 @@ label cat_root_3_1:
     $ location_now = 'City_Home'
     $ renpy.play('audio/Door.mp3')
     scene expression '#000' with Dissolve(.5)
-    $ events.pop('cat_root_3_1', 0)
+    $ events_pop('cat_root_3_1', 0)
     if get_item('Чёрные очки', True, True):
         call show_bg_image_label from _call_show_bg_image_label_106
-        $ events.pop('cat_root_3_0', 0)
+        $ events_pop('cat_root_3_0', 0)
         show GG Think
         with Dissolve(.5)
         "[gg]" "Отлично, теперь я могу заделался «частным сыщиком» и устраивать настоящие слежки."
@@ -28,7 +28,7 @@ label cat_root_3_1:
         jump main_interface_label
     elif True:
         $ location_now = 'City_Home'
-        $ events.pop('talk_with_clothes_store_woman_menu', 0)
+        $ events_pop('talk_with_clothes_store_woman_menu', 0)
         $ Event('cat_root_3_0', 'ClothesStore')
 
 

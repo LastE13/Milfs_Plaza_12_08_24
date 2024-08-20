@@ -1,8 +1,8 @@
 label ep3_milf_31:
 
-    $ events.pop('ep3_milf_30_stump', 0)
+    $ events_pop('ep3_milf_30_stump', 0)
 
-    $ events.pop('ep3_milf_31', 0)
+    $ events_pop('ep3_milf_31', 0)
 
     $ location_now = 'Hall'
 

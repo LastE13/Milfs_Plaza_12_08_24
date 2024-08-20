@@ -1,8 +1,8 @@
 label christie_root_49:
     #Description: Вывести из строя кондиционер Ночью, пока никто не видит.
 
-    $ events.pop('christie_root_48', 0)
-    $ events.pop('christie_root_49', 0)
+    $ events_pop('christie_root_48', 0)
+    $ events_pop('christie_root_49', 0)
     #//GG_Condicer_Work_1
     $ add_items_for_storein_shop_fixed.remove(screw_at_shop)
     $ del screw_at_shop

@@ -1155,18 +1155,43 @@ image Goon Invis = 'invis'
 #############################
 
 image BiblioGirl Pose_0 = "characters/BiblioGirl/1POSES/0.png"
+image BiblioGirl Pose_1 = "characters/BiblioGirl/1POSES/1.png"
 
-image BiblioGirl Smile = Composite((500, 1080),
+image BiblioGirl Skepticism = Composite((500, 1080),
 (0, 0),  "BiblioGirl Pose_0",
-(155, 287),  "BiblioGirl_7")
+(155, 290),  "BiblioGirl_0")
+
+image BiblioGirl Passion = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 290),  "BiblioGirl_1")
 
 image BiblioGirl Embarrassment = Composite((500, 1080),
 (0, 0),  "BiblioGirl Pose_0",
 (155, 287),  "BiblioGirl_2")
 
-image BiblioGirl Passion = Composite((500, 1080),
+image BiblioGirl Laughs = Composite((500, 1080),
 (0, 0),  "BiblioGirl Pose_0",
-(155, 287),  "BiblioGirl_1")
+(155, 290),  "BiblioGirl_3")
+
+image BiblioGirl Angry = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 290),  "BiblioGirl_4")
+
+image BiblioGirl Surprise = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 290),  "BiblioGirl_5")
+
+image BiblioGirl Chagrin = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 290),  "BiblioGirl_6")
+
+image BiblioGirl Smile = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_0",
+(155, 285),  "BiblioGirl_7")
+
+image BiblioGirl Books = Composite((500, 1080),
+(0, 0),  "BiblioGirl Pose_1")
+
 
 
 #############################

@@ -1,7 +1,7 @@
 label ep3_milf_18:
     $ descript = _("Встретиться с Игорем. ")
 
-    $ events.pop('ep3_milf_18', 0)
+    $ events_pop('ep3_milf_18', 0)
 
     if hasattr(store, 'ep3_milf_16'):
         $ del ep3_milf_16
@@ -117,7 +117,7 @@ label ep3_milf_18:
     "[gg]" "Я могу идти? "
     show Christie Normal
     "Кристи" "Ага."
-    $ events.pop('ep2_9_igor', 0)
+    $ events_pop('ep2_9_igor', 0)
     $ Event('ep3_milf_18_2',     'Igor')
 
     jump main_interface_label
@@ -132,7 +132,7 @@ label ep3_milf_18_2:
 
 
 
-    $ events.pop('ep3_milf_18_2', 0)
+    $ events_pop('ep3_milf_18_2', 0)
     call show_bg_image_label from _call_show_bg_image_label_18
 
     call show_additional_images_label from _call_show_additional_images_label_15
@@ -211,7 +211,7 @@ label ep3_milf_18_3:
             $ Event('ep3_milf_20',     'JayBob')
             $ money -= 200
             $ show_text_animation('-200 money')
-            $ events.pop('ep3_milf_18_4', 0)
+            $ events_pop('ep3_milf_18_4', 0)
             jump ep3_milf_19
         "Я вернусь когда наберу 200$" if money < 200:
             $ Event('ep3_milf_18_4',     'Igor')

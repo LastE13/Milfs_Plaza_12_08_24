@@ -11,7 +11,7 @@ label christie_root_31:
 
     $ descript_Christie = _("Проверить телефон.")
 
-    $ events.pop('christie_root_31', 0)
+    $ events_pop('christie_root_31', 0)
     $ Event('christie_root_31_0', 'Corridor')
 
     $ sms_now = SmsBlock('Игорь', 'igor', "2", Jump('christie_root_31_2'))
@@ -38,8 +38,8 @@ label christie_root_31:
 
 
 
-    $ events.pop('christie_root_31_0', 0)
-    $ events.pop('christie_root_31', 0)
+    $ events_pop('christie_root_31_0', 0)
+    $ events_pop('christie_root_31', 0)
 
 
 
@@ -71,8 +71,8 @@ label christie_root_31_2:
 
 
 
-    # $ events.pop('christie_root_31_0', 0)
-    # $ events.pop('christie_root_31', 0)
+    # $ events_pop('christie_root_31_0', 0)
+    # $ events_pop('christie_root_31', 0)
 
 
 

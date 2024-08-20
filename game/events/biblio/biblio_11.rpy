@@ -2,7 +2,7 @@ label biblio_11:
     # Description: Вернуть элитарные мешочки Зудиле и Бубниле.
     # Task: Активировать Зудило
     
-    call show_bg_image_label
+    call show_bg_image_label from _call_show_bg_image_label_276
     show Jay Silence
     show Jay Silence:
         ypos 1085
@@ -58,9 +58,22 @@ label biblio_11:
     "Зудило" "Взаимно, чувачело!"
 
     $ location_now = "City_Shop"
+    $ descript_BiblioGirl = _("Подарить цветы Нэнси.")
 
     
-    $ events.pop("biblio_11", 0)
-    $ Event("biblio_12", location = "City_Library_BiblioGirl", button_name="Подарить цветы")
-    
+    $ events_pop("biblio_11", 0)
+    $ Event("biblio_12", location = "City_Library", time = ['morning',  'afternoon'])
+    $ check_event_in_allowed_events("biblio_12")
+
+    $ add_to_inventory(name = 'Букет ландышей')
+    $ descript_BiblioGirl = _("Подарить цветы Нэнси.")    
+    $ locations.update({
+        'City_Library':
+            Location(
+                'City_Library',
+                buttons       = [],
+                image_buttons = {}
+                )}
+
+    )
     jump main_interface_label

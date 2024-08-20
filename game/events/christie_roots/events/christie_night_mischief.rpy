@@ -2452,7 +2452,7 @@ label christie_night_mischief_night:
     if not from_gallery_check():
 
         $ add_to_gallery(40)
-        $ events.pop('christie_night_mischief_night', 0)
+        $ events_pop('christie_night_mischief_night', 0)
     
         $ christie_night_mischief_text = _("Надеюсь она чувствует себя лучше.")
 
