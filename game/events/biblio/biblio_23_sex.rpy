@@ -463,6 +463,50 @@ init:
         pause .02
         repeat
     image Biblio_Final 5_anim_end:
+        "cg/biblio/final/front_ses/front_ses00000.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00001.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00002.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00003.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00004.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00005.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00006.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00007.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00008.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00009.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00010.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00011.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00012.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00013.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00014.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00015.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00016.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00017.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00018.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00019.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00020.png"
+        pause .02
+        "cg/biblio/final/front_ses/front_ses00021.png"
+        pause .02
         "cg/biblio/final/front_cum/frofa_kam00000.png"
         pause .02
         "cg/biblio/final/front_cum/frofa_kam00001.png"
@@ -572,6 +616,8 @@ init:
     image Biblio_Final_5_anim_end_cum:
         alpha 0.0
         pause .7
+        yoffset -24
+        xoffset 3
         linear .1  alpha 1.0
         "cg/biblio/final/s_01.png"
         pause .1
@@ -691,7 +737,7 @@ label biblio_23_sex:
     
     # //Biblio_Sex_2anim
     # //x1
-    scene Biblio_Final_bg 4
+    scene Biblio_Final_bg 5
     show Biblio_Final 4_anim_01
     show BiblioGirl Invis:
         xalign .35
@@ -738,7 +784,7 @@ label biblio_23_sex:
     
     # //Biblio_Sex_3anim
     # //x1
-    scene Biblio_Final_bg 5
+    scene Biblio_Final_bg 4
     show Biblio_Final 5_anim_01
     with my_dissolve
     
@@ -794,7 +840,7 @@ label biblio_23_sex:
             jump sex_scene_biblio_end
 
         "Поза 2":
-            scene Biblio_Final_bg 4
+            scene Biblio_Final_bg 5
             show Biblio_Final 4_anim_03
             with my_dissolve
             window hide
@@ -802,19 +848,23 @@ label biblio_23_sex:
             jump sex_scene_biblio_end
 
         "Поза 3":
-            scene Biblio_Final_bg 5
+            scene Biblio_Final_bg 4
             show Biblio_Final 5_anim_03
             with my_dissolve
             window hide
             pause
             jump sex_scene_biblio_end
         "Кончить":
-            scene Biblio_Final_bg 5
-            with my_dissolve
+            pass
+            
     # //кончить
     # //Biblio_Sex_3_ENDanim
+    scene Biblio_Final_bg 4
     show Biblio_Final 5_anim_end
-    show Biblio_Final_5_anim_end_cum
+    
+    #show Biblio_Final_5_anim_end_cum
+    window hide
+    pause
     "[gg]" "Кончааааааюююююююююююююю!"
     "Нэнси" "Аххххх!!! Я тоже кончаю, [gg]! Это блаженство!"
     "Нэнси" "Моя попка полыхает от наслаждения!"

@@ -1,5 +1,5 @@
 init -100 python:
-
+    block_time_start_day = True
     eng_tdtd = {
      'Понедельник' : 'Monday',
      'Вторник' : 'Tuesday',
@@ -54,9 +54,9 @@ init -100 python:
             self.times    = ['morning', 'afternoon', 'evening', 'night']
             self.tdtd     = 'Воскресенье'
             self.block    = False
-        def time_forward(self, jump_to_main_interface = True, block_to_next_day = False, need_check_ev = True):
+        def time_forward(self, jump_to_main_interface = True, block_to_next_day = False, need_check_ev = True, bb = False):
             
-            global milf_drunk, block_time_forward
+            global milf_drunk, block_time_forward, block_time_start_day
             global events, milf_position, sister_position
             global random_1_3_time, random_1_2_time
             global nastroi, gigiena, sitost, store
@@ -69,8 +69,20 @@ init -100 python:
             if getattr(store, 'block_time_forward', False):
                 return self.time_forward
             indx = self.times.index(self.time_now)
+            print("__________")
+            print(indx, len(self.times)-1)
             if indx != len(self.times)-1:
-                self.time_now = self.times[indx+1]
+                if block_time_start_day:
+                    print("q")
+                    if bb:
+                        print("w")
+                        self.time_now = self.times[indx+1]
+                    else:
+                        print("e")
+                        block_time_start_day = False
+                else:
+                    self.time_now = self.times[indx+1]
+                
             elif not block_to_next_day:
                 
                 if not hasattr(store, 'milf_drunk'):
@@ -80,6 +92,8 @@ init -100 python:
                 
                 self.time_now = self.times[0]
                 self.day_now += 1
+                print("qw")
+                block_time_start_day = True
                 if self.tdtd == 'Воскресенье':
                     self.tdtd = 'Понедельник'
                 elif self.tdtd == 'Понедельник':

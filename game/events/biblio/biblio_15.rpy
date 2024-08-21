@@ -30,73 +30,73 @@ init 10:
 
     image cg_readroom_fap anim1:
         "cg_readroom_fap 1"
-        0.25
+        0.18
         "cg_readroom_fap 2"
-        0.25
+        0.18
         "cg_readroom_fap 3"
-        0.25
+        0.18
         "cg_readroom_fap 4"
-        0.25
+        0.18
         "cg_readroom_fap 5"
-        0.25
+        0.18
         "cg_readroom_fap 6"
-        0.25
+        0.18
         "cg_readroom_fap 5"
-        0.25
+        0.18
         "cg_readroom_fap 4"
-        0.25
+        0.18
         "cg_readroom_fap 3"
-        0.25
+        0.18
         "cg_readroom_fap 2"
-        0.25
+        0.18
         repeat
     
     
     image cg_readroom_fap anim2:
         "cg_readroom_fap 1"
-        0.18
+        0.11
         "cg_readroom_fap 2"
-        0.18
+        0.11
         "cg_readroom_fap 3"
-        0.18
+        0.11
         "cg_readroom_fap 4"
-        0.18
+        0.11
         "cg_readroom_fap 5"
-        0.18
+        0.11
         "cg_readroom_fap 6"
-        0.18
+        0.11
         "cg_readroom_fap 5"
-        0.18
+        0.11
         "cg_readroom_fap 4"
-        0.18
+        0.11
         "cg_readroom_fap 3"
-        0.18
+        0.11
         "cg_readroom_fap 2"
-        0.18
+        0.11
         repeat
     
     
     image cg_readroom_fap anim3:
         "cg_readroom_fap 1"
-        0.1
+        0.06
         "cg_readroom_fap 2"
-        0.1
+        0.06
         "cg_readroom_fap 3"
-        0.1
+        0.06
         "cg_readroom_fap 4"
-        0.1
+        0.06
         "cg_readroom_fap 5"
-        0.1
+        0.06
         "cg_readroom_fap 6"
-        0.1
+        0.06
         "cg_readroom_fap 5"
-        0.1
+        0.06
         "cg_readroom_fap 4"
-        0.1
+        0.06
         "cg_readroom_fap 3"
-        0.1
+        0.06
         "cg_readroom_fap 2"
-        0.1
+        0.06
         repeat
 
     image cg_readroom_fap_cum 1 = "cg/biblio/wank/s_01.png"
@@ -329,7 +329,7 @@ label biblio_15:
     with my_dissolve
     "[gg]" "Извини, я не смог тебя найти и решил хоть как-то убить время."
     "Нэнси" "О, ты правильно поступил."
-    "Нэнси" "Не хочу, чтобы ты зависит от моей благодарности."
+    "Нэнси" "Не хочу, чтобы ты зависил от моей благодарности."
     show cg_readroom_nency 2
     "Нэнси" "Но и не хочу, чтобы ты забывал, как я признательна тебе."
     show cg_readroom_gg 3 with my_dissolve

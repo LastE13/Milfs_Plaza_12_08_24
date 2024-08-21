@@ -1,6 +1,7 @@
 init:
     image Incel 1= "images/cg/biblio/characters/incel.png"
     image simp1 1 = "images/cg/biblio/characters/simp1.png"
+    image simp1 2 = "images/cg/biblio/characters/incel.png"
     image simp2 = "images/cg/biblio/characters/simp2.png"
 
 label biblio_19:

@@ -112,14 +112,16 @@ label biblio_17_buy_menu:
     
     
     menu:
-        "Да" if money >= 150:
+        "Да (отдать {i}{b}150{/b}{/i} баксов)" if money >= 150:
+            $ money -= 150
+            $ show_text_animation('-150 money')
             "SecretMan" "Хорошая сделка."
             "[gg]" "Я на это очень надеюсь."
             
-            show screen give_item_screen(i_path+'items/ticket.png', _('Волшебный коробок'), _('Какая-то шкатулка с замком-пазлом.'))
+            show screen give_item_screen(i_path+'items/box.png', _('Волшебный коробок'), _('Какая-то шкатулка с замком-пазлом.'))
             pause #TODO Себе напоминаю что нужно добавить предмет в инвентарь
             hide screen give_item_screen
-
+            $ add_to_inventory(name = 'Волшебный коробок')
             python:
                 Event("biblio_18", location = "City_Library_BiblioGirl", time=["morning", "afternoon"], button_name="Подарить коробку")
                 time.time_now = "evening"
@@ -128,7 +130,8 @@ label biblio_17_buy_menu:
             
 
             $ check_event_in_allowed_events("biblio_18")
-
+        "!Да (отдать {i}{b}150{/b}{/i} баксов)." if money <  150:
+            $ pass
         "Не сейчас":
             "SecretMan" "Возвращайся, когда будешь готов купить шкатулку."
             $ locations['City_Getto'].image_buttons["secretman"] = Jump("biblio_17_repeat")

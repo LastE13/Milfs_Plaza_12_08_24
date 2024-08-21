@@ -329,7 +329,8 @@ init python:
             list_event_mandatory.remove(what_pop)
         if what_pop not in store.completed_events:
             store.completed_events.append(what_pop)
-        
+        if list_event_mandatory == []:
+            allowed_events = []
         return dict.pop(store.events, what_pop, rtrn)
     
     def if_in_allowed_events(name):

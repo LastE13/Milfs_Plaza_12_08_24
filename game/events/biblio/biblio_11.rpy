@@ -16,10 +16,14 @@ label biblio_11:
     with my_dissolve
     
     "[gg]" "Получите-распишитесь."
+    $ remove_from_inventory('Элитный мешочек')
+    $ remove_from_inventory('Элитный мешочек')
+    $ remove_from_inventory('Элитный мешочек')
+    $ remove_from_inventory('Элитный мешочек')
+    $ remove_from_inventory('Элитный мешочек')
     "Зудило" "Йеееее! Наше дерьмо!"
     "[gg]" "Гоните цветы, ботаники."
     "Зудило" "Бубнилыч – тащи товар."
-    
     # //Bob исчезает и вправо и возвращается
     show Bob Normal behind Jay:
         ypos 1085

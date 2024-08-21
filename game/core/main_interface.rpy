@@ -425,7 +425,8 @@ screen icons_interface(click=True, with_transform = False):
                     getattr(store, 'old_descript_Christie', '!') != getattr(store, 'descript_Christie', '!')) or (
                     getattr(store, 'old_descript_Cat', '!') != getattr(store, 'descript_Cat', '!')) or getattr(store, 'new_events', False) or (
                     getattr(store, 'old_descript_Misha', '!') != getattr(store, 'descript_Misha', '!')) or (
-                    hasattr(store, 'new_events_christie') and new_events_christie):
+                    hasattr(store, 'new_events_christie') and new_events_christie) or (
+                    getattr(store, 'old_descript_BiblioGirl', '!') != getattr(store, 'descript_BiblioGirl', '!')):
                 
                     add 'warning_icon': 
                         if mp.interface_scale_number > 1.0:
@@ -640,7 +641,7 @@ screen icons_interface(click=True, with_transform = False):
             getattr(store, 'old_descript_Christie', '!') != getattr(store, 'descript_Christie', '!')) or (
             getattr(store, 'old_descript_Cat', '!') != getattr(store, 'descript_Cat', '!')) or getattr(store, 'new_events', False) or (
             getattr(store, 'old_descript_Misha', '!') != getattr(store, 'descript_Misha', '!')) or (
-            hasattr(store, 'new_events_christie') and new_events_christie):
+            hasattr(store, 'new_events_christie') and new_events_christie) or (getattr(store, 'old_descript_BiblioGirl', '!') != getattr(store, 'descript_BiblioGirl', '!')):
             
                 add 'warning_icon' xpos 340 ypos 100
            

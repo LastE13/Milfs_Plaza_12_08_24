@@ -25,11 +25,7 @@ init 50 python:
         letters_combinations_full = []
         idle_hover_color = []
         letters_complete = []
-        print("____________________")
-        print("letters_complete")
-        print(letters_complete)
-        print(letters_combinations)
-        run = renpy.random.randint(4, 6)
+        run = 5
         for i in range(run):
             letters_combinations.append([])
             letters_combinations[-1].append(renpy.random.choice(letters_list))

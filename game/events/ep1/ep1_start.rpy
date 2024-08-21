@@ -104,10 +104,6 @@ label start:
                 buttons = []
                 )
             $ Location(
-                'City_Psi',
-                buttons = []
-                )
-            $ Location(
                 'City_Shop',
                 buttons       = [],
                 image_buttons = {
@@ -132,7 +128,14 @@ label start:
                     )
 
 
-
+            $ unlock_city_library = True
+            $ Location(
+                    'City_Library',
+                    buttons       = [],
+                    image_buttons = {
+                    'biblio_girl':Jump("christie_root_21_pre_menu")
+                    }
+                    )
 
             $ igor_position = {
                 'morning'   : ('City_Park',  'igor_park'),

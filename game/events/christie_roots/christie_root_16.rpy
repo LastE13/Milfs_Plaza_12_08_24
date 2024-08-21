@@ -387,7 +387,7 @@ label christie_root_16_menu_2:
 
     with my_dissolve
 
-    $ add_to_gallery(22)
+    $ add_to_gallery(23)
     "Сьюзен" "Теперь я могу послушать, как именно ты помог Кристи?"
 
 

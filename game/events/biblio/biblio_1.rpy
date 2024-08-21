@@ -13,7 +13,7 @@ label biblio_1:
     "[gg]" "Из книги выпала какая-то шпаргалка."
     "[gg]" "Это записка или просто закладка?"
     
-    show screen give_item_screen(i_path+'items/ticket.png', _('Любовная записка'), _('Листочек с чьими-то записями.'))
+    show screen give_item_screen(i_path+'items/love_mail.png', _('Любовная записка'), _('Листочек с чьими-то записями.'))
     pause
     hide screen give_item_screen
     # Спрайт с записью

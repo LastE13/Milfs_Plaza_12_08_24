@@ -118,7 +118,7 @@ label christie_root_15:
     with vpunch
 
 
-    $ add_to_gallery(21)
+    $ add_to_gallery(22)
     "Кристи" "Бесстыдник! "
     show GG Smile
     "[gg]" "Эй, это кухня, а не ванная комната. "

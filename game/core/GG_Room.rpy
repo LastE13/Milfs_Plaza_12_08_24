@@ -42,7 +42,7 @@ label go_sleep_to_morning:
 
     return
 label bed_no_night:
-    $ time.time_forward(jump_to_main_interface = False)
+    $ time.time_forward(jump_to_main_interface = False, bb = True)
     if time.time_now != time_tmp:
         jump bed_no_night
     elif True:
@@ -73,13 +73,13 @@ label gg_room_bed:
             scene expression '#000' with Dissolve(.5)
             
             $ renpy.pause(1, hard = True)
-            $ time.time_forward()
+            $ time.time_forward(bb = True)
 
 
         "Отдохнуть." if time.time_now != 'night' and not _block_time_forward_check:
             scene expression '#000' with Dissolve(.5)
             $ renpy.pause(1, hard = True)
-            $ time.time_forward()
+            $ time.time_forward(bb = True)
 
 
         "Отдыхать до вечера." if time.time_now in ['morning', 'afternoon'] and not _block_time_forward_check:
@@ -124,16 +124,32 @@ label gg_room_pc:
     if getattr(store, 'watch_porn_ep2', False) and time.time_now == 'night':
         jump watch_porn_ep2
     if getattr(store, 'allowed_events', False):
-        if 'biblio_5' in allowed_events:
-            jump round_1
-        if "biblio_8" in allowed_events:
-            jump round_2
+        if 'biblio_5' in allowed_events or "round_1" in events:
+            menu:
+                "Использовать ПК":
+                    pass
+                "Расшифравать записку":
+                    jump round_1
+        if "biblio_8" in allowed_events or "round_2" in events:
+            menu:
+                "Использовать ПК":
+                    pass
+                "Расшифравать записку":
+                    jump round_2
+
     $ location_now = 'gg_room_pc_enter'
     $ check_ev = check_events()
 
     if check_ev:
-        $ renpy.jump(check_ev.label)
+        if check_ev.label == "round_1" or "round_2":
+            menu:
+                "Использовать ПК":
+                    pass
+                "Расшифравать записку":
+                    $ renpy.jump(check_ev.label)
 
+        
+        
     scene pc_bg with Dissolve(.5)
     call screen pc_interface
     scene expression '#000' with Dissolve(.5)

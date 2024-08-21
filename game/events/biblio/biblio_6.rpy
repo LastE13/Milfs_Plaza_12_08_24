@@ -1,8 +1,9 @@
 init:
-    image bg bookshelves = "images/cg/biblio/bookshelves.png"
+    image bg bookshelves = "cg/biblio/bookshelves.png"
 
-    image stairs ass = "images/cg/biblio/stairs/ass.png"
-    image stairs stay = "images/cg/biblio/stairs/stay.png"
+    image stairs ass = "cg/biblio/stairs/ass.png"
+    image stairs stay = "cg/biblio/stairs/stay.png"
+    image bookshelves bg_blur = "cg/biblio/stairs/bg.png"
 
 
 label biblio_6:
@@ -54,10 +55,13 @@ label biblio_6:
         ease 1 xalign 1.5
     show BiblioGirl Normal:
         ease 1 xalign 1.5
+    $ renpy.pause(0.9, hard = True)
     scene bookshelves bg with my_dissolve #my_fade #TODO а куда my_fade делся?
+    show GG Normal
     show GG Normal:
         xalign -.5
         ease 1 xalign .1
+    show BiblioGirl Normal
     show BiblioGirl Normal:
         xalign -.5
         ease 1 xalign .85
@@ -98,13 +102,10 @@ label biblio_6:
     
     # //Для продолжения нужно кликнуть по Нэнси на лестницу 
     call screen rtrn_screen("images/cg/biblio/stairs/stay_b.png", show_icons_interface = False)
-    scene bookshelves bg:
-        blur 15
+    scene bookshelves bg_blur 
     #show stairs stay:
     #    blur 15
     show stairs ass
-    show stairs ass:
-        xpos 450
     show BiblioGirl Invis
     show BiblioGirl Invis:
         xalign .25
@@ -120,14 +121,10 @@ label biblio_6:
     "[gg]" "Я с радостью послужу для неё подушкой безопасности."
     
     # //Biblio_Komnata_1
-    
+    scene bookshelves bg
+    # //Biblio_Komnata_1
+    show stairs stay 
     "Нэнси" "Вот и всё, я справилась."
-
-    hide stairs ass with my_dissolve
-    scene bookshelves bg:
-        blur 15
-        ease 1 blur 0
-    pause 1
 
     show GG Normal:
         xalign .15
@@ -163,7 +160,7 @@ label biblio_6:
     show GG Smile with my_dissolve
     "[gg]" "Спасибо."
     
-    show screen give_item_screen(i_path+'items/ticket.png', _('Анжелика и Король'), _('Классический любовный роман'))
+    show screen give_item_screen(i_path+'items/book.png', _('Книга «Анжелика и Король»'), _('Классический любовный роман'))
     pause
     hide screen give_item_screen
     

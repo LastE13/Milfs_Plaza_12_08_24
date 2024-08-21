@@ -583,7 +583,7 @@ label milf_root_8_menu_4:
     $ block_milf_home = False
     $ milf_root_1_text = _("Конец ивента")
     $ block_milf_events = None
-    $ add_to_gallery(20)
+    $ add_to_gallery(21)
     call milf_root_9_0 from _call_milf_root_9_0_1
 
     jump main_interface_label

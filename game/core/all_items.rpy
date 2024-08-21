@@ -87,7 +87,7 @@ init -50 python:
 
     Item(_('Товар'), ["Товар для продажи."],           i_path+'/items/drug.png',     NullAction(), max_quant = 35),
     
-    Item(_('Элитный мешочек'),[_('Элитный мешочек Зудилы и Бубнилы')],           i_path+'/items/drug.png',     NullAction(), max_quant = 5),
+    Item(_('Элитный мешочек'),[_('Элитный мешочек Зудилы и Бубнилы')],           i_path+'/items/bag_grass.png',     NullAction(), max_quant = 5),
 
     Item(_('Купон «кекса»'), [_('Коллекционный купон.'), _('Но сейчас эта самая ходовая валюта на чёрном рынке.')],           i_path+'/items/keks.png', NullAction(), max_quant = 10),
 
@@ -114,6 +114,7 @@ init -50 python:
     Item(_("Роза"),        ["Красивый, пахучий цветок бордового цвета."],           i_path+'/items/flower.png', NullAction()),
 
     Item(_("Билеты"),        ["Театральные билеты на постановку «Кошки»."],           i_path+'/items/ticket.png', NullAction()),
+    Item(_("Волшебный коробок"),        ["Какая-то шкатулка с замком-пазлом."],           i_path+'/items/box.png', NullAction()),
 
     Item(_('Резиновые перчатки'), [_('Оберегают руки при работе в хозяйственной сфере и не только.')], i_path+'/items/gloves.png', NullAction()),
 

@@ -139,105 +139,105 @@ init:
 
     image Art_Biblio_Trenie 5_anim:
         "cg/biblio/ass_scenes/backview/Scene_1_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_2_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_3_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_4_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_5_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_6_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_7_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_8_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_9_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_10_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_11_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_12_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_13_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_14_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_15_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_16_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_17_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_18_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_19_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_20_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_21_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_22_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_23_for_anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/backview/Scene_24_for_anim.png"
-        pause .06
+        pause .05
         repeat
     image Art_Biblio_Trenie 6_anim:
         "cg/biblio/ass_scenes/FrontView/FrontScene_4_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_5_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_6_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_7_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_8_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_9_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_10_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_11_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_12_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_13_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_14_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_15_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_16_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_17_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_18_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_19_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_20_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_21_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_22_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_23_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_24_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_25_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_26_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_27_for_Anim.png"
-        pause .06
+        pause .05
         "cg/biblio/ass_scenes/FrontView/FrontScene_28_for_Anim.png"
-        pause .06
+        pause .05
         repeat
     image Art_Biblio_Trenie 5_anim_2:
         "cg/biblio/ass_scenes/backview/Scene_1_for_anim.png"
@@ -537,6 +537,13 @@ label biblio_16:
     hide GG
     $ silence_time = 60
     $ silence_now = 0
+    $ silence_max = 1000
+    $ noise_people = False
+    $ noise_pos = (0, 0)
+    $ noise_control = False
+    $ pos_runner = (534, 666)
+    $ pos_thumb = (560, 478)
+    $ xxx = 0
     show screen silence_mini_game("biblio_16.lose", "biblio_16.win")
     pause
     label .lose:
@@ -667,7 +674,7 @@ label biblio_16:
     show Art_Biblio_Trenie 5_anim
     "[gg]" "Например, таких?.."
     "Нэнси" "Это... Это и есть твой вопрос, [gg]?"
-    "[gg]" "Пока только повод, чтобы узнать тебя лучше, как ты узнавал меня, хе-хе."
+    "[gg]" "Пока только повод, чтобы узнать тебя лучше, как ты узнавала меня, хе-хе."
     
     # // Art_Biblio_Trenie_6_anim
     # //х1
@@ -781,7 +788,7 @@ label biblio_16:
     
     # //Кончить
     # // Art_Biblio_Trenie_4_END_anim
-    scene bg biblio_ass_scene 3
+    scene bg_biblio_ass_scene_3
     show ass_scenes_gg_cum
     "[gg]" "Конч...."
     "Нэнси" "Тсссссссссссс!"

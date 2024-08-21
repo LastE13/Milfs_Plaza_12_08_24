@@ -379,6 +379,7 @@ label biblio_18:
     "[gg]" "Но я тоже не с пустыми руками."
     "[gg]" "Вот, эта необычная шкатулка с сюрпризом внутри для тебя."
     "Нэнси" "Ух ты! Как мило с твоей стороны, [gg]."
+    $ remove_from_inventory(name = 'Волшебный коробок')
     "[gg]" "Я, признаюсь, и сам не знаю, что там содержится, но продавец заверил, что ты будешь в восторге."
     show BiblioGirl Surprise with my_dissolve
     "Нэнси" "Даже так?.."
@@ -626,7 +627,7 @@ label biblio_18:
     # //Книжные полки
     # // GG_ Surprise
     # // BiblioGirl_Surprise
-    # //Симп выезжает слева
+    # //Simp выезжает слева
 
     scene bookshelves bg
     show GG Surprise
@@ -638,15 +639,19 @@ label biblio_18:
         xalign .90
     with my_dissolve
     with vpunch
-    #TODO А какой спрайт у симпа?
-    
-    "Симп" "Эй, что здесь за шум?!"
-    "Симп" "Кого-то убивают?"
+    #TODO А какой спрайт у Simpа?
+    show simp1 2:
+        xalign -1.4 
+        xzoom -1
+    show simp1 2:
+        ease 1 xalign .01  
+    "Simp" "Эй, что здесь за шум?!"
+    "Simp" "Кого-то убивают?"
     show BiblioGirl Surprise with my_dissolve
     "Нэнси" "Мы... Я..."
     "[gg]" "Всё в порядке, приятель. Мы просто перебирали книгу, и одна из них оказалась достаточно... редкой."
     show BiblioGirl Embarrassment with my_dissolve
-    "Симп" "Я вам не верю. Здесь пахнет сексом!"
+    "Simp" "Я вам не верю. Здесь пахнет сексом!"
     show GG Angry with my_dissolve
     "[gg]" "Чувак, но ты же не думаешь, что мы должна оправдываться перед тобой?"
     show GG Smile with my_dissolve

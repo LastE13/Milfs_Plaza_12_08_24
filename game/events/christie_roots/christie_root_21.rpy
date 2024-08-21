@@ -41,7 +41,7 @@ label christie_root_21_menu:
                     xalign .15
                 with my_dissolve
                 "[gg]" "Да, я понял. "
-                jump christie_root_21_pre_menu
+                jump main_interface_label
             $ Jump(check_ev[0].label)()
         
         "Говорить" if not len(library_event_name):
@@ -52,7 +52,8 @@ label christie_root_21_menu:
                     xalign .15
                 with my_dissolve
                 "[gg]" "Да, я понял. "
-                jump christie_root_21_pre_menu
+                $ location_now    = 'City_Library'
+                jump main_interface_label
 
             "Библиотекарша" "Добро пожаловать в обитель знаний, меня зову Нэнси. "
             show GG Normal:
@@ -65,7 +66,8 @@ label christie_root_21_menu:
             "[gg]" "А что из «так» вы предлагаете?"
 
             "Библиотекарша" "Смотря что вы ожидаете, хи-хи."
-            jump christie_root_21_pre_menu
+            $ location_now    = 'City_Library'
+            jump main_interface_label
         "Уйти" if True:
 
 
